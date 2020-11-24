@@ -1,4 +1,4 @@
 # About
 
-This is a blog by Joe
+This is a blog by Joe.
 
