@@ -6,10 +6,10 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: Random Confounder Theory
+site.title: Random Confounder Theory
 description: The antidote is a Randomised Controlled Trial
 github_username:
-author: Draft Punk
+site.author: Joe Cheung
 
 # Email and twitter are optional:
 email:
@@ -22,12 +22,15 @@ use_math: true
 google_analytics: G-ZWN0CHR9LT
 
 # Everything below here can be ignored, unless you want to change the theme entirely
-theme: minima
+remote_theme: tufte-pandoc-jekyll
+
 plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-octicons
   - jekyll-github-metadata
+  - jekyll-sitemap
+  - jekyll-pandoc
 
 titles_from_headings:
   enabled:     true
@@ -35,10 +38,10 @@ titles_from_headings:
   collections: true
 
 highlighter: rouge
-markdown: kramdown
-kramdown:
-  math_engine: katex
-  input: GFM
-  auto_ids: true
-  hard_wrap: false
-  syntax_highlighter: rouge
+
+markdown: Pandoc
+pandoc:
+  extensions:
+    - section-divs
+    - from: 'markdown+tex_math_single_backslash'
+    - filter: 'pandoc-sidenote'
