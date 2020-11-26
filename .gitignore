@@ -7,3 +7,10 @@ _site
 .jekyll-metadata
 vendor
 _notebooks/.ipynb_checkpoints
+
+.DS_Store
+assets/.DS_Store
+static/.DS_Store
+_includes/.DS_Store
+
+Gemfile.lock
