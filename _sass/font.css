@@ -23,7 +23,7 @@
 
 @font-face {
     font-family: "Merriweather";
-    font-weight: 350;
+    font-weight: 300;
     font-style: normal;
     src: url('/assets/fonts/Merriweather-Light.ttf' format('truetype');
     font-display: swap;
@@ -39,9 +39,17 @@
 
 @font-face {
     font-family: "Open Sans";
-    font-weight: 350;
+    font-weight: 300;
     font-style: normal;
     src: url('/assets/fonts/OpenSans-Light.ttf' format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-style: Bold;
+    src: url('/assets/fonts/OpenSans-Bold.ttf' format('truetype');
     font-display: swap;
 }
 

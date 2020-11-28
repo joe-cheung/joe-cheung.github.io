@@ -19,12 +19,7 @@ function prefersColorTest(systemInitiatedDark) {
   }
 }
 
-const mql = window.matchMedia("(prefers-color-scheme: dark)");
-
-mql.addEventListener("change", () => {
-    this.checkNative();
-});
-
+systemInitiatedDark.addListener(prefersColorTest);
 
 function modeSwitcher() {
 	let theme = sessionStorage.getItem('theme');

@@ -20,6 +20,24 @@ html[data-theme="dark"] {
   		--main-text-color: rgb(229, 229, 234);
 	}
 
+@media (prefers-color-scheme: dark) {
+     html, html[data-theme="dark"] {
+          --light-text-color: rgb(199, 199, 204);
+          --link-color: hsl(46, 100%, 50%);
+          --hover-link-color: rgb(255, 0, 170);
+          --main-background-color: #121212;
+          --main-text-color: rgb(229, 229, 234);
+     }
+
+     html[data-theme="light"] { 
+          --light-text-color: rgb(72, 72, 74);
+          --link-color: rgb(255, 166, 0);
+          --hover-link-color: rgb(132, 0, 255);
+          --main-background-color: rgb(255, 255, 255);
+          --main-text-color: rgb(0, 0, 0);
+     }
+}
+
 /* Tufte CSS styles */
 html {
   font-size: 12px;
@@ -49,6 +67,11 @@ html {
      }
 }
 
+@media (prefers-color-scheme: dark) {
+     body {
+          font-weight: 300;
+     }
+}
 
 body { 
        display: flex;
