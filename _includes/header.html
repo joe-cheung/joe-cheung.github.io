@@ -1,12 +1,17 @@
-{% if page.title %}
-  <header>
-    <h1 class="title">{{ page.title }}</h1>
-    {% if page.subtitle %}
-      <p class="subtitle">{{ page.subtitle }}</p>
-    {% endif %}
-    {% if page.date %}
-      <p class="byline">{{ page.date | date: "%B %-d, %Y"}}</p>
-    {% endif %}
-  </header>
-{% endif %}
-
+<header class="site-header">
+    {% include navigation.html %}
+    <h1 style= "font-size: 3rem;" class="title">{{ page.title }}</h1>
+      {% if page.subtitle %}
+        <p.subtitle class="subtitle">{{ page.subtitle }}</p.subtitle>
+      {% endif %}
+      {% if page.author %}<h3 style= "text-align: left; width:49%; display: inline-block;"> By <a href="{{ '/about' | prepend: site.baseurl }}" style="float: none; text-decoration: none;">{{ page.author }}</a></h3>{% endif %}
+      <h4 style= "text-align: right; width:50%;  display: inline-block;" class="date-range">{{ page.date | date: "%b %-d, %Y" }}{% if page.update %} -
+        {{ page.update | date: "%b %-d, %Y" }}{% endif %}</h4>
+      <h3>
+        {% if page.tags %}
+        {% for tag in page.tags %}
+        <a style= "text-decoration: none; background-color: var(--link-color); padding: 0 .5rem; margin-right: .5rem; border-radius: 4px; color: var(--main-background-color); font-size: 90%;" class="post-tag" href="{{ site.baseurl }}/tags/{{ tag | slugify }}">{{ tag }}</a>
+        {% endfor %}
+        {% endif %}
+      </h3>
+</header>

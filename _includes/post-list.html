@@ -1,0 +1,14 @@
+<ul class="post-list" style = "list-style: none;
+    padding-left: 0;">
+    {% for post in paginator.posts %}
+    <h1>
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </h1>
+    {{ post.content | strip_html | lstrip | truncatewords: 40 }}
+    <br>
+    <a href="{{ post.url | relative_url }}">Read more &raquo;</a>
+    <h3>
+        <span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </h3>
+    {% endfor %}
+</ul>

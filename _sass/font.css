@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/* Font overview: loads Source Serif Pro for body, Source Sans Pro for ToC, and yinit/Goudy/Deutsche Zierschrift for 3 kinds of drop caps (enabled in /static/css/default.css) */
+
+/********************/
+/* SOURCE SERIF PRO */
+/********************/
+/* workhorse font for the body */
+
+@font-face {
+    font-family: "Merriweather";
+    font-weight: 400;
+    font-style: normal;
+    src: url('/assets/fonts/Merriweather-Regular.ttf' format('truetype');
+    /*  for body text, display as soon as possible (presumably as system font Baskerville)
+        and re-render with Source Serif Pro whenever it downloads:
+        https://developers.google.com/web/updates/2016/02/font-display
+        https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display
+        https://caniuse.com/#search=font-display
+        */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Merriweather";
+    font-weight: 350;
+    font-style: normal;
+    src: url('/assets/fonts/Merriweather-Light.ttf' format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-style: normal;
+    src: url('/assets/fonts/OpenSans-Regular.ttf' format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 350;
+    font-style: normal;
+    src: url('/assets/fonts/OpenSans-Light.ttf' format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-style: normal;
+    src: url('/assets/fonts/PlayfairDisplay-Black.ttf' format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+    font-style: normal;
+    src: url('/assets/fonts/RobotoCondensed-LightItalic.ttf' format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inconsolata";
+    font-weight: 400;
+    font-style: normal;
+    src: url('/assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf' format('truetype');
+    font-display: swap;
+}

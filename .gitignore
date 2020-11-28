@@ -8,6 +8,9 @@ _site
 vendor
 _notebooks/.ipynb_checkpoints
 
+tags
+.bundle
+
 .DS_Store
 assets/.DS_Store
 static/.DS_Store

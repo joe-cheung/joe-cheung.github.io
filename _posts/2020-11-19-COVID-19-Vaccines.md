@@ -1,15 +1,21 @@
-# COVID-19 Vaccines: Much More Than You Wanted To Know
+---
+title:  "COVID-19 Vaccines: Much More Than You Wanted To Know"
+subtitle:
+date:   2020-11-19 00:00:00
+update: 2020-11-25 00:00:00
+author: Joe Cheung
+description:
+tags: science medicine
+---
 
 [Epistemic status: I have no expertise, and news about COVID-19 changes by the minute, but below is my best guess from what I have read so far.]
 
 1. TOC
 {:toc}
 
-## I. Overview
+## Overview
 
-> [We were promised flying cars... but all we got was three 90% effective vaccines within 10 months of a novel viral pandemic :rocket:](https://twitter.com/matthewclifford/status/1330814191406616576?s=20)
-
-There have been so many good vaccine news that it might be overwhelming to comprehend. Let us first look at the big boys from the West.
+We wanted flying cars[...](https://www.goodreads.com/quotes/697729-we-wanted-flying-cars-instead-we-got-140-characters) instead we got are 90% effective vaccines within 10 months of a novel viral pandemic!
 
 Pfizer and BioNTech just concluded their [phase 3 analysis](https://www.pfizer.com/news/press-release/press-release-detail/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine) of their messenger RNA (mRNA) candidate and reports it to be 95% effective, with 162 infection cases in the placebo group versus 8 in the vaccine group in the 43,000-patient trial. The vaccine is well tolerated and there are minimal severe side-effects (a.k.a. grade 3 adverse events) including fatigue (3.8%) and headache (2.0%). It will require 2 doses 21 days apart and cannot be removed from -70°C more than 4 times, which poses a massive distribution challenge. Nonetheless, it is fantastic news.
 
@@ -29,13 +35,13 @@ With regards to viral mutation, a Pfizer [paper](https://www.medrxiv.org/content
 
 Another worry is efficacy in different demographics, but fortunately the Pfizer vaccine [demonstrated](https://www.pfizer.com/news/press-release/press-release-detail/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine) 94% efficacy in patients 65 and older. Pfizer also claims that 42% of global participants and 30% of U.S. participants have racially and ethnically diverse backgrounds. However, there are no numbers yet for people with pre-existing conditions and risk factors.
 
-## II. The story of the mRNA
+## The story of the mRNA
 
 While there are [about](https://www.covid-19vaccinetracker.org/) [200](https://www.statnews.com/2020/04/27/drugs-vaccines-tracker/) [candidates](https://biorender.com/covid-vaccine-tracker?utm_campaign=Vaccine+Tracker%3A+Announce&utm_content=COVID-19+Vaccine+Tracker%3A+Announcement&utm_medium=email_action&utm_source=customer.io) globally, the Pfizer and Moderna vaccines are the only ones that rely on mRNA, a completely novel technology that was a [scientific backwater](https://www.statnews.com/2020/11/10/the-story-of-mrna-how-a-once-dismissed-idea-became-a-leading-technology-in-the-covid-vaccine-race/) before it was a multibillion-dollar idea.
 
 The concept of mRNA therapeutics was first [demonstrated](https://pubmed.ncbi.nlm.nih.gov/1690918/) to work in mice in 1990 when injected mRNA led to detectable protein production, and a subsequent [paper](https://pubmed.ncbi.nlm.nih.gov/1546298/) showed that administration of mRNA elicited physiologyical response in rats. However, these early promising results did not lead to substantial investment, and no mRNA vaccine nor drug has ever been approved. (That is about to change!) mRNA is notoriously unstable as free RNA breaks down quickly, posing a significant *in vivo* (in live cell) delivery challenge. mRNA injected into the body might also elicit unintended immune response, which is the stumbling block that led to most of the rejections of funding.
 
-For Katalin Karikó, a Hungarian-born biochemist, mRNA was a career dead-end. Her grant applications were all rejected, and she was even demoted from her path to full professorship. But after a decade of trial and error with collaborator Drew Weisman, an immunology MD, PhD, they [dsicovered](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2775451/) in 2005 that by modifying a nucleoside (building block of mRNA), mRNA can penetrate its target cells without eliciting an immune response. This key discovery did not go unnoticed by the future founders of Moderna and BioNTech.
+For Katalin Karikó, a Hungarian-born biochemist, mRNA was a career dead-end. Her grant applications were all rejected, and she was even demoted from her path to full professorship. But after a decade of trial and error with collaborator Drew Weisman, an immunology MD, PhD, they [discovered](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2775451/) in 2005 that by modifying a nucleoside (building block of mRNA), mRNA can penetrate its target cells without eliciting an immune response. This key discovery did not go unnoticed by the future founders of Moderna and BioNTech.
 
 Derrick Rossi was a Canadian stem cell biology postdoctoral fellow at Stanford when he first came across Karikó and Weisman’s work . With another postdoctoral fellow, they [discovered](https://pubmed.ncbi.nlm.nih.gov/23429718/) that modified mRNA can reprogram adult cells to act like embryonic stem cells that have the potential to develop into any cell. Embryonic stem cells are the holy grail of regenerative medicine, and Rossi's discovery can completely sidestep the ethical controversy of harvesting them from discarded embryos.
 
@@ -43,7 +49,7 @@ Rossi, who is now a professor at Harvard Medical School, informed his colleague 
 
 In Germany, husband and wife Uğur Şahin and Özlem Türeci, both Turkish immigrant and immunology physicians-scientists, co-founded BioNTech as a spin-off of another biotech startup they previously co-founded. Like Moderna, BioNTech licensed technology developed by Karikó and Weissman. In fact, BioNTech hired Karikó in 2013. When Şahin read about the COVID-19 in China in January, he realised BioNTech required a strong partner to manufacture the vaccine and reached out to the pharmaceutical giant Pfizer, which BioNTech worked with before to try to develop mRNA influenza vaccines.
 
-## III. mRNA technology
+## mRNA technology
 
 The Pfizer and Moderna vaccines demonstrate the [coming of age](http://www.softmachines.org/wordpress/?p=2541) of nano-medicine. The mRNA vaccine field is developing rapidly as a large body of preclinical data has accumulated over the past several years, and multiple human clinical trials have begun.
 
@@ -64,20 +70,20 @@ One of the major advantages of mRNA vaccines is that mRNA is that there is no po
 
 The Pfizer and Moderna vaccines were definitely not overnight successes; they were built on more than a [decade](https://www.nature.com/articles/nrd.2017.243#ref-CR6) of hard work. The majority of early work in mRNA vaccines focused on cancer immunotherapy. In fact, BioNTech's Şahin received substantial funding from the European Research Council to develop personalised cancer vaccines. Even shortly before the pandemic, mRNA vaccines had been experiencing a burst in basic and clinical research, with a number of papers demonstrated protection against a wide variety of pathogens, including influenza virus, Ebola virus, Zika virus, Streptococcus spp. and T. gondii. In fact, The US Biomedical Advanced Research and Development Authority (BARDA) has been funding Moderna's clinical trial of a promising nucleoside-modified mRNA vaccine for Zika virus.
 
-## IV. Genome sequencing
+## Genome sequencing
 
-One of the key factors in controlling the spread of COVID-19 is genome sequencing, which almost all vaccines rely on. The [plummet](https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost) in the cost of human whole genome sequencing (WGS) has even outpaced the Carlson curve[^4] , which predicts that the doubling of DNA sequencing technologies as measured by cost[^5] and performance would be at least as fast as Moore's law.
+One of the key factors in controlling the spread of COVID-19 is genome sequencing, which almost all vaccines rely on. The [plummet](https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost) in the cost of human whole genome sequencing (WGS) has even outpaced the Carlson curve[^4], which predicts that the doubling of DNA sequencing technologies as measured by cost[^5] and performance would be at least as fast as Moore's law.
 
 ![](/images/2020-11-25-COVID-19-Vaccines/image4.png)
 [The pace of innovation in genome sequencing in the last decade has been astonishing.](https://www.broadinstitute.org/blog/opinionome-can-dna-sequencing-get-any-faster-and-cheaper)
 
-It took $5 billion (adjusted for inflation) and almost 15 years for the Human Genome Project to sequence the first human genome. In 2016, Veritas Genetics began selling WGS for $999, breaking the commonly-referred commercial target of $1000. Last year, Veritas Genetics cut the cost for WGS to $599. In February this year, since acquiring US's Complete Genomics, China's BGI[^6] [claimed](https://www.technologyreview.com/2020/02/26/905658/china-bgi-100-dollar-genome/) it could perform WGS for $100, which is the current commercial target.
+ It took \$5 billion (adjusted for inflation) and almost 15 years for the Human Genome Project to sequence the first human genome. In 2016, Veritas Genetics began selling WGS for \$999, breaking the commonly-referred commercial target of \$1000. Last year, Veritas Genetics cut the cost for WGS to \$599. In February this year, since acquiring US's Complete Genomics, China's BGI[^6] [claimed](https://www.technologyreview.com/2020/02/26/905658/china-bgi-100-dollar-genome/) it could perform WGS for $100, which is the current commercial target.
 
-SARS-CoV-2 is a positive-sense single-stranded RNA (ssRNA) virus. Positive-sense (5′-to-3′) means that the viral genome itself acts as mRNA that is directly translated by the host cell's ribosomes into viral proteins, while negative-sense (3′-to-5′) means that it must be transcribed by an RNA-dependent RNA polymerase (RdRP) into a positive-sense mRNA, before being translated by the host cell's ribosomes into viral proteins. And since human cells do not contain RdRP, positive-sense ssRNA virus will tell the host cell to make RdRP first in order to replicate the rest of its genome, while negative-sense ssRNA virus is packaged with RdRP in the virion (the entire virus particle) to first transcribe its genome into mRNA. In [Cambridge](https://www.cam.ac.uk/stories/sequencingcovid), virus samples arrive the day after being taken, and are attached to an anonymised barcode. Once the sample is prepped, it gets pipetted into the injection port of the latest handheld minION sequencer, which can sequence the genomes of between 24 and 70 virus samples a day[^7].
+SARS-CoV-2 is a positive-sense single-stranded RNA (ssRNA) virus. Positive-sense (5′-to-3′) means that the viral genome itself acts as mRNA that is directly translated by the host cell's ribosomes into viral proteins, while negative-sense (3′-to-5′) means that it must be transcribed by an RNA-dependent RNA polymerase (RdRP) into a positive-sense mRNA, before being translated by the host cell's ribosomes into viral proteins. And since human cells do not contain RdRP, positive-sense ssRNA virus will tell the host cell to make RdRP first in order to replicate the rest of its genome, while negative-sense ssRNA virus is packaged with RdRP in the virion (the entire virus particle) to first transcribe its genome into mRNA. In [Cambridge](https://www.cam.ac.uk/stories/sequencingcovid), virus samples arrive the day after being taken, and are attached to an anonymised barcode. Once the sample is prepped, it gets pipetted into the injection port of the latest handheld minION sequencer, which can sequence the genomes of between 24 and 70 virus samples a day[^bignote1].
 
 Tracking SARS-CoV-2 outbreaks and sharing genome data[^8] globally is key in monitoring the pandemic. If a COVID ward has multiple samples of the same lineage, there might be a local outbreak within a particular area, community or perhaps even hospital.
 
-## V. Development
+## Development
 
 After sequencing the SARS-CoV-2 genome, Pfizer, Moderna and all the other biotechs could begin to develop vaccines[^9] and run clinical trials, which can normally take decades without any guarantee of success.
 
@@ -94,13 +100,13 @@ Until the end of 2020, there have never been any vaccine to prevent human corona
 
 It is all the more amazing that Pfizer and Moderna vaccines and 200 other candidates have been developed so rapidly. A key reason is that many of the teams have previously worked on vaccines for the original SARS virus as well as MERS. Less than 10 weeks after the Chinese scientists published the SARS-CoV-2 sequence, Moderna already had a candidate ready for a phase 1 trial.
 
-In the US, Operation Warp Speed (OWS), headed by Moroccan [immigrant](https://reason.com/volokh/2020/11/22/thank-immigration-for-the-new-covid-19-vaccines/) and molecular biologist Moncef Slaoui, was established with the goal of producing and delivering 300 million vaccine doses by January 2021. OWS purchased vaccines before clinical trials have been completed e.g. $1.6 billion for 100 million doses from Novavax, and $1.95 billion for 100 million doses from Pfizer. Funding agencies also directly invest in vaccine development. Governments and foundations like the Coalition for Epidemic Preparedness Innovations are throwing millions, even billions into the hunt for vaccines. Moderna[^12], for instance,received $472 million from BARDA in July, on top of the $483 million it got in April.
+In the US, Operation Warp Speed (OWS), headed by Moroccan [immigrant](https://reason.com/volokh/2020/11/22/thank-immigration-for-the-new-covid-19-vaccines/) and molecular biologist Moncef Slaoui, was established with the goal of producing and delivering 300 million vaccine doses by January 2021. OWS purchased vaccines before clinical trials have been completed e.g. \$1.6 billion for 100 million doses from Novavax, and \$1.95 billion for 100 million doses from Pfizer. Funding agencies also directly invest in vaccine development. Governments and foundations like the Coalition for Epidemic Preparedness Innovations are throwing millions, even billions into the hunt for vaccines. Moderna[^12], for instance,received \$472 million from BARDA in July, on top of the \$483 million it got in April.
 
 During the 2014-2016 West African Ebola crisis (the worst Ebola outbreak in history), regulatory bodies [embraced](https://www.statnews.com/2020/07/30/a-huge-experiment-how-the-world-made-so-much-progress-on-a-covid-19-vaccine-so-fast/) a new dexterity in green-lighting trials and were a lot more proactive in communicating with companies about the efficacy thresholds. For COVID-19, the FDA has outlined that vaccines need to prevent infections or reduce the severity of COVID-19 in just 50% of recipients to be approved. Some of the trials have even been collapsed into Phase 1/2 or Phase 2/3 trials, which can shave weeks or even months off the trials. The Medicines and Healthcare products Regulatory Agency in the UK has been conducting rolling reviews of the Oxford vaccine. Similarly, the European Medical Agency has also been conducting rolling reviews of Moderna's vaccine since 17 November.
 
-## VI. Manufacturing
+## Manufacturing
 
-Even when the vaccines pass phase 3 trials, manufacturing is a long and arduous process[^13] with a myriad of stringent quality control measures at every step in the pipeline[^14]. Not to mention the fact that all the later-stage candidates are based on completely novel or immature technologies that have never been scaled.
+Even when the vaccines pass phase 3 trials, manufacturing is a long and arduous process[^bignote2] with a myriad of stringent quality control measures at every step in the pipeline[^bignote3]. Not to mention the fact that all the later-stage candidates are based on completely novel or immature technologies that have never been scaled.
 
 For the Oxford and Sputnik V vaccines, which are [modified adenaviruses](https://www.sciencedirect.com/science/article/pii/S2352304217300272), the only therapeutic that uses a similar technology is gene therapy, which has only been used on single-digit thousands of patients (the [Ebola vaccine](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6183239/) is also a viral vector but it uses the VZV virus). Luckily, the UK already has [four million doses](https://www.bbc.co.uk/news/health-55041371) of the Oxford vaccine ready to deploy as production has begun long before data from the Oxford phase 3 trials were analysed.
 
@@ -112,11 +118,11 @@ Although the mRNA vaccines are the most advanced candidates they ironically have
 
 As mentioned before, mRNA degradation has to be prevented, and that requires a very rare substance called vaccinia capping enzyme (VCE). Just over 10 pounds of VCE is enough to produce 100 million doses of mRNA vaccine, but the current manufacturing processes require so much bioreactor capacity that it would cost $1.4 billion. More important, global bioreactor capacity cannot support production at that level while also producing other vaccines and cancer-fighting drugs.
 
-Less exotic [supply links](https://www.bloomberg.com/features/2020-covid-vaccine-manufacturing-essentials/) such as needles and syringes will also be challenging to scale. The US Biomedical Advanced Research and Development Authority (BARDA) has invested heavily in a number of companies to make up for lost time. Schott AG, the world’s largest manufacturer of medical borosilicate, a special glass to make vaccine vials that can withstand the -80°C storage, will produce 2 billion vials following a $376 million investment. Corning Inc. received $204 million to expand its production of glass vials. ApiJect Systems Corp. has received $138 million to make 100 million pre-fillable plastic syringes by the end of the year. SiO2 Materials Science has received $143 million to produce 120 million patented vials made of plastic coated with a thin layer of glass, which will not be affected by a potential sand shortage.
+Less exotic [supply links](https://www.bloomberg.com/features/2020-covid-vaccine-manufacturing-essentials/) such as needles and syringes will also be challenging to scale. The US Biomedical Advanced Research and Development Authority (BARDA) has invested heavily in a number of companies to make up for lost time. Schott AG, the world’s largest manufacturer of medical borosilicate, a special glass to make vaccine vials that can withstand the -80°C storage, will produce 2 billion vials following a \$376 million investment. Corning Inc. received \$204 million to expand its production of glass vials. ApiJect Systems Corp. has received \$138 million to make 100 million pre-fillable plastic syringes by the end of the year. SiO2 Materials Science has received \$143 million to produce 120 million patented vials made of plastic coated with a thin layer of glass, which will not be affected by a potential sand shortage.
 
-It is not clear what the rate-limiting step(s) is in scaling up the Pfizer and Moderna vaccines immediately. Oddly, none of the official sources say what makes the scaling take months instead of weeks or years, even when many governments and Bill Gates are spending more than a billion dollars to accelerate it[^15]. We have already seen the costs of supply-chain failures in the delayed production of simple nasal swabs that slowed testing by months even as cases exploded worldwide. Securing and scaling supply chains for the vaccines is paramount in the race against time.
+It is not clear what the rate-limiting step(s) is in scaling up the Pfizer and Moderna vaccines immediately. Oddly, none of the official sources say what makes the scaling take months instead of weeks or years, even when many governments and Bill Gates are spending more than a billion dollars to accelerate it[^bignote4]. We have already seen the costs of supply-chain failures in the delayed production of simple nasal swabs that slowed testing by months even as cases exploded worldwide. Securing and scaling supply chains for the vaccines is paramount in the race against time.
 
-## VII. Distribution
+## Distribution
 
 On top of manufacturing, distribution is going to be a tremendous logistical challenge, especially for the Pfizer vaccine that cannot be removed from -70°C more than 4 times. “[Cold chain](https://www.nytimes.com/2020/09/18/business/coronavirus-covid-vaccine-cold-frozen-logistics.html)” delivery is hard enough for first-world cities, but to reach people living in rural parts of India, or sub-Saharan Africa, it will need new infrastructure.
 
@@ -131,17 +137,11 @@ Then there is the problem of who will get the vaccine first. [Emergency Use Auth
 The dates of the rollout:
 
 - Care home residents and staff, healthcare workers - from beginning of December;
-
 - Ages 80 plus - from mid-December;
-
 - Everyone aged 70-80 - from late December;
-
 - Everyone aged 65-70 - from early January;
-
 - All high and moderate risk under 65s - from early January;
-
 - Everyone aged 50-65 - from mid January; and
-
 - Everyone aged 18-50 - from late January; but with the bulk of this group vaccinated during March.
 
 Time to buy Ryanair and AirBnB stocks\!
@@ -154,13 +154,13 @@ If there are only 4 million doses in the UK at the very first, hypothetically, i
 
 Pfizer and Moderna both say that they can make in the range of 20 million doses by the end of the year, but what we do not know is (1) when the FDA will grant EUA, (2) how many of these doses can be distributed and how it is going to happen, (3) what the number of doses available right now is, (4) how the ramp-up of both production and distribution are going to be coupled in the coming months, (5) what is going to show up with the other vaccine candidates in testing.
 
-\[UPDATE 21/11/20\] FDA just [announced](https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-announces-advisory-committee-meeting-discuss-covid-19-vaccine) the meeting on Pfizer’s EUA to be held on 10 December[^16].
+\[UPDATE 21/11/20\] FDA just [announced](https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-announces-advisory-committee-meeting-discuss-covid-19-vaccine) the meeting on Pfizer’s EUA to be held on 10 December[^bignote5].
 
 \[UPDATE 23/11/20\] The Pfizer vaccine could get [UK approval](https://uk.reuters.com/article/us-health-coronavirus-vaccines-pfizer-br-idUKKBN2820QU) by the end of November!
 
-Assuming the FDA exercises its EUA powers, the very first people to get these new vaccines will almost surely be health care workers, starting some time in December. The rollout after that has too many variables to usefully predict, but it is going to be the biggest thing of its type ever attempted, in people-per-unit-time. The light is real, but the tunnel at the end of it is still pretty long. Only a tiny amount of people will receive vaccines when Santa comes to town[^17]. In the meantime, if you have nothing better to do for the holidays, maybe sell your Zoom stock-ings and buy some Moderna[^18] ones.
+Assuming the FDA exercises its EUA powers, the very first people to get these new vaccines will almost surely be health care workers, starting some time in December. The rollout after that has too many variables to usefully predict, but it is going to be the biggest thing of its type ever attempted, in people-per-unit-time. The light is real, but the tunnel at the end of it is still pretty long. Only a tiny amount of people will receive vaccines when Santa comes to town[^bignote6]. In the meantime, if you have nothing better to do for the holidays, maybe sell your Zoom stock-ings and buy some Moderna[^bignote7] ones.
 
-![](images/2020-11-25-COVID-19-Vaccines/image1.png)
+![](/images/2020-11-25-COVID-19-Vaccines/image1.png)
 
 ## Endnotes
 
@@ -176,9 +176,9 @@ Assuming the FDA exercises its EUA powers, the very first people to get these ne
 
 [^6]: In 2003, to investigate the genomics of intelligence, BGI launched a [cognitive genomics lab](https://www.wsj.com/articles/SB10001424127887324162304578303992108696034) in Hong Kong where more than 100 gene-sequencing machines deciphered 2,200 genomes, the majority of which were from people with IQs of 160 or higher, supplied by a researcher at King's College London, and the Vice President was Stephen Hsu.
 
-[^7]: Computing power and storage capacity are nonetheless [bottlenecks](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5958914/) because sequencing generates a lot of raw data. The 1000 Genomes project data, for example, consists of [200 terabytes](https://medium.com/precision-medicine/how-big-is-the-human-genome-e90caa3409b0) (1 terabyte is 1,024 gigabytes) for the 1700 participants in 2014.
+[^bignote1]: Computing power and storage capacity are nonetheless [bottlenecks](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5958914/) because sequencing generates a lot of raw data. The 1000 Genomes project data, for example, consists of [200 terabytes](https://medium.com/precision-medicine/how-big-is-the-human-genome-e90caa3409b0) (1 terabyte is 1,024 gigabytes) for the 1700 participants in 2014.
 
-  The first SARS-CoV-2 strain sequenced on 18 March 2020: [Wuhan-Hu-1](https://www.ncbi.nlm.nih.gov/nuccore/MN908947.3), has 29,903 nucleotides. Since there are only four possible nucleotides, we can estimate the information compression value of each nucleotide at approximately 2 bits. Therefore, [in theory](https://csvoss.com/a-mechanists-guide-to-the-coronavirus-genome), the Wuhan-Hu-1 genome requires only 7.5 kilobytes to store.
+    The first SARS-CoV-2 strain sequenced on 18 March 2020: [Wuhan-Hu-1](https://www.ncbi.nlm.nih.gov/nuccore/MN908947.3), has 29,903 nucleotides. Since there are only four possible nucleotides, we can estimate the information compression value of each nucleotide at approximately 2 bits. Therefore, [in theory](https://csvoss.com/a-mechanists-guide-to-the-coronavirus-genome), the Wuhan-Hu-1 genome requires only 7.5 kilobytes to store.
 
 [^8]: There is still room for GWS to improve. [The Netherlands](https://www.nature.com/articles/s41591-020-0997-y), for example, has been using an amplicon-based sequencing approach, which relies on close, reliable reference sequences that are designed based on current knowledge about SARS-CoV-2 diversity and therefore need regular updating. However, at the moment, conventional metagenomic sequencing from Illumina takes too long for near to real-time sequencing, and nanopore-based metagenomic sequencing is not sensitive enough to allow recovery of whole-genome sequences in a similar fashion and costs compared to amplicon-based nanopore sequencing. In the future, this may be overcome using metagenomic sequencing.
 
@@ -188,37 +188,37 @@ Assuming the FDA exercises its EUA powers, the very first people to get these ne
 
 [^11]: The list of the “most notable” 27 vaccines is definitely not exhaustive, it is just from WHO’s [list](https://www.wikiwand.com/en/WHO_Model_List_of_Essential_Medicines#/Vaccines) of essential vaccines.
 
-[^12]: [Dolly Parton](https://www.theguardian.com/music/2020/nov/17/dolly-parton-partly-funded-moderna-covid-vaccine-research) donated $1 million to COVID-19 vaccine research, which supported the development of the Moderna vaccine\!
+[^12]: [Dolly Parton](https://www.theguardian.com/music/2020/nov/17/dolly-parton-partly-funded-moderna-covid-vaccine-research) donated \\$1 million to COVID-19 vaccine research, which supported the development of the Moderna vaccine\!
 
-[^13]: The first step in conventional [vaccine manufacturing](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7152262/) is the establishment of a “master cell bank”: a collection of vialed cells that form the starting material for all future production. Viruses are grown in either primary cells (e.g. chicken fibroblasts for yellow fever vaccine), or continuous cell lines (e.g. MRC-5 for hepatitis A vaccine). Bacterial pathogens are grown in bioreactors using media carefully optimised for the yield of the antigen while maintaining its integrity. Recombinant proteins can be manufactured in bacteria, yeast, or cell cultures. The next step is to isolate the antigen from the growth medium. This can be isolation of free virus, proteins from cells, or cells containing the antigen. The antigens are then purified using column chromatography, ultrafiltration, or simple inactivation of the isolated virus.
+[^bignote2]: The first step in conventional [vaccine manufacturing](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7152262/) is the establishment of a “master cell bank”: a collection of vialed cells that form the starting material for all future production. Viruses are grown in either primary cells (e.g. chicken fibroblasts for yellow fever vaccine), or continuous cell lines (e.g. MRC-5 for hepatitis A vaccine). Bacterial pathogens are grown in bioreactors using media carefully optimised for the yield of the antigen while maintaining its integrity. Recombinant proteins can be manufactured in bacteria, yeast, or cell cultures. The next step is to isolate the antigen from the growth medium. This can be isolation of free virus, proteins from cells, or cells containing the antigen. The antigens are then purified using column chromatography, ultrafiltration, or simple inactivation of the isolated virus.
 
-  The formulation of the vaccine is designed to maximise the stability, distribution efficiency, and proper delivery. The formulated vaccine may include an adjuvant to enhance the immune response, stabilisers to prolong shelf life, and preservatives to allow multi-dose vials to be delivered. All components that constitute the final vaccine are uniformly mixed in a single vessel. Individual, scrupulously cleaned, depyrogenated, single or multi-dose containers are then filled with the vaccine and sealed with sterile stoppers or plungers.
+    The formulation of the vaccine is designed to maximise the stability, distribution efficiency, and proper delivery. The formulated vaccine may include an adjuvant to enhance the immune response, stabilisers to prolong shelf life, and preservatives to allow multi-dose vials to be delivered. All components that constitute the final vaccine are uniformly mixed in a single vessel. Individual, scrupulously cleaned, depyrogenated, single or multi-dose containers are then filled with the vaccine and sealed with sterile stoppers or plungers.
 
-[^14]: Take influenza as an example to see how complex [quality controll](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7152262/) is.
+[^bignote3]: Take influenza as an example to see how complex [quality controll](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7152262/) is.
 
-  ![](images/2020-11-25-COVID-19-Vaccines/image2.png)
+    ![](/images/2020-11-25-COVID-19-Vaccines/image2.png)
 
-[^14]: Funded largely with public money and led by two global nonprofits that [Bill Gates](https://www.seattletimes.com/nation-world/bill-gates-the-virus-and-the-quest-to-vaccinate-the-world/) helped launch and bankroll, along with the World Health Organization, [COVID-19 Vaccines Advance Market Commitment](https://www.gavi.org/vaccineswork/covax-explained) (COVAX AMC) aims to ensure that the 92 middle- and lower-income countries will receive enough doses to vaccinate up to 20 per cent of their population in the longer term.
+[^bignote4]: Funded largely with public money and led by two global nonprofits that [Bill Gates](https://www.seattletimes.com/nation-world/bill-gates-the-virus-and-the-quest-to-vaccinate-the-world/) helped launch and bankroll, along with the World Health Organization, [COVID-19 Vaccines Advance Market Commitment](https://www.gavi.org/vaccineswork/covax-explained) (COVAX AMC) aims to ensure that the 92 middle- and lower-income countries will receive enough doses to vaccinate up to 20 per cent of their population in the longer term.
 
-  ![](/images/2020-11-25-COVID-19-Vaccines/image7.png)
-  [The Gates Foundation is the also the 2nd largest doner to the WHO, only below the US, higher than the UK and the rest of the world.](https://www.bbc.co.uk/news/world-us-canada-52291654) Thanks Bill Gates!
+    ![](/images/2020-11-25-COVID-19-Vaccines/image7.png)
+    [The Gates Foundation is the also the 2nd largest doner to the WHO, only below the US, higher than the UK and the rest of the world.](https://www.bbc.co.uk/news/world-us-canada-52291654) Thanks Bill Gates!
 
-[^15]: Why not sooner? The Pfizer vaccine could get UK approval THIS WEEK.
+[^bignote5]: Why not sooner? The Pfizer vaccine could get UK approval THIS WEEK.
 
-  “[FDA](https://www.fda.gov/advisory-committees/about-advisory-committees/common-questions-and-answers-about-fda-advisory-committee-meetings) is required to publish announcements of advisory committee meetings at least 15 calendar days before a meeting date in the Federal Register (41 CFR sec 102-3.150). Once a meeting is published in the Federal Register, it is posted on FDA's advisory committee meeting calendar, which can be found on the Advisory Committee Calendar page.” If they published today, and it probably takes at least a day or two to publish, it would be 18 days.
+    “[FDA](https://www.fda.gov/advisory-committees/about-advisory-committees/common-questions-and-answers-about-fda-advisory-committee-meetings) is required to publish announcements of advisory committee meetings at least 15 calendar days before a meeting date in the Federal Register (41 CFR sec 102-3.150). Once a meeting is published in the Federal Register, it is posted on FDA's advisory committee meeting calendar, which can be found on the Advisory Committee Calendar page.” If they published today, and it probably takes at least a day or two to publish, it would be 18 days.
 
-  Even then, why take 3 weeks to review Pfizer’s application? Within [4 weeks](https://www.nytimes.com/2020/11/09/health/covid-vaccine-pfizer.html), when the first wave in Europe was in full swing, BioNTech had identified 20 vaccine candidates as part its Project Lightspeed, so the FDA better be doing important stuff in the 3 weeks.
+    Even then, why take 3 weeks to review Pfizer’s application? Within [4 weeks](https://www.nytimes.com/2020/11/09/health/covid-vaccine-pfizer.html), when the first wave in Europe was in full swing, BioNTech had identified 20 vaccine candidates as part its Project Lightspeed, so the FDA better be doing important stuff in the 3 weeks.
 
-  Are the 3 weeks warranted caution? In the [1976 swine flu epidemic](https://www.discovermagazine.com/health/the-public-health-legacy-of-the-1976-swine-flu-outbreak) in the US, a vaccine was rushed through with unexpected public side effects, causing less people to be willing to take the vaccine. Perhaps this is why the FDA is taking it slow.
+    Are the 3 weeks warranted caution? In the [1976 swine flu epidemic](https://www.discovermagazine.com/health/the-public-health-legacy-of-the-1976-swine-flu-outbreak) in the US, a vaccine was rushed through with unexpected public side effects, causing less people to be willing to take the vaccine. Perhaps this is why the FDA is taking it slow.
 
-[^16]: Santa would be the ultimate super-spreader responsible for more deaths than the bubonic plague. Luckily, Dr Anthony Fauci [said](https://www.huffingtonpost.co.uk/entry/anthony-fauci-santa-claus-covid-19-immunity_n_5fb8331ac5b67493dd366989?ri18n=true&guccounter=1&guce_referrer=aHR0cHM6Ly9jb25zZW50LnlhaG9vLmNvbS8&guce_referrer_sig=AQAAAIIQVD-4y_xs-pdyZ7YufPwTQtqrgqmzQVXdXm7pvxl93DvpLyUJ4pkxFzKiHLq6cN--HSKx6W5sBq7izZWTQnE_CBFwFU1usnR1LUHLdlFjkL120mSKw5bXVUW5JAx5UOOZIiuRzAKkjb_EKxhewKHM1WN_2V4wbf9Wsd-YDA7w) the obese, old man has good innate immunity to COVID-19 (must be the Santabodies), so he can solve the distribution problem with his reindeers\! But even the North Pole is 30°C too hot for the Pfizer vaccine. Santa’s child labourers should just extract his serum to massively scale production, with proper ‘elf and safety measures of course.
+[^bignote6]: Santa would be the ultimate super-spreader responsible for more deaths than the bubonic plague. Luckily, Dr Anthony Fauci [said](https://www.huffingtonpost.co.uk/entry/anthony-fauci-santa-claus-covid-19-immunity_n_5fb8331ac5b67493dd366989?ri18n=true&guccounter=1&guce_referrer=aHR0cHM6Ly9jb25zZW50LnlhaG9vLmNvbS8&guce_referrer_sig=AQAAAIIQVD-4y_xs-pdyZ7YufPwTQtqrgqmzQVXdXm7pvxl93DvpLyUJ4pkxFzKiHLq6cN--HSKx6W5sBq7izZWTQnE_CBFwFU1usnR1LUHLdlFjkL120mSKw5bXVUW5JAx5UOOZIiuRzAKkjb_EKxhewKHM1WN_2V4wbf9Wsd-YDA7w) the obese, old man has good innate immunity to COVID-19 (must be the Santabodies), so he can solve the distribution problem with his reindeers\! But even the North Pole is 30°C too hot for the Pfizer vaccine. Santa’s child labourers should just extract his serum to massively scale production, with proper ‘elf and safety measures of course.
 
-  Unless Santa’s sweatshop can produce a Christmas miracle, the holidays are going [to](https://ourworldindata.org/coronavirus) [be](https://www.economist.com/graphic-detail/2020/07/15/tracking-covid-19-excess-deaths-across-countries) [grim](https://ourworldindata.org/coronavirus-data-explorer?zoomToSelection=true&time=2019-12-31..latest&country=GBR~USA~ESP~ITA~AUT~BEL~CZE~DEU~LUX~MEX~NLD~PRT~RUS~CHE~ROU~POL~FRA~HRV~IND~UKR~SWE&region=World&deathsMetric=true&interval=smoothed&hideControls=true&perCapita=true&smoothing=7&pickerMetric=location&pickerSort=asc):
-  
-  ![](images/2020-11-25-COVID-19-Vaccines/image5.png)
+    Unless Santa’s sweatshop can produce a Christmas miracle, the holidays are going [to](https://ourworldindata.org/coronavirus) [be](https://www.economist.com/graphic-detail/2020/07/15/tracking-covid-19-excess-deaths-across-countries) [grim](https://ourworldindata.org/coronavirus-data-explorer?zoomToSelection=true&time=2019-12-31..latest&country=GBR~USA~ESP~ITA~AUT~BEL~CZE~DEU~LUX~MEX~NLD~PRT~RUS~CHE~ROU~POL~FRA~HRV~IND~UKR~SWE&region=World&deathsMetric=true&interval=smoothed&hideControls=true&perCapita=true&smoothing=7&pickerMetric=location&pickerSort=asc):
 
-  Note that contrary to the pernicious myth that those who die of COVID-19 are at death’s door anyway, the virus takes away [10 years](https://www.medrxiv.org/content/10.1101/2020.06.08.20050559v2) of their lives. Luckily, as far as we know, Santa is immortal.
+    ![](/images/2020-11-25-COVID-19-Vaccines/image5.png)
 
-[^17]: Moderna’s Chief Medical Officer Tal Zaks has been getting $1 million richer each week by selling his existing stock like clockwork through pre-scheduled trades every week. As of early October 2020, it has earned him more than [$50 million](https://www.statnews.com/2020/10/13/selling-stock-like-clockwork-modernas-top-doctor-gets-1-million-richer-every-week/) since the dawn of the pandemic.
+    Note that contrary to the pernicious myth that those who die of COVID-19 are at death’s door anyway, the virus takes away [10 years](https://www.medrxiv.org/content/10.1101/2020.06.08.20050559v2) of their lives. Luckily, as far as we know, Santa is immortal.
 
-  Yeah, yeah, I know. But if vaccine makers cannot capture a tiny sliver of the billions or trillions of dollars in the value they bring, no one should be allowed to be a millionaire\!
+[^bignote7]: Moderna’s Chief Medical Officer Tal Zaks has been getting \$1 million richer each week by selling his existing stock like clockwork through pre-scheduled trades every week. As of early October 2020, it has earned him more than [\$50 million](https://www.statnews.com/2020/10/13/selling-stock-like-clockwork-modernas-top-doctor-gets-1-million-richer-every-week/) since the dawn of the pandemic.
+
+    Yeah, yeah, I know. But if vaccine makers cannot capture a tiny sliver of the billions or trillions of dollars in the value they bring, no one should be allowed to be a millionaire\!

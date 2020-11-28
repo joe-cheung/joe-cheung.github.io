@@ -1,0 +1,15 @@
+<h3 style="display: inline-block;">
+ <a class="no-after social-icon" target="_blank" href="{{ "/feed.xml" | prepend: site.baseurl }}">
+        <i class="fa fa-rss"></i>
+    </a>
+    {% if site.author.email %}
+    <a class="no-after social-icon" href="mailto:{{ site.authorEmail }}">
+        <i class="fa fa-envelope"></i>
+    </a>
+    {% endif %}
+    {% if site.authorTwitter %}
+    <a class="no-after social-icon" href="{{ site.authorTwitter }}">
+        <i class="fa fa-twitter"></i>
+    </a>
+    {% endif %}
+</h3>

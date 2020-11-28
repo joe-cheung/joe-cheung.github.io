@@ -6,31 +6,35 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-site.title: Random Confounder Theory
-description: The antidote is a Randomised Controlled Trial
-github_username:
-site.author: Joe Cheung
+title: RCT
+description: Random Confounder Theory
+meta_description: "The antidote is a Randomised Controlled Trial"
 
-# Email and twitter are optional:
-email:
-twitter_username: JoeCheung_
+baseurl: ""
+
+aboutPage: true
 
 # Set this to true to get LaTeX math equation support
-use_math: true
+use_math: false
 
 # Add your Google Analytics ID here if you have one and want to use it
 google_analytics: G-ZWN0CHR9LT
 
 # Everything below here can be ignored, unless you want to change the theme entirely
-remote_theme: tufte-pandoc-jekyll
+remote_theme: jez/tufte-pandoc-jekyll
+
+# Disqus
+page.comments: true
 
 plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-octicons
-  - jekyll-github-metadata
   - jekyll-sitemap
   - jekyll-pandoc
+  - jekyll-remote-theme
+  - jemoji
+  - jekyll-paginate
 
 titles_from_headings:
   enabled:     true
@@ -39,9 +43,57 @@ titles_from_headings:
 
 highlighter: rouge
 
+pagination:
+  enabled: true
+paginate: 8
+paginate_path: "/page:num/"
+
 markdown: Pandoc
 pandoc:
   extensions:
     - section-divs
     - from: 'markdown+tex_math_single_backslash'
     - filter: 'pandoc-sidenote'
+
+disqus: true
+disqus_shortname: 'joe-cheung-github-io'
+
+# Search settings
+tipue_search:
+  include:
+    pages: true
+
+#    collections: [apps]
+  exclude:
+    files: [index.html, 
+            pages/search.md, 
+            search.md]
+    tags:
+    categories: 
+
+# Details for the RSS feed generator
+url:            "http://joe-cheung.github.io"
+author:         Joe Cheung
+authorTwitter:  https://twitter.com/JoeCheung_
+
+permalink:       /:year/:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post

@@ -1,0 +1,22 @@
+---
+layout: default
+tipue_search_active: false
+---
+
+<h1>Archive</h1>
+
+<div class="archive">
+
+    <br>
+
+    {{ content }}
+
+    <ul class="archive-list" style="list-style: none;">
+        {% for post in site.posts %}
+        <li>
+        <h3 style= "display: inline;" class="date">{{ post.date | date: "%D" }}&nbsp;&nbsp;</h3>
+        <a style= "display: inline;" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

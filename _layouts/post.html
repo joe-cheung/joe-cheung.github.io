@@ -1,1 +1,27 @@
-{% include default.html %}
+---
+layout: default
+archive: true
+tipue_search_active: true
+---
+
+<article class="post">
+    <a name="top"></a>
+        {{ content }}
+    <a href="#top"><h3 style= "text-align: right;">↑ back to top</h3></a>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    <h3>
+    {% include previousnext.html %}<br>
+    </h3>
+    <section id="sharing">
+        {% include share.html %}
+    </section>
+</footer>
+
+<!-- Disqus comments -->
+{% if site.disqus %}
+<div class="archive readmore">
+    {% include disqus.html %}
+</div>
+{% endif %}
