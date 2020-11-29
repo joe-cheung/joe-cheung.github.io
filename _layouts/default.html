@@ -2,15 +2,12 @@
 <html>
     {% include head.html %}
   <body>
-    {% include before.html %}
     {% include header.html %}
     <div class="content">
     <main class="wrapper">
       {{ content }}
-      {% include after.html %}
       {% include math.html %}
       {% include scripts.html %}
-      {% include search.html %}
       <div id="fade"></div>
     </main>
     <script id="dsq-count-scr" src="//joe-cheung-github-io.disqus.com/count.js" async></script>
