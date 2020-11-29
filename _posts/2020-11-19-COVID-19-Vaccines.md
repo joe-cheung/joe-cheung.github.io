@@ -193,22 +193,22 @@ Assuming the FDA exercises its EUA powers, the very first people to get these ne
 
 [^11]: The list of the “most notable” 27 vaccines is definitely not exhaustive, it is just from WHO’s [list](https://www.wikiwand.com/en/WHO_Model_List_of_Essential_Medicines#/Vaccines) of essential vaccines.
 
-[^12]: [Dolly Parton](https://www.theguardian.com/music/2020/nov/17/dolly-parton-partly-funded-moderna-covid-vaccine-research) donated \\$1 million to COVID-19 vaccine research, which supported the development of the Moderna vaccine\!
+[^12]: [Dolly Parton](https://www.theguardian.com/music/2020/nov/17/dolly-parton-partly-funded-moderna-covid-vaccine-research) donated \$1 million to COVID-19 vaccine research, which supported the development of the Moderna vaccine\!
 
 [^bignote2]: The first step in conventional [vaccine manufacturing](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7152262/) is the establishment of a “master cell bank”: a collection of vialed cells that form the starting material for all future production. Viruses are grown in either primary cells (e.g. chicken fibroblasts for yellow fever vaccine), or continuous cell lines (e.g. MRC-5 for hepatitis A vaccine). Bacterial pathogens are grown in bioreactors using media carefully optimised for the yield of the antigen while maintaining its integrity. Recombinant proteins can be manufactured in bacteria, yeast, or cell cultures. The next step is to isolate the antigen from the growth medium. This can be isolation of free virus, proteins from cells, or cells containing the antigen. The antigens are then purified using column chromatography, ultrafiltration, or simple inactivation of the isolated virus.
 
     The formulation of the vaccine is designed to maximise the stability, distribution efficiency, and proper delivery. The formulated vaccine may include an adjuvant to enhance the immune response, stabilisers to prolong shelf life, and preservatives to allow multi-dose vials to be delivered. All components that constitute the final vaccine are uniformly mixed in a single vessel. Individual, scrupulously cleaned, depyrogenated, single or multi-dose containers are then filled with the vaccine and sealed with sterile stoppers or plungers.
 
-[^bignote3]: Take influenza as an example to see how complex [quality controll](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7152262/) is.
+[^bignote3]: Take influenza as an example to see how complex [quality control](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7152262/) is.
 
     ![](/images/2020-11-25-COVID-19-Vaccines/image2.png)
 
-[^bignote4]: Funded largely with public money and led by two global nonprofits that [Bill Gates](https://www.seattletimes.com/nation-world/bill-gates-the-virus-and-the-quest-to-vaccinate-the-world/) helped launch and bankroll, along with the World Health Organization, [COVID-19 Vaccines Advance Market Commitment](https://www.gavi.org/vaccineswork/covax-explained) (COVAX AMC) aims to ensure that the 92 middle- and lower-income countries will receive enough doses to vaccinate up to 20 per cent of their population in the longer term.
+[^bignote4]: [COVID-19 Vaccines Advance Market Commitment](https://www.gavi.org/vaccineswork/covax-explained) (COVAX AMC) aims to ensure that the 92 middle- and lower-income countries will receive enough doses to vaccinate up to 20 per cent of their population in the longer term. It is funded largely with public money and led by two global nonprofits that [Bill Gates](https://www.seattletimes.com/nation-world/bill-gates-the-virus-and-the-quest-to-vaccinate-the-world/) helped launch and bankroll, along with the World Health Organization.
 
     ![](/images/2020-11-25-COVID-19-Vaccines/image7.png)
-    [The Gates Foundation is the also the 2nd largest doner to the WHO, only below the US, higher than the UK and the rest of the world.](https://www.bbc.co.uk/news/world-us-canada-52291654) Thanks Bill Gates!
+    [The Gates Foundation is the also the 2nd largest doner to the WHO, only below the US, higher than the UK and the rest of the world.](https://www.bbc.co.uk/news/world-us-canada-52291654)
 
-[^bignote5]: Why not sooner? The Pfizer vaccine could get UK approval THIS WEEK.
+[^bignote5]: Why not sooner? The Pfizer vaccine could get UK approval before the FDA meeting.
 
     “[FDA](https://www.fda.gov/advisory-committees/about-advisory-committees/common-questions-and-answers-about-fda-advisory-committee-meetings) is required to publish announcements of advisory committee meetings at least 15 calendar days before a meeting date in the Federal Register (41 CFR sec 102-3.150). Once a meeting is published in the Federal Register, it is posted on FDA's advisory committee meeting calendar, which can be found on the Advisory Committee Calendar page.” If they published today, and it probably takes at least a day or two to publish, it would be 18 days.
 
@@ -226,4 +226,4 @@ Assuming the FDA exercises its EUA powers, the very first people to get these ne
 
 [^bignote7]: Moderna’s Chief Medical Officer Tal Zaks has been getting \$1 million richer each week by selling his existing stock like clockwork through pre-scheduled trades every week. As of early October 2020, it has earned him more than [\$50 million](https://www.statnews.com/2020/10/13/selling-stock-like-clockwork-modernas-top-doctor-gets-1-million-richer-every-week/) since the dawn of the pandemic.
 
-    Yeah, yeah, I know. But if vaccine makers cannot capture a tiny sliver of the billions or trillions of dollars in the value they bring, no one should be allowed to be a millionaire\!
+    Yeah, yeah, I know. But if vaccine makers cannot capture a tiny sliver of the billions or trillions of dollars in the value they bring, maybe no one should be allowed to be a millionaire\!
