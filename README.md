@@ -1,3 +1,3 @@
 # Joe's blog
 
-[joe-cheung.github.io](<https://joe-cheung.github.io)
+[joe-cheung.github.io](https://joe-cheung.github.io)
