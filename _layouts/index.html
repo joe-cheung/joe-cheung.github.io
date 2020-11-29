@@ -2,12 +2,14 @@
 layout: default
 ---
 
-<div class="home">
+<article>
+    <div class="home">
 
-    {{ content }}
+        {{ content }}
 
-    {% include post-list.html %}
-    {% if paginator.previous_page or paginator.next_page %}
-    {% include pagination.html %}
-    {% endif %}
-</div>
+        {% include post-list.html %}
+        {% if paginator.previous_page or paginator.next_page %}
+        {% include pagination.html %}
+        {% endif %}
+    </div>
+</article>
