@@ -7,8 +7,8 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: Subcritical Appraisal
-description: Joe's Blog
-meta_description: "Reaching Critical Mass"
+description: Citations Needed
+meta_description: "Citations Needed"
 
 baseurl: ""
 
@@ -74,7 +74,7 @@ tipue_search:
 # Details for the RSS feed generator
 url:            "http://joe-cheung.github.io"
 author:         Joe Cheung
-authorTwitter:  https://twitter.com/JoeCheung_
+authorTwitter:  https://twitter.com/SubCriticalA
 
 permalink:       /:year/:title/
 
