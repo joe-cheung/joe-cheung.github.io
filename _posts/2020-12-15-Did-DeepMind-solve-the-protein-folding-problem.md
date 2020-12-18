@@ -1,7 +1,7 @@
 ---
-title:  "Did DeepMind solve the protein folding problem?"
+title:  "Did DeepMind Solve The Protein Folding Problem?"
 subtitle:
-date:   2020-12-18 00:00:00
+date:   2020-12-15 00:00:00
 update:
 author: Joe Cheung
 description:
@@ -21,7 +21,13 @@ DeepMind, Google’s premier AI offshoot, predicted protein structures so impres
 ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image37.gif)
 [<span class="underline">They see me foldin’ they hatin'</span>](https://deepmind.com/blog/article/AlphaFold-Using-AI-for-scientific-discovery)
 
-Is the hype for real?[^7] Mohammed AlQuraishi, a computational biologist at Columbia University and CASP participant, said, “In my read of most CASP14 attendees (virtual as it was), I sense that \[the protein structure prediction problem for single protein chains was solved\] was the conclusion of the majority. It certainly is my conclusion as well.” As if it wasn’t hyperbolic to describe this moment to be protein structure prediction’s [<span class="underline">ImageNet</span>](https://www.wikiwand.com/en/ImageNet) moment like some have, AlQuraishi said, “It is more akin to having the ImageNet accuracies of 2020 in 2012\! A seismic and unprecedented shift so profound it literally turns a field upside down over night.”
+Is the hype for real?[^7] Mohammed AlQuraishi, a computational biologist at Columbia University and CASP participant, said,
+
+> “In my read of most CASP14 attendees (virtual as it was), I sense that \[the protein structure prediction problem for single protein chains was solved\] was the conclusion of the majority. It certainly is my conclusion as well.”
+
+As if it wasn’t hyperbolic to describe this moment to be protein structure prediction’s [<span class="underline">ImageNet</span>](https://www.wikiwand.com/en/ImageNet) moment like some have, AlQuraishi said,
+
+> “It is more akin to having the ImageNet accuracies of 2020 in 2012\! A seismic and unprecedented shift so profound it literally turns a field upside down over night.”
 
 ## But why?
 
@@ -314,7 +320,9 @@ First, DeepMind has unlimited computing power thanks to unlimited money. Tensor 
 
 Interestingly, although DeepMind says that AF2 uses a “relatively modest” amount of compute in the context of most large state-of-the-art machine-learning models, it is in fact an insane amount given that they are not doing any MD.
 
-AlQuraishi says that “Nothing in their architecture as I understand it could warrant this much compute, unless they’re initializing from multiple random seeds for each prediction. The most computationally intensive part is likely the iterative MSA/distogram attention ping-pong, but even if that is run for hundreds or thousands of iterations, the inference compute seems too much. MSAs can be very large, that is true, but I doubt that they’re using them in their entirety as that seems overkill.”
+AlQuraishi says,
+
+> “Nothing in their architecture as I understand it could warrant this much compute, unless they’re initializing from multiple random seeds for each prediction. The most computationally intensive part is likely the iterative MSA/distogram attention ping-pong, but even if that is run for hundreds or thousands of iterations, the inference compute seems too much. MSAs can be very large, that is true, but I doubt that they’re using them in their entirety as that seems overkill.”
 
 Vast computational resources doesn’t only allow DeepMind to use mysterious, large models, it also allows a much higher throughput than any academic group. What the Baker group needed a month to test in their 4 Titan GPUs might only take a few hours for DeepMind, allowing for rapid prototyping and testing of ideas.
 
@@ -360,7 +368,9 @@ Mostly a rehash of AlQuraishi’s [<span class="underline">speculations</span>](
 
 *<span class="underline">Protein structure prediction</span>*
 
-AlQuraishi again, ”The core field has been blown to pieces; there’s just no sugar-coating it. I can say this because it’s (one of) my own field(s). There are some intellectually interesting exercises left, for example predicting structure from a single sequence without structural templates or evolutionary information, and there are important engineering problems including addressing all the corner cases that AF2 still can’t. These are important and scientifically worthwhile but will be of limited interest beyond the core community of structure predictors.“
+AlQuraishi again,
+
+> ”The core field has been blown to pieces; there’s just no sugar-coating it. I can say this because it’s (one of) my own field(s). There are some intellectually interesting exercises left, for example predicting structure from a single sequence without structural templates or evolutionary information, and there are important engineering problems including addressing all the corner cases that AF2 still can’t. These are important and scientifically worthwhile but will be of limited interest beyond the core community of structure predictors.“
 
 *<span class="underline">Experimental structure biology</span>*
 
@@ -433,101 +443,31 @@ In the long run, the true power of AF2 may come in providing a more robust platf
 
     Currently, we don’t fully understand the energetic processes and tradeoffs in folding any given protein, but this field of energetics in protein folding is [<span class="underline">advancing</span>](https://www.nature.com/articles/srep24035). At the end of the day, we still haven't found sequence patterns, say of hydrophobic, polar, charged, and aromatic amino acids, that would predict protein structures and stabilities. So the first question of the protein folding problem remains unsolved.
 
-[^2]: Levinthal's paradox states that the number of possible conformations available to a given protein is astronomically large ([<span class="underline">10<sup>300</sup></span>](https://web.archive.org/web/20050212130449/http://paradox.harvard.edu/~igor/PUBL_BER/PUB22.pdf)), such that even for a small protein of 100 residues with 3 possible amino acid bond states sampling 10<sup>13</sup> new configurations per second, it will take 10<sup>27</sup> years to try all 5 x 10<sup>7</sup> configurations to find the correct one, which is more time than the universe has existed. However, for *in vivo* folding, the [<span class="underline">average</span>](https://www.sciencedirect.com/science/article/pii/S0092867411011925) [<span class="underline">time</span>](https://www.pnas.org/content/110/1/147.short) for protein synthesis is about 0.1 s per amino acid residue in both bacterial and eukaryotic cells, while the spontaneous folding time of single-domain globular proteins ranges from a fraction of a microsecond per residue for small proteins to many seconds per residue for large single-domain globular proteins. So how do proteins get around the [<span class="underline">NP-hard</span>](https://academic.oup.com/peds/article-abstract/5/4/313/1539582) [<span class="underline">problem</span>](https://link.springer.com/article/10.1007/BF02460703) of finding the global free energy minimum?
-
-    Somehow almost every paper I’ve read on this is written by Russian scientists. In any case, we know that:
-
-    1. Transition between any denatured state (e.g. molten globule, random coil) and the native state is [<span class="underline">much more pronounced</span>](https://www.sciencedirect.com/science/article/abs/pii/S0065323308604015) than transitions between denatured states
-
-    2. Unfolding and folding of discrete protein molecules are [<span class="underline">reversible</span>](https://www.jstor.org/stable/1736447?seq=1) [<span class="underline">processes</span>](https://onlinelibrary.wiley.com/doi/abs/10.1002/bip.360231122)
-
-    3. Unfolding and folding are [<span class="underline">observed</span>](https://onlinelibrary.wiley.com/doi/abs/10.1002/bip.360231122) even at the mid-transition (equilibrium) point where the native and unfolded states have equal stability.
-
-    4. Transition between the native and any denatured state is “all-or-none” where all alternative structures (e.g. “half-folded” or “misfolded”) are virtually absent, providing a [<span class="underline">sufficiently</span>](https://www.sciencedirect.com/science/article/abs/pii/S006532330860460X) [<span class="underline">high</span>](https://www.nature.com/articles/346773a0) [<span class="underline">free energy</span>](https://aip.scitation.org/doi/abs/10.1063/1.464522) [<span class="underline">barrier</span>](https://pubs.acs.org/doi/full/10.1021/cr040425u) between the native structure and the alternative ones.
-
-    The “[<span class="underline">folding funnel</span>](https://www.wikiwand.com/en/Folding_funnel#:~:text=The%20folding%20funnel%20hypothesis%20is,conditions%20usually%20encountered%20in%20cells.)” is [<span class="underline">widely</span>](https://www.sciencedirect.com/science/article/pii/S1359027897000679) [<span class="underline">used</span>](https://onlinelibrary.wiley.com/doi/abs/10.1002/prot.340210302) to explain protein folding, but it doesn’t solve the paradox per se because there are still too many configurations.
-
-    ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image6.png)
-    (a) The energy landscape for the “golf course” model, where a protein samples conformations randomly until it hits the “hole” that is the native structure. (b) A general “energy funnel” centering on the protein native structure having the lowest energy. (c) A more detailed general energy landscape with “gap” denoting an free energy gap between the global and other energy minima, necessary to provide the “all-or-none” transition between native and other structures of the chain.
-
-    Formation of the protein’s native structure decreases both the chain entropy (increasing the chain's ordering) and its energy (due to formation of contacts stabilising the lowest-energy fold). The former increases and the latter decreases free energy of the chain.
-
-    ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image5.png)
-    How entropy converts the energy funnel into a “volcano-shaped” free-energy folding landscape with free-energy barriers on each pathway leading from an unfolded conformation to the native fold.
-
-    - Any pathway from the unfolded state to the native one first goes uphill, and only then, from the barrier (i.e., crater edge), descends into the “free-energy funnel”.
-
-    - The smooth free energy landscape corresponds to compact semi-folded intermediate structures
-
-    - The rocks (denoted by dotted lines) present a landscape including non-compact semi-folded intermediate structures.
-
-    Protein folding [<span class="underline">does not</span>](https://ro.uow.edu.au/cgi/viewcontent.cgi?article=1968&context=scipapers) occur in one step. An *L*-residue chain can, in principle, attain its lowest-energy fold in *L* steps, each adding one fixed residue to the growing structure. Proteins spend most of their folding time, nearly [<span class="underline">96%</span>](https://www.sciencedirect.com/science/article/abs/pii/S0959440X11002041?via%3Dihub) in some cases, waiting in various intermediate conformational states (local thermodynamic free energy minimum) to climb up the free energy barrier and falling back, rather than on moving along the folding pathway.
-
-    ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image24.png)
-    Sequential folding/unfolding between the unfolded random coil (*n* = 0) and the final structure (*n* = *L*) with (a) compact and (b) non-compact semi-folded intermediates.
-
-    We can look at unfolding because it is easier to outline a good unfolding pathway of any structure than a good folding pathway leading to the lowest-energy fold, while the free energy barrier at both pathways is the same. It is worth mentioning that the unfolding-based estimate gives both the upper and lower estimates of the folding time, while the folding-based estimate gives its upper limit only.
-
-    ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image24.png)
-    The change of (c) energy ΔE(*n*), (d) entropy ΔS(*n*) and (e) free energy ΔF(*n*) during folding/unfolding.
-
-    - The full energy ΔE(*L*) and entropy changes ΔS(*L*) are approximately proportional to *L*.
-
-    - The straight blue lines show the linear (proportional to the number of residues already folded *n*) parts of ΔE(*n*) and ΔS(*n*).
-
-    - The red lines show the non-linear parts of ΔE(*n*) and ΔS(*n*) (solid lines: with compact intermediate structures; dotted lines: with non-compact intermediates).
-
-    At the beginning of folding, the energy decrease is a bit slower because the contact of a newly joined residue with the surface of a small globule is, on average, smaller than its contact with the surface of a large globule. Hence, the maximal deviations of the ΔE(*n*) and ΔS(*n*) values from linear dependencies are proportional to only *L*<sup>2/3</sup> instead of *L*. As a result, ΔF(*n*)=ΔE(*n*)−*T*ΔS(*n*) also deviates from the linear dependence by a value of only ~*L*<sup>2/3</sup> for compact intermediate structures.
-
-    Thus, at the equilibrium point (where ΔF(0)=ΔF(L)), the maximal on this pathway free energy excess ΔF over the blue free energy baseline, i.e. the the free energy barrier, is also proportional to only *L*<sup>2/3</sup> for compact intermediate structures.
-
-    The time of folding/unfolding of the most native structure do not grow according to Levinthal because (i) during folding, the entropy decrease is almost immediately and almost completely compensated for by an energy decrease along the sequential folding pathway (and, likewise, the energy increase is almost immediately and almost completely compensated for by an entropy increase along the same sequential unfolding pathway), and (ii) the free energy results only from surface effects which are relatively weak.
-
-    Hence, the estimated time of folding/unfolding of the most native structure mid-transition is given by 10ns × exp\[(1±0.5)*L*<sup>2/3</sup>\]. It shows that a chain of *L* ≲ 80-90 residues will find its most stable fold within minutes (or faster) even under “non-biological” mid-transition conditions, where folding is known to be the slowest.
-
-    ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image10.png)
-    Experimentally measured *in vitro* folding rate constants in water and at mid-transition for 107 single-domain proteins (or separate domains) without SS bonds and covalently bound ligands.
-
-    Importantly, the protein doesn’t actually have to sample all configurations; it just needs to sample all local energy minima, similar to the idea that a 100-residue protein only needs to find the native [<span class="underline">topomer</span>](https://www.pnas.org/content/96/6/2596.short) (the set of all structures similar to the native structure) in [<span class="underline">2 stages</span>](https://onlinelibrary.wiley.com/doi/full/10.1110/ps.0220003) of (i) topomer diffusion: random, diffusive sampling of the 3 × 10<sup>7</sup> distinct topomers to find the native topomer (~0.1 s), followed by (ii) intratopomer ordering: nonrandom, local conformational rearrangements within the native topomer to settle into the precise native state.
-
-    Coupled with the observation that most of the interactions of the protein chain are connecting secondary structures, we can estimate the conformation space to scale no faster than ~*L<sup>N</sup>* where N is the number of secondary structures (which is much smaller than *L*), while Levinthal's estimate scales up at the rate of ~3*<sup>L</sup>*.
-
-    In sum, Levinthal’s paradox is [<span class="underline">solved</span>](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7072185/) for protein shorter than 100 amino acid residues (provided sequences of these chains ensure a significant stability to only one of their folds); this is because (i) these chains can overcome free energy barriers at the pathway to their most stable folds, independently of their complexity, and (ii) they are able to sample all their folds at the level of secondary structure formation and assembly and find the most stable one.
+[^2]: See my [post](https://subcriticalappraisal.com/2020/Solution-To-Levinthals-Paradox/) about Levinthal's paradox. It has a solution!
 
 [^3]: [<span class="underline">Anfinsen's dogma</span>](https://www.wikiwand.com/en/Anfinsen%27s_dogma) (a.k.a. the [<span class="underline">thermodynamic hypothesis</span>](https://science.sciencemag.org/content/181/4096/223)) postulates that the native structure of a protein is its most thermodynamically stable structure; it depends only on the amino acid sequence and on the conditions of solution, and not on the kinetic folding route.
 
-  Keeping in mind that systems tend to move towards its global free energy (energy available in a system to do useful work) minimum, there are three conditions:
+    Keeping in mind that systems tend to move towards its global free energy (energy available in a system to do useful work) minimum, there are three conditions:
 
-  1. **Uniqueness**: the free energy minimum must be unchallenged; the sequence does not have any other configuration with a comparable free energy
+    1. **Uniqueness**: the free energy minimum must be unchallenged; the sequence does not have any other configuration with a comparable free energy
 
-  2. **Stability**: small changes in the surrounding environment cannot give rise to changes in the minimum configuration; the free energy surface around the native state must be rather steep and high, in order to provide stability
+    2. **Stability**: small changes in the surrounding environment cannot give rise to changes in the minimum configuration; the free energy surface around the native state must be rather steep and high, in order to provide stability
 
-  3. **Kinetical accessibility**: the path in the free energy surface from the unfolded to the folded state must be reasonably smooth; the folding of the chain must not involve highly complex changes in the shape (e.g. knots)
+    3. **Kinetical accessibility**: the path in the free energy surface from the unfolded to the folded state must be reasonably smooth; the folding of the chain must not involve highly complex changes in the shape (e.g. knots)
 
-  Put simply, to determine a protein's native structure, all the information you need is in its amino-acid sequence<sup>2,3</sup>. But at the end of the day, we still haven't found sequence patterns, say of hydrophobic, polar, charged, and aromatic amino acids, that would predict protein structures and stabilities. So the first question of the protein folding problem remains unsolved.
+    Put simply, to determine a protein's native structure, all the information you need is in its amino-acid sequence<sup>2,3</sup>. But at the end of the day, we still haven't found sequence patterns, say of hydrophobic, polar, charged, and aromatic amino acids, that would predict protein structures and stabilities. So the first question of the protein folding problem remains unsolved.
 
-  ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image25.png)
-  [<span class="underline">Anfinsen’s experiment.</span>](https://greatexperimentsblog.blogspot.com/2017/11/anfinsens-dogma.html)
+    ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image25.png)
+    [<span class="underline">Anfinsen’s experiment.</span>](https://greatexperimentsblog.blogspot.com/2017/11/anfinsens-dogma.html)
 
-  Anfinsen [<span class="underline">demonstrated</span>](https://www.jbc.org/content/237/6/1839.full.pdf) it in his [<span class="underline">now</span>](https://www.jbc.org/content/236/5/1361.long)-[<span class="underline">famous</span>](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC223141/?page=1) [<span class="underline">experiments</span>](https://www.jbc.org/content/237/6/1839.full.pdf) from 1960 to 1962 by using a protein called ribonuclease A (RNase A), which contains four disulfide bridges that are vital to protein structure and function. First, he unfolded RNase A with urea (which denatures or causes the loss of native structure of protein) and βME (a reducing agent that breaks disulfide bridges). When Anfinsen removed urea first and βME second, the protein refolded and regained 100% activity. However, when he removed βME first and urea second, the protein only regained 1% of its original activity. This was because removing βME when the enzyme is still unfolded causes cysteine (an amino acid) residues to randomly form disulfide bonds with each other.
+    Anfinsen [<span class="underline">demonstrated</span>](https://www.jbc.org/content/237/6/1839.full.pdf) it in his [<span class="underline">now</span>](https://www.jbc.org/content/236/5/1361.long)-[<span class="underline">famous</span>](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC223141/?page=1) [<span class="underline">experiments</span>](https://www.jbc.org/content/237/6/1839.full.pdf) from 1960 to 1962 by using a protein called ribonuclease A (RNase A), which contains four disulfide bridges that are vital to protein structure and function. First, he unfolded RNase A with urea (which denatures or causes the loss of native structure of protein) and βME (a reducing agent that breaks disulfide bridges). When Anfinsen removed urea first and βME second, the protein refolded and regained 100% activity. However, when he removed βME first and urea second, the protein only regained 1% of its original activity. This was because removing βME when the enzyme is still unfolded causes cysteine (an amino acid) residues to randomly form disulfide bonds with each other.
 
-  There are some caveats. Some proteins need the assistance of another protein called a chaperone protein which seems to work primarily by preventing aggregation of several protein molecules prior to the final folded state of the protein. It has been suggested that this disproves Anfinsen's dogma, but many chaperones do not appear to affect the final state of the protein.
+    There are some caveats. Some proteins need the assistance of another protein called a chaperone protein which seems to work primarily by preventing aggregation of several protein molecules prior to the final folded state of the protein. It has been suggested that this disproves Anfinsen's dogma, but many chaperones do not appear to affect the final state of the protein.
 
-[^4]: FAH [<span class="underline">boasts</span>](https://archive.vn/20200412111010/https://stats.foldingathome.org/os) of being the world's first exaFLOP (10<sup>18</sup> FLOPS) computer system when it achieved a processing speed of 1.22 exaFLOPS by late March 2020 and reached 2.43 exaFLOPS by April 12, 2020. As it is powered by volunteers running its clients on their CPUs and GPUs (and until 2012 their PS3s too), heightened interest during the COVID-19 pandemic has allowed it to be faster than the top 500 supercomputers combined.
-
-    ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image40.png)
-    [<span class="underline">The exascale barrier is a quintillion (1,000,000,000,000,000,000) operations per second</span>](https://twitter.com/foldingathome/status/1249778379634675712?s=20)
-
-    How much electricity does FAH consume? When it hit 1.01 exaFLOPS, an [<span class="underline">estimated</span>](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7337393/) ~280,000 GPUs and 4.8 million CPU cores were participating. According to FAH, although power supplies on most computers are rated at 400 watts, a Pentium-type computer uses about 100 watts on average (if the monitor is off), so let’s assume each CPU and GPU draw 100 watts, not factoring in heat production, normal system load, nor dynamic frequency scaling. That gives 508,000,000 watts, and a power efficiency of 1.99 GFLOP (10<sup>9</sup> FLOP)/watt, putting it at 145th on the [<span class="underline">November Green500 List</span>](https://www.top500.org/lists/green500/list/2020/11/?page=2).
-
-    How much air pollution does FAH produce? Assuming 1.01 exaFLOPS is sustained for a whole year, it consumes 4.45 terawatt-hours per year. That means a [<span class="underline">greenhouse gas emission</span>](https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator) of 3,150,000 metric tons, as much as that from 680,000 cars. If we’re being generous and pretend that all the electricity is produced in the US, and take into account [<span class="underline">Gwern</span>](https://www.gwern.net/Charity-is-not-about-helping#:%7E:text=Folding%40home%20\(FAH%20for%20short,their%20GPUs%20and%20PS3s)’s estimation of 7.7 deaths per year for a US power mix, it means 34 deaths per year due to air pollution from powering FAH.
-
-    How much does all that electricity cost? As of September 2020, the average US rate for 1 kilowatt-hour is $0.1355, so the electricity bill of FAH is $602,975,000 per year. Take the [<span class="underline">Against Malaria Foundation</span>](https://www.givewell.org/charities/amf#Cost_per_death_averted) for example, GiveWell [<span class="underline">estimates</span>](https://80000hours.org/2017/05/most-people-report-believing-its-incredibly-cheap-to-save-lives-in-the-developing-world/) that $2,300 can save a child’s life in the developing world. The opportunity cost of FAH is 262,163 [<span class="underline">dead children</span>](https://www.gwern.net/docs/philo/2011-yvain-deadchild.html) per year.
-
-    Did FAH produce anything actually useful? They boast of [<span class="underline">233</span>](https://arstechnica.com/science/2020/04/how-the-pandemic-revived-a-distributed-computing-project-and-made-history/) [<span class="underline">papers</span>](https://foldingathome.org/papers-results/) produced in the 20 years since the start of the project, but their own [<span class="underline">summary</span>](https://foldingathome.org/faqs/press/what-have-you-done-so-far/summarize-key-papers-resulted-fah/) looks unimpressive, but who am I to judge. Folding@home, per its namesake, initially set out to simulate protein folding, but it [<span class="underline">seems</span>](https://www.reddit.com/r/askscience/comments/r93i6/has_foldinghome_really_accomplished_anything/c43yxd4/) that they are more about dynamics of the folding mechanism, than predicting anything. They have never competed in CASP.
+[^4]: See my [post](https://subcriticalappraisal.com/2020/Charity-Is-Still-Not-About-Helping/) about Folding@home as a scientific lemon project running on high resource costs and why charity is still not about helping.
 
 [^5]: There have been many attempts to get faster at doing these kinds of calculations. IBM’s (retired?) [<span class="underline">Blue Gene</span>](https://www.nature.com/articles/nbt0100_8d) supercomputers boasted of operating speeds in the petaFLOPS range with lower power consumption, but I couldn’t find any protein prediction paper from them at all, and it seems that they have ended development in 2015.
 
-[^6]: Another thing that will speed up drug discovery is a better warning system for toxicity in human trials as well. Many promising drugs have dropped out of the clinic due to unexpected tox effects, for sure – some of these turn out to be mechanism-related and some of them are just compound-related (where the compound does something else that you don’t want), but there are many instances where we can’t even make that distinction yet. Animal models for toxicity are extremely valuable, but they don’t get you all the way. You are still taking a risk every time a new compound or new mechanism goes into human trials, and it would be very useful if we could lower that risk a bit. The general solution would be some sort of system that exactly mimics human biology but doesn’t consist of a bunch of human swallowing pills. This is a difficult goal to realize.
+[^6]: [Another thing]((https://blogs.sciencemag.org/pipeline/archives/2020/12/01/the-big-problems)) that will speed up drug discovery is a better warning system for toxicity in human trials as well. Many promising drugs have dropped out of the clinic due to unexpected tox effects, for sure – some of these turn out to be mechanism-related and some of them are just compound-related (where the compound does something else that you don’t want), but there are many instances where we can’t even make that distinction yet. Animal models for toxicity are extremely valuable, but they don’t get you all the way. You are still taking a risk every time a new compound or new mechanism goes into human trials, and it would be very useful if we could lower that risk a bit. The general solution would be some sort of system that exactly mimics human biology but doesn’t consist of a bunch of human swallowing pills. This is a difficult goal to realize.
 
-[^8]: Recently the European Medicines Agency approved the use of Tafamidis or Vyndaqel (a kinetic stabilizer of tetrameric transthyretin) for the treatment of transthyretin amyloid diseases. This suggests that the process of amyloid fibril formation (and not the fibrils themselves) causes the degeneration of post-mitotic tissue in human amyloid diseases.
+[^8]: In 2011, the European Medicines Agency [approved](https://www.nature.com/articles/nrd3675) the use of [Tafamidis](https://www.wikiwand.com/en/Tafamidis) a.k.a. Vyndaqel/Vyndamax (a kinetic stabilizer of tetrameric transthyretin) to delay peripheral nerve impairment in adults with [transthyretin amyloid diseases](https://www.wikiwand.com/en/Familial_amyloid_polyneuropathy). In 2019, the FDA [approved](https://www.fda.gov/news-events/press-announcements/fda-approves-new-treatments-heart-disease-caused-serious-rare-disease-transthyretin-mediated) Vyndaqel and Vyndamax for the treatment of transthyretin mediated cardiomyopathy. This suggests that the process of amyloid fibril formation (and not the fibrils themselves) causes the degeneration of post-mitotic tissue in human amyloid diseases.
