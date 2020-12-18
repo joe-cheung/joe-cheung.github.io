@@ -7,11 +7,10 @@ author: Joe Cheung
 description:
 tags: science AI
 ---
+\[Epistemic status: I have no expertise, but below is my best guess from what I have read so far, mostly relying on AlQuraishi's excellent [<span class="underline">essay</span>](https://moalquraishi.wordpress.com/2020/12/08/alphafold2-casp14-it-feels-like-ones-child-has-left-home/). The first half of this post will be kind of a literature review on the protein structure prediction, and the second half is a bit of a rehash of AlQuraishi’s essay. This post will serve as a companion piece of sorts to help you understand the background of the problem better if you’re a layman like me.]
 
 1. TOC
 {:toc}
-
-\[Epistemic status: I have no expertise, but below is my best guess from what I have read so far, mostly relying on AlQuraishi's excellent [<span class="underline">essay</span>](https://moalquraishi.wordpress.com/2020/12/08/alphafold2-casp14-it-feels-like-ones-child-has-left-home/). The first half of this post will be kind of a literature review on the protein structure prediction, and the second half is a bit of a rehash of AlQuraishi’s essay. This post will serve as a companion piece of sorts to help you understand the background of the problem better if you’re a layman like me.]
 
 ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image2.png)
 [<span class="underline">Obligatory XKCD</span>](https://xkcd.com/1430/)
@@ -23,11 +22,11 @@ DeepMind, Google’s premier AI offshoot, predicted protein structures so impres
 
 Is the hype for real?[^7] Mohammed AlQuraishi, a computational biologist at Columbia University and CASP participant, said,
 
-> “In my read of most CASP14 attendees (virtual as it was), I sense that \[the protein structure prediction problem for single protein chains was solved\] was the conclusion of the majority. It certainly is my conclusion as well.”
+  > “In my read of most CASP14 attendees (virtual as it was), I sense that \[the protein structure prediction problem for single protein chains was solved\] was the conclusion of the majority. It certainly is my conclusion as well.”
 
 As if it wasn’t hyperbolic to describe this moment to be protein structure prediction’s [<span class="underline">ImageNet</span>](https://www.wikiwand.com/en/ImageNet) moment like some have, AlQuraishi said,
 
-> “It is more akin to having the ImageNet accuracies of 2020 in 2012\! A seismic and unprecedented shift so profound it literally turns a field upside down over night.”
+  > “It is more akin to having the ImageNet accuracies of 2020 in 2012\! A seismic and unprecedented shift so profound it literally turns a field upside down over night.”
 
 ## But why?
 
@@ -292,23 +291,23 @@ DeepMind reformulates the entire pipeline to be end-to-end differentiable; inste
 
 1. [<span class="underline">Attention model</span>](https://towardsdatascience.com/attention-in-neural-networks-e66920838742?gi=b0c6090086c5): AF2 decides which raw sequences to look at and which noisy ones to ignore, and from that predicts a distogram, upon which it decides which sequences to attend to next, and so on for a few hundred iterations
     
-- Leverages deeper (as in having more sequences) MSAs for individual protein domains/intra-domain details, and shallower ones for whole proteins/inter-domain details
-    
-- It [<span class="underline">doesn’t</span>](https://twitter.com/d_kihara/status/1335631335759745034?s=20) even explicitly use co-evolution\!
+   - Leverages deeper (as in having more sequences) MSAs for individual protein domains/intra-domain details, and shallower ones for whole proteins/inter-domain details
+       
+   - It [<span class="underline">doesn’t</span>](https://twitter.com/d_kihara/status/1335631335759745034?s=20) even explicitly use co-evolution\!
 
 2. After some number of iterations, AF2 generates a 3D atom cloud from the distograms that is then fed into a transformer for 10 iterations
     
-- Captures higher-order coordinations between more than 2 atom (information not captured by distograms)
-    
-- It doesn’t use any physics simulation\!
+   - Captures higher-order coordinations between more than 2 atom (information not captured by distograms)
+       
+   - It doesn’t use any physics simulation\!
 
 3. In a few hundred iterations, AF2 begins building the local structure within individual protein domains before branching out to more global features, and outputs a full structure at the end.
     
-- It ensures self-consistency at every step of the pipeline, as traditionally distances between all atoms are first predicted simultaneously (can be nonsense if not embedded in 3D space) then optimised (sometimes physics-based)
+   - It ensures self-consistency at every step of the pipeline, as traditionally distances between all atoms are first predicted simultaneously (can be nonsense if not embedded in 3D space) then optimised (sometimes physics-based)
 
 4. In TBM, AF2 takes homologues directly as inputs along with the MSA
     
-- But AF2 was also able to perform well in FM
+   - But AF2 was also able to perform well in FM
 
 ## Why DeepMind?
 
