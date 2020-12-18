@@ -8,7 +8,7 @@ description:
 tags: science medicine unfinished
 ---
 
-[Epistemic status: I have no expertise, and news about COVID-19 changes by the minute so this is likely somewhat outdated, but below is my best guess from what I have read so far (h/t Tyler Cowen, Alex Tabarrok, Eric Topol, and many others).]
+[Epistemic status: I have no expertise, and news about COVID-19 changes by the minute so this is likely somewhat, but below is my best guess from what I have read so far (h/t Tyler Cowen, Alex Tabarrok, Eric Topol, and many others).]
 
 1. TOC
 {:toc}
@@ -18,17 +18,17 @@ tags: science medicine unfinished
 We wanted flying cars[...](https://www.goodreads.com/quotes/697729-we-wanted-flying-cars-instead-we-got-140-characters) instead we got >90% effective vaccines within 10 months of a novel viral pandemic![^addnote1]
 
 ![](/images/2020-11-25-COVID-19-Vaccines/image10.png)
-*[This is a triumph (Blue is vaccine; red is placebo).](https://www.fda.gov/media/144245/download)*
+[This is a triumph (blue: vaccine; red: placebo).](https://www.fda.gov/media/144245/download)
 
 Pfizer and BioNTech [published](https://www.nejm.org/doi/full/10.1056/NEJMoa2034577?query=featured_home) their [phase 3 analysis](https://www.pfizer.com/news/press-release/press-release-detail/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine) of their messenger RNA (mRNA) candidate and reports it to be 95% effective, with 162 infection cases in the placebo group versus 8 in the vaccine group in the 43,000-patient trial. The vaccine is well tolerated and there are minimal (<1.0%) severe side-effects (a.k.a. grade 3 adverse events) including fatigue (3.8%) and headache (2.0%). It will require 2 doses 21 days apart and cannot be removed from -70°C more than 4 times, which poses a massive distribution challenge. Nonetheless, it is fantastic news.
 
 ![](/images/2020-11-25-COVID-19-Vaccines/image11.png)
-*[From the secondary efficacy analysis of severe cases 14 days after the second dose, the full suppression of severe infections in the is extraordinary: 30 in placebo group vs 0 in vaccine group.](https://www.fda.gov/media/144245/download)*
+[From the secondary efficacy analysis of severe cases 14 days after the second dose, the full suppression of severe infections in the is extraordinary: 30 in placebo group vs 0 in vaccine group.](https://www.fda.gov/media/144245/download)
 
 Interesting that the efficacy against severe COVID-19 occurring after the first dose was 88.9%, noting that the data do not provide information about longer term protection beyond 21 days after the single dose. This [could be important](https://marginalrevolution.com/marginalrevolution/2020/12/the-vaccine-works-fast.html) as we could potentially vaccinate more people and delay the second dose.
 
 ![](/images/2020-11-25-COVID-19-Vaccines/image9.jpeg)
-*[This is extraordinary (Red is vaccine; blue is placebo).](https://www.fda.gov/media/144434/download)*
+[This is extraordinary (red: vaccine; blue: placebo).](https://www.fda.gov/media/144434/download)
 
 Moderna reports in their [first interim analysis](https://investors.modernatx.com/news-releases/news-release-details/modernas-covid-19-vaccine-candidate-meets-its-primary-efficacy) of their phase 3 trial that their own mRNA candidate is 94.5% effective, with 90 infection cases in the placebo group versus 5 cases in the vaccine group in the 30,000-patient trial. The vaccine is generally well tolerated, with short-lived grade 3 adverse events such as fatigue (9.7%), myalgia (8.9%), arthralgia (5.2%), headache (4.5%), and pain (4.1%). It will also require 2 doses, 4 weeks apart. Also, there is [some data](https://www.fda.gov/media/144453/download) that supports efficacy against asymptomatic infection. Most [groundbreaking](https://investors.modernatx.com/news-releases/news-release-details/moderna-announces-longer-shelf-life-its-covid-19-vaccine) is that their vaccine remains stable up to 6 months under standard freezer condition (-20°C), up to 30 days under normal fridge condition (4°C), and up to 12 hours in room temperature, which means significantly easier distribution and storage with the existing infrastructure.
 
@@ -37,7 +37,7 @@ The Oxford-AstraZeneca viral vector[^1] (weakened chimpanzee adenovirus with DNA
 Apparently the half-dose-then-full-dose protocol was an [accident](https://www.reuters.com/article/us-health-coronavirus-astrazeneca-dosing/dosing-error-turns-into-lucky-punch-for-astrazeneca-and-oxford-idUSKBN28327Q)!? Around the time when AstraZeneca was initiating its partnership with Oxford at the end of April, Oxford researchers used a different measurement technique than the manufacturer to assess the strength of the samples, and found the concentration of viral particles to be double the level that the manufacturer had found, so they decided to be on the safe side and use the lower-strength dosage. Soon, the researchers noticed milder side effects than expected[^2], and realised they were using an initial half-dose when they identified an ingredient in the outside manufacturer’s vaccine batch that had skewed their measurement upward. These blunders [do not help](https://www.nytimes.com/2020/12/08/business/covid-vaccine-oxford-astrazeneca.html) with confidence in the vaccines.
 
 ![](/images/2020-11-25-COVID-19-Vaccines/image12.png)
-*[Let us hope Oxford-AstraZeneca pulls through because the world is depending on them.](https://www.economist.com/graphic-detail/2020/11/13/a-vaccine-against-the-virus)*
+[Let us hope Oxford-AstraZeneca pulls through because the world is depending on them.](https://www.economist.com/graphic-detail/2020/11/13/a-vaccine-against-the-virus)
 
 Meanwhile in Russia (now with more [evidence](https://sputnikvaccine.com/newsroom/pressreleases/second-interim-analysis-of-clinical-trial-data-showed-a-91-4-efficacy-for-the-sputnik-v-vaccine-on-d/) and the usual caveats), the Sputnik V viral vector (modified human adenovirus) vaccine has [shown](https://sputnikvaccine.com/newsroom/pressreleases/the-sputnik-v-vaccine-s-efficacy-is-confirmed-at-91-4-based-on-data-analysis-of-the-final-control-po/) 91.4% effectiveness in its 40000-patient phase 3 trial.
 
