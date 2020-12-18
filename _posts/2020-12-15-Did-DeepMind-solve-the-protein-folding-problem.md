@@ -28,7 +28,7 @@ As if it wasn’t hyperbolic to describe this moment to be protein structure pre
 
   > “It is more akin to having the ImageNet accuracies of 2020 in 2012\! A seismic and unprecedented shift so profound it literally turns a field upside down over night.”
 
-## But why?
+## But Why?
 
 The [<span class="underline">central dogma of molecular biology</span>](https://www.wikiwand.com/en/Central_dogma_of_molecular_biology) states that the flow of genetic information within a biological system cannot be transferred back from protein to either protein or nucleic acid per [<span class="underline">Francis Crick</span>](https://www.wikiwand.com/en/Francis_Crick)’s [<span class="underline">original</span>](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5602739/#pbio.2003243.ref001) [<span class="underline">statement</span>](http://libgallery.cshl.edu/items/show/52220) in 1957 . The more popular version as [<span class="underline">stated</span>](https://faseb.onlinelibrary.wiley.com/doi/10.1096/fj.15-1101ufm) by [<span class="underline">James Watson</span>](https://www.wikiwand.com/en/James_Watson) in 1965 is often known as "DNA makes RNA, and RNA makes protein (amino acid sequence)"
 
@@ -65,7 +65,7 @@ In the 6 decades since the [<span class="underline">1962 Nobel Prize in Chemistr
 
 So whenever you hear people shout that DeepMind has solved the grand challenge of the protein folding problem, they’re really only referring to the [<span class="underline">protein structure prediction problem</span>](https://en.wikipedia.org/wiki/Protein_structure_prediction?oldformat=true).
 
-## A very hard problem
+## A Very Hard Problem
 
 So you want to predict protein structure *in silico*, the obvious way is to simulate physics. With [<span class="underline">molecular dynamics</span>](https://www.nature.com/articles/nsb0902-646) (MD), you can try to model the forces on each atom, given its location, charge, and chemical bonds, then calculate accelerations and velocities and evolve the system step by step. [<span class="underline">However</span>](https://rootsofprogress.org/alphafold-protein-folding-explainer), a typical protein has hundreds of residues (amino acids), which means thousands of atoms. Then there are the like 30k more atoms to simulate because of surrounding water molecules. And there are electrostatic interactions between every pair of atoms. So naively that’s ~450M pairs.
 
@@ -80,7 +80,7 @@ Just when you’re questioning your hubris, you remember that Anfinsen’s dogma
 ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image4.png)
 [<span class="underline">Protein folding time given 2 degrees of freedom and 3 possible positions for each peptide bond, and assuming 1 nanosecond spent to sample each conformation.</span>](https://blog.exxactcorp.com/deepminds-protein-folding-upset/)
 
-## How to predict protein structures
+## So You Want To Predict
 
 *<span class="underline">3.1. Conformation initialisation</span>*
 
@@ -196,7 +196,7 @@ One of the factors that lead to the recent breakthrough of FM is residue‐resid
 
 Another factor is deep learning which was [<span class="underline">introduced</span>](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3509494/) into the field in 2012 and demonstrated as the best method for protein contact prediction in 2012 CASP10. There was significant [<span class="underline">improvement</span>](https://pubmed.ncbi.nlm.nih.gov/29139163/) in 2016 CASP 12 where convolutional neural networks, residual networks, coevolutionary analysis, fragment assembly, and distance geometry were combined to build protein structural models from scratch.
 
-## Top dogs
+## Top Dogs
 
 One of the consistently [<span class="underline">top-ranking</span>](https://zhanglab.ccmb.med.umich.edu/I-TASSER/) servers in CASP is [<span class="underline">I-TASSER</span>](https://www.wikiwand.com/en/I-TASSER) (as Zhang-Server) developed by the [<span class="underline">Yang Zhang Lab</span>](https://zhanglab.ccmb.med.umich.edu/research/#StructurePrediction) at the University of Michigan. It uses threading and Monte Carlo simulations based on fragments.
 
@@ -278,7 +278,7 @@ How did the Zhang and Baker groups do?
 
 While the Zhang and Baker models are very good, close examination reveals some discrepancies. The kink in the first α-helix is not reproduced accurately: Zhang’s group models it as an essentially straight helix, while Baker groups shows a smaller kink. In comparison, AF2 modelled the kink to perfect accuracy. Also, the magnitude of the deviations is a lot larger than that in the AF2 model.
 
-## How did DeepMind do it?
+## How Did DeepMind Do It?
 
 ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image36.png)
 [<span class="underline">Overview of AF2 architecture</span>](https://deepmind.com/blog/article/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology)
@@ -329,7 +329,7 @@ Second, organisational structure is another key factor beyond unsubstitutable in
 
 However, as AlQuraishi cautions, it would be short-sighted to turn the entire research enterprise into many mini DeepMinds. Unlike protein structure prediction (which literally has a leaderboard every 2 years), most of biology doesn’t have well-defined questions, and the academic model is much better at asking questions, while the DeepMind is only better at answering them. More subtly, the fast and focus model means that there is ironically less time for idea exploration and for new ideas to gestate into the literature to inform questions even beyond protein structure prediction. Once a solution is solved in any way, it becomes hard to justify solving it another way, especially from a publication standpoint. At least for now, we can kind of have our cake and eat it too when fast and focused efforts co-exist with the slow and steady progress of conventional research.
 
-## Wait, so is the protein folding problem solved?
+## Wait, So Is The Protein Folding Problem Solved?
 
 Again, the [<span class="underline">protein-folding problem</span>](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2443096/#:~:text=The%20protein%20folding%20problem%20is,first%20atomic%2Dresolution%20protein%20structures.) came to be three main questions:
 
@@ -361,7 +361,7 @@ Well, AF2 reliably (\>90% of the time) predict to reasonable accuracy (\<3-4Å) 
 
 The list of [<span class="underline">caveats</span>](http://occamstypewriter.org/scurry/2020/12/02/no-deepmind-has-not-solved-protein-folding/) is a long one, but whether DeepMind solved protein structure prediction can be a bit of a motte (a general solution) and bailey (a universal solution). I think it’s useful to phrase the question as whether we can devise a computer algorithm to predict a protein’s native structure from its amino acid sequence. Since we did not know the answer before AF2 came out, and now we do know that a solution is possible, AF2 counts as a solution, which seems like the consensus among experts like AlQuraishi anyway. The core scientific question of prediction *in silico* has been answered, so the remaining problems are now engineering rather than scientific (not that engineering problems are any easier or less important).
 
-## What are the implications?
+## What Are The Implications?
 
 Mostly a rehash of AlQuraishi’s [<span class="underline">speculations</span>](https://moalquraishi.wordpress.com/2020/12/08/alphafold2-casp14-it-feels-like-ones-child-has-left-home/), do read his essay for more.
 
@@ -381,7 +381,7 @@ What about single particle CryoEM? It has a better short to medium outlook as it
 
 The one area that will remain safe and wholly complementary to AF2 is in situ structural biology, because AF2 cannot determine the cellular context of proteins. If anything, AF2 may accelerate the breakneck pace of progress in CryoET and usher in the era of structural cell biology faster than even its proponents are expecting.
 
-## Will it revolutionise drug discovery?
+## Will It Revolutionise Drug Discovery?
 
 No. At least [<span class="underline">not</span>](https://www.nature.com/articles/d41586-018-05267-x) in the near term.
 
