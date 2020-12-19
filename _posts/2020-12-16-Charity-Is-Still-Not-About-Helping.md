@@ -22,7 +22,7 @@ FAH [<span class="underline">boasts</span>](https://archive.vn/20200412111010/ht
 ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image40.png)
 *[<span class="underline">The exascale barrier is a quintillion (1,000,000,000,000,000,000) operations per second</span>](https://twitter.com/foldingathome/status/1249778379634675712?s=20)
 
-## Sins of Commision
+## Sins of Commission
 
 How much electricity does FAH consume? When it hit 1.01 exaFLOPS, an [<span class="underline">estimated</span>](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7337393/) ~280,000 GPUs and 4.8 million CPU cores were participating. According to FAH, although power supplies on most computers are rated at 400 watts, a Pentium-type computer uses about 100 watts on average (if the monitor is off), so let’s assume each CPU and GPU draw 100 watts, not factoring in heat production, normal system load, nor dynamic frequency scaling. That gives 508,000,000 watts, and a power efficiency of 1.99 GFLOP (10<sup>9</sup> FLOP)/watt, putting it at 145th on the [<span class="underline">November Green500 List</span>](https://www.top500.org/lists/green500/list/2020/11/?page=2).
 
