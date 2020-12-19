@@ -8,7 +8,7 @@ description:
 tags: philosophy sociology charity
 ---
 
-[This is sort of an appendix to my [post](https://subcriticalappraisal.com/2020/Did-DeepMind-solve-the-protein-folding-problem/) about DeepMind protein structure prediction. Epistemic status: not too sure, just doing the back-of-the-envelope with more up-to-date numbers.]
+*[This is sort of an appendix to my [post](https://subcriticalappraisal.com/2020/Did-DeepMind-solve-the-protein-folding-problem/) about DeepMind protein structure prediction. Epistemic status: not too sure, just doing the back-of-the-envelope with more up-to-date numbers.]*
 
 1. TOC
 {:toc}
@@ -17,16 +17,16 @@ This is an update of Gwern's [cost-benefit analysis](https://www.gwern.net/Chari
 
 ## Charitable Supercomputer
 
-FAH [<span class="underline">boasts</span>](https://archive.vn/20200412111010/https://stats.foldingathome.org/os) of being the world's first exaFLOP (10<sup>18</sup> FLOPS) computer system when it achieved a processing speed of 1.22 exaFLOPS by late March 2020 and reached 2.43 exaFLOPS by April 12, 2020. As it is powered by volunteers running its clients on their CPUs and GPUs (and until 2012 their PS3s too), heightened interest during the COVID-19 pandemic has allowed it to be faster than the top 500 supercomputers combined.
+FAH [<span class="underline">boasts</span>](https://archive.vn/20200412111010/https://stats.foldingathome.org/os) of being the world's first [exaFLOP](https://en.wikipedia.org/wiki/Exascale_computing?oldformat=true) (10<sup>18</sup> [FLOPS](https://en.wikipedia.org/wiki/FLOPS?oldformat=true)) computer system when it achieved a processing speed of 1.22 exaFLOPS by late March 2020 and reached 2.43 exaFLOPS by April 12, 2020. As it is powered by volunteers running its clients on their CPUs and GPUs (and until 2012 their PS3s too), heightened interest during the COVID-19 pandemic has allowed it to be faster than the top 500 supercomputers combined.
 
 ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image40.png)
-[<span class="underline">The exascale barrier is a quintillion (1,000,000,000,000,000,000) operations per second</span>](https://twitter.com/foldingathome/status/1249778379634675712?s=20)
+*[<span class="underline">The exascale barrier is a quintillion (1,000,000,000,000,000,000) operations per second</span>](https://twitter.com/foldingathome/status/1249778379634675712?s=20)*
 
 ## Sins of Commision
 
 How much electricity does FAH consume? When it hit 1.01 exaFLOPS, an [<span class="underline">estimated</span>](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7337393/) ~280,000 GPUs and 4.8 million CPU cores were participating. According to FAH, although power supplies on most computers are rated at 400 watts, a Pentium-type computer uses about 100 watts on average (if the monitor is off), so let’s assume each CPU and GPU draw 100 watts, not factoring in heat production, normal system load, nor dynamic frequency scaling. That gives 508,000,000 watts, and a power efficiency of 1.99 GFLOP (10<sup>9</sup> FLOP)/watt, putting it at 145th on the [<span class="underline">November Green500 List</span>](https://www.top500.org/lists/green500/list/2020/11/?page=2).
 
-How much air pollution does FAH produce? Assuming 1.01 exaFLOPS is sustained for a whole year, it consumes 4.45 terawatt-hours per year. That means a [<span class="underline">greenhouse gas emission</span>](https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator) of 3,150,000 metric tons, as much as that from 680,000 cars. If we’re being generous and pretend that all the electricity is produced in the US, and take into account [<span class="underline">Gwern</span>](https://www.gwern.net/Charity-is-not-about-helping#:%7E:text=Folding%40home%20\(FAH%20for%20short,their%20GPUs%20and%20PS3s)’s estimation of 7.7 deaths per year for a US power mix, it means 34 deaths per year due to air pollution from powering FAH.
+How much air pollution does FAH produce? Assuming 1.01 exaFLOPS is sustained for a whole year, it consumes 4.45 terawatt-hours per year. That means a [<span class="underline">greenhouse gas emission</span>](https://www.epa.gov/energy/greenhouse-gas-equivalencies-calculator) of 3,150,000 metric tons, as much as that from 680,000 cars. If we’re being generous and pretend that all the electricity is produced in the US, and take into account Gwern’s estimation of 7.7 deaths per year for a US power mix, it means 34 deaths per year due to air pollution from powering FAH.
 
 ## Sins of Omission
 

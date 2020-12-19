@@ -8,7 +8,7 @@ description:
 tags: science
 ---
 
-[Levinthal's paradox is the second question of the protein folding problem, which became too long to be an endnote in my [post](https://subcriticalappraisal.com/2020/Did-DeepMind-solve-the-protein-folding-problem/) about DeepMind protein structure prediction so this is sort of an appendix. Epistemic status: Not too sure, somehow almost every [paper]((https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7072185/)) I’ve read on this is written by Russian scientists. ]
+*[Levinthal's paradox is the second question of the protein folding problem, which became too long to be an endnote in my [post](https://subcriticalappraisal.com/2020/Did-DeepMind-solve-the-protein-folding-problem/) about DeepMind protein structure prediction so this is sort of an appendix. Epistemic status: Not too sure, somehow almost every [paper]((https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7072185/)) I’ve read on this is written by Russian scientists.]*
 
 1. TOC
 {:toc}
@@ -34,30 +34,30 @@ So how do proteins get around the [<span class="underline">NP-hard</span>](https
 The “[<span class="underline">folding funnel</span>](https://www.wikiwand.com/en/Folding_funnel#:~:text=The%20folding%20funnel%20hypothesis%20is,conditions%20usually%20encountered%20in%20cells.)” is [<span class="underline">widely</span>](https://www.sciencedirect.com/science/article/pii/S1359027897000679) [<span class="underline">used</span>](https://onlinelibrary.wiley.com/doi/abs/10.1002/prot.340210302) to explain protein folding, but it doesn’t solve the paradox per se because there are still too many configurations.
 
 ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image6.png)
-(a) The energy landscape for the “golf course” model, where a protein samples conformations randomly until it hits the “hole” that is the native structure. (b) A general “energy funnel” centering on the protein native structure having the lowest energy. (c) A more detailed general energy landscape with “gap” denoting an free energy gap between the global and other energy minima, necessary to provide the “all-or-none” transition between native and other structures of the chain.
+*(a) The energy landscape for the “golf course” model, where a protein samples conformations randomly until it hits the “hole” that is the native structure. (b) A general “energy funnel” centering on the protein native structure having the lowest energy. (c) A more detailed general energy landscape with “gap” denoting an free energy gap between the global and other energy minima, necessary to provide the “all-or-none” transition between native and other structures of the chain.*
 
 Formation of the protein’s native structure decreases both the chain entropy (increasing the chain's ordering) and its energy (due to formation of contacts stabilising the lowest-energy fold). The former increases and the latter decreases free energy of the chain.
 
 ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image5.png)
-How entropy converts the energy funnel into a “volcano-shaped” free-energy folding landscape with free-energy barriers on each pathway leading from an unfolded conformation to the native fold.
+*How entropy converts the energy funnel into a “volcano-shaped” free-energy folding landscape with free-energy barriers on each pathway leading from an unfolded conformation to the native fold.*
 
-- Any pathway from the unfolded state to the native one first goes uphill, and only then, from the barrier (i.e., crater edge), descends into the “free-energy funnel”.
+- *Any pathway from the unfolded state to the native one first goes uphill, and only then, from the barrier (i.e., crater edge), descends into the “free-energy funnel”.*
 
-- The smooth free energy landscape corresponds to compact semi-folded intermediate structures
+- *The smooth free energy landscape corresponds to compact semi-folded intermediate structures*
 
-- The rocks (denoted by dotted lines) present a landscape including non-compact semi-folded intermediate structures.
+- *The rocks (denoted by dotted lines) present a landscape including non-compact semi-folded intermediate structures.*
 
 Protein folding [<span class="underline">does not</span>](https://ro.uow.edu.au/cgi/viewcontent.cgi?article=1968&context=scipapers) occur in one step. An *L*-residue chain can, in principle, attain its lowest-energy fold in *L* steps, each adding one fixed residue to the growing structure. Proteins spend most of their folding time, nearly [<span class="underline">96%</span>](https://www.sciencedirect.com/science/article/abs/pii/S0959440X11002041?via%3Dihub) in some cases, waiting in various intermediate conformational states (local thermodynamic free energy minimum) to climb up the free energy barrier and falling back, rather than on moving along the folding pathway.
 
 ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image24.png)
-Sequential folding/unfolding between the unfolded random coil (*n* = 0) and the final structure (*n* = *L*) with (a) compact and (b) non-compact semi-folded intermediates.
+*Sequential folding/unfolding between the unfolded random coil (n = 0) and the final structure (n = L) with (a) compact and (b) non-compact semi-folded intermediates.*
 
 ## Unfolding The Steps
 
 We can look at unfolding because it is easier to outline a good unfolding pathway of any structure than a good folding pathway leading to the lowest-energy fold, while the free energy barrier at both pathways is the same. It is worth mentioning that the unfolding-based estimate gives both the upper and lower estimates of the folding time, while the folding-based estimate gives its upper limit only.
 
 ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image24.png)
-The change of (c) energy ΔE(*n*), (d) entropy ΔS(*n*) and (e) free energy ΔF(*n*) during folding/unfolding.
+*The change of (c) energy ΔE(n), (d) entropy ΔS(n) and (e) free energy ΔF(n) during folding/unfolding.*
 
 - The full energy ΔE(*L*) and entropy changes ΔS(*L*) are approximately proportional to *L*.
 
@@ -74,7 +74,7 @@ The time of folding/unfolding of the most native structure do not grow according
 Hence, the estimated time of folding/unfolding of the most native structure mid-transition is given by 10ns × exp\[(1±0.5)*L*<sup>2/3</sup>\]. It shows that a chain of *L* ≲ 80-90 residues will find its most stable fold within minutes (or faster) even under “non-biological” mid-transition conditions, where folding is known to be the slowest.
 
 ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image10.png)
-Experimentally measured *in vitro* folding rate constants in water and at mid-transition for 107 single-domain proteins (or separate domains) without SS bonds and covalently bound ligands.
+*Experimentally measured in vitro folding rate constants in water and at mid-transition for 107 single-domain proteins (or separate domains) without SS bonds and covalently bound ligands.*
 
 ## Narrowing Scale
 
