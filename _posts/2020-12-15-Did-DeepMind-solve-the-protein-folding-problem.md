@@ -6,6 +6,7 @@ update:
 author: Joe Cheung
 description:
 tags: science AI
+wordcount: 10844
 ---
 *[Epistemic status: I have no expertise, but below is my best guess from what I have read so far, mostly relying on AlQuraishi's excellent [<span class="underline">essay</span>](https://moalquraishi.wordpress.com/2020/12/08/alphafold2-casp14-it-feels-like-ones-child-has-left-home/). The first half of this post will be kind of a literature review on the protein structure prediction, and the second half is a bit of a rehash of AlQuraishi’s essay, so post will serve as a companion piece of sorts to help you understand the background of the problem better if you’re a layman like me.]*
 
@@ -42,8 +43,7 @@ However, we still can’t tell what the function of the protein is until we lear
 
 To determine the structure of a protein, the predominant approach is to look at its conformational changes during gradual unfolding or folding with [<span class="underline">experimental techniques</span>](https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/methods-for-determining-structure#:~:text=Several%20methods%20are%20currently%20used,method%20has%20advantages%20and%20disadvantages.) (e.g. [<span class="underline">X-ray crystallography</span>](https://www.wikiwand.com/en/X-ray_crystallography#:~:text=X%2Dray%20crystallography%20\(XRC\),diffract%20into%20many%20specific%20directions.), [<span class="underline">nuclear magnetic resonance spectroscopy</span>](https://www.wikiwand.com/en/Nuclear_magnetic_resonance_spectroscopy_of_proteins), and more recently [<span class="underline">cryogenic electron microscopy</span>](https://www.wikiwand.com/en/Cryogenic_electron_microscopy) a.k.a. cryo-EM).
 
-![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image31.png)
-
+![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image31.png)  
 *[<span class="underline">Steps of X-ray crystallography</span>](https://www.sciencedirect.com/science/article/abs/pii/S1438422114001775)*
 
 As these methods depend on extensive trial and error, it can take years of painstaking and laborious work per structure, and require the use of multi-million dollar specialised equipment. For example, it [<span class="underline">takes</span>](https://towardsdatascience.com/unfolding-alphafold-683d576a54a3) about a year and $120000 to obtain the structure of a single protein with X-ray crystallography. Worse, they don’t work for all proteins. Notably, membrane proteins (e.g. the ACE2 receptor that SARS-CoV-2 binds to) are [<span class="underline">difficult</span>](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3641781/) to crystallise, yet they represent the [<span class="underline">majority</span>](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4379170/) of drug targets.
@@ -71,8 +71,7 @@ So you want to predict protein structure *in silico*, the obvious way is to simu
 
 Simulating physics has the [<span class="underline">Big-O</span>](https://www.wikiwand.com/en/Time_complexity) complexity of O(n<sup>2</sup>), shown as the turquoise line in the graph below. (There are smart algorithms to make this O(N log N).) More like Big Oof complexity because you end up needing to run for something like 10<sup>9</sup> to 10<sup>12</sup> time-steps[^5].
 
-![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image18.png)
-
+![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image18.png)  
 *[<span class="underline">Big-O notation represents the upper bound of the complexity of an algorithm, where n is the input size in bits, assuming each operation takes the same unit time-step to perform.</span>](https://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation)*
 
 Just when you’re questioning your hubris, you remember that Anfinsen’s dogma[^3] also postulates that a protein’s native structure has the minimal global free energy, so maybe you can use the same MD model to calculate what structure minimises free energy the most. You do this by sampling the [<span class="underline">configuration space</span>](https://www.wikiwand.com/en/Configuration_space_\(physics\)) (set of all possible conformations), guided by scoring functions (potential-energy minimising) to produce a large set of candidates, then selecting the better ones with more scoring functions, before high-resolution refining. But as Cyrus Levinthal [<span class="underline">noted</span>](https://web.archive.org/web/20050212130449/http://paradox.harvard.edu/~igor/PUBL_BER/PUB22.pdf) in 1969, the number of possible conformations is astronomically large, like 10<sup>300</sup> (\!) large. It will take you more time than the age of the universe to solve the 2 main problems of calculating the protein free energy and finding the global minimum of that energy. 2D and 3D mathematical modelling of protein folding as a free energy minimisation problem is [<span class="underline">NP-hard</span>](https://www.gwern.net/docs/biology/1993-fraenkel.pdf)\!
@@ -125,8 +124,7 @@ Whether you’re doing TBM or FM or a hybrid of both, you will be mixing and mat
 
 Searching through the conformation space requires a “[<span class="underline">force field</span>](https://en.wikipedia.org/wiki/Force_field_(chemistry)?oldformat=true))” depicting the protein conformational energy landscape, where all conformations correspond to a point on the energy landscape (the native conformation should be the lowest point).
 
-![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image22.png)
-
+![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image22.png)  
 *[<span class="underline">Protein folding guided by funnel-shaped energy landscape</span>](https://pubmed.ncbi.nlm.nih.gov/23180855/)*
 
 Proteins fold due to atomic interactions, so ideally force fields should be constructed based on quantum mechanics. Alas, until quantum computers materialise, you can only construct force fields based on classical physics that consist of the bond-stretching energy, the angle bending energy, the angle torsional energy and other energies for nonbonded interactions. Due to computational limits, these [<span class="underline">physics-based energy functions</span>](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4554537/) are often inaccurate for describing the complicated atomic interactions and have poor performances in protein structure prediction.
@@ -151,8 +149,7 @@ Unfortunately the all-atom model isn’t very good due to defects of the force f
 ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image8.png)
 *[<span class="underline">Refining</span>](https://brettkoonce.com/talks/an-introduction-to-alphafold-and-protein-modeling/)*
 
-![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image1.png)
-
+![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image1.png)  
 *[<span class="underline">Hopefully this flowchart of TBM and FM now makes sense.</span>](https://brettkoonce.com/talks/an-introduction-to-alphafold-and-protein-modeling/)*
 
 ## CASP
@@ -168,8 +165,7 @@ CASP structures have on average grown in length, although the vast majority of s
 
 The average difficulty of the targets in CASP has also increased. In fact, the targets for CASP14 were the most difficult to date:
 
-![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image21.png)
-
+![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image21.png)  
 *[<span class="underline">Comparison of the targets of the last four CASPs in terms of the coverage and sequence identity of the available templates.</span>](https://www.blopig.com/blog/2020/12/casp14-what-google-deepminds-alphafold-2-really-achieved-and-what-it-means-for-protein-folding-biology-and-bioinformatics/?s=09)*
 
 There are 2 types of predictors: the human, and the server. For each protein target, the former has 3 weeks and can make use of all the server results and any available resources, while the latter only has 3 days and cannot see the result from other servers. As it is “openbook” for humans, they can easily beat most of the servers by simply doing a consensus analysis (majority voting) on all server predictions, or straight up just copying the results from the best servers.
@@ -236,8 +232,7 @@ You can’t deny the magnitude of the breakthrough:
 
 AF2 achieved a mean RMSD of about 1.6Å, and \<5Å 92.5% of the time over all side chain atoms. it achieves RMS\_CA of \<1Å 25% of the time, \<1.6Å 50% of the time, and \<2.5Å 75% of the time. In terms of RMS\_All, it achieves \<1.5Å 25% of the time, \<2.1Å 50% of the time, and \<3Å 75% of the time.
 
-![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image16.png)
-
+![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image16.png)  
 *[<span class="underline">Distribution of RMSDs for the highest-ranked models submitted by AlphaFold 2.</span>](https://www.blopig.com/blog/2020/12/casp14-what-google-deepminds-alphafold-2-really-achieved-and-what-it-means-for-protein-folding-biology-and-bioinformatics/?s=09)*
 
 Some results from AF2 are so good that they defied the experimentally determined models. For example, [<span class="underline">Osnat Herzberg</span>](http://www.chem.umd.edu/faculty-staff-directory/facultydirectory/osnat-herzberg)’s group, who were studying a phage tail protein, noticed that they had a different assignment for a cis-proline compared to the model from AF2. Upon reviewing the analysis, they realised they had made a mistake in the interpretation and [<span class="underline">corrected</span>](https://www.blopig.com/blog/2020/12/casp14-what-google-deepminds-alphafold-2-really-achieved-and-what-it-means-for-protein-folding-biology-and-bioinformatics/?s=09) it. Another example is [<span class="underline">Henning Tidow</span>](https://www.chemie.uni-hamburg.de/en/institute/bc/arbeitsgruppen/tidow/personen/tidow-henning.html)’s group, who were trying but struggling to perform X-ray crystallography on an integral membrane protein, reductase FoxB (related to iron uptake in Gram-negative bacteria) for about two years. When they saw the models from AF2, they managed to solve the problem by [<span class="underline">molecular replacement</span>](https://www.wikiwand.com/en/Molecular_replacement#:~:text=Molecular%20replacement%20\(or%20MR\)%20is,the%20diffraction%20data%20is%20derived.) in a matter of hours.
@@ -246,8 +241,7 @@ Some results from AF2 are so good that they defied the experimentally determined
 
 DeepMind highlighted the [<span class="underline">ORF8</span>](https://www.biorxiv.org/content/10.1101/2020.08.27.270637v1) protein (labelled as T1064 in CASP14; 7JTL in PBD), a viral protein involved with the interaction between SARS-CoV-2 and the immune response, as one of the targets “where they didn’t do that well”.
 
-![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image7.png)
-
+![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image7.png)  
 *[<span class="underline">AF2 model for the T1064 target (red), superimposed onto the 7JTL\_A structure (blue).</span>](https://www.blopig.com/blog/2020/12/casp14-what-google-deepminds-alphafold-2-really-achieved-and-what-it-means-for-protein-folding-biology-and-bioinformatics/?s=09)*
 
 AF2’s model of the core of the protein is in excellent agreement with the experimental structure, down to the antiparallel β-sheets, and more impressively, the loops (top and right) that connect them. As for the large loop region (bottom left) that looks very different from the experimental structure, it does bear some resemblance to the actual loop, and its performance is still better than most common methods. Also, loop regions are commonly very flexible, so it can just mean that that region is mobile. [<span class="underline">Apparently</span>](https://www.blopig.com/blog/2020/12/casp14-what-google-deepminds-alphafold-2-really-achieved-and-what-it-means-for-protein-folding-biology-and-bioinformatics/?s=09), a new experimental structure of the ORF8 protein actually displays a much similar structure to the prediction. Loops are generally considered hard to predict, and compared to usual methods, AlphaFold 2’s performance is quite impressive.
@@ -261,8 +255,7 @@ It’s pretty clear that AF2 is in a class of its own. Zhang’s group barely ca
 
 What about models where DeepMind acknowledges that it did really well? Let’s look at the target T1046s1 (6x6o chain A, in PDB).
 
-![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image19.png)
-
+![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image19.png)  
 *[<span class="underline">AF2 model for the T1046s1 target (red), superimposed onto the 6X6O\_A structure (blue).</span>](https://www.blopig.com/blog/2020/12/casp14-what-google-deepminds-alphafold-2-really-achieved-and-what-it-means-for-protein-folding-biology-and-bioinformatics/?s=09)*
 
 The AF2 model, especially the α-helices and the loops, is virtually indistinguishable from the crystal structure with a total RMSD of 0.48Å.
@@ -396,8 +389,7 @@ The [<span class="underline">biggest challenge</span>](https://blogs.sciencemag.
 
 One class of disease where protein structure determination might help us understand better is [<span class="underline">proteopathy</span>](https://www.wikiwand.com/en/Proteopathy#/list_of_proteopathies) that is caused by protein misfolding.[^8] Take Alzheimer's disease for instance, while its exact cause remains unknown, it is [<span class="underline">associated</span>](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2274891/) with toxic aggregations of the misfolded amyloid beta (Aβ) peptide that grows into significantly larger senile plaques. As these [<span class="underline">aggregates</span>](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3837440/) are heterogeneous, experimental methods such as X-ray crystallography and nuclear magnetic resonance (NMR) have had difficulty determining their structures. It doesn’t help that atomic simulations of Aβ aggregation are very [<span class="underline">computationally demanding</span>](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2674793/) due to their size and complexity.
 
-> ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image9.jpg)![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image33.jpg)![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image23.jpg)
-
+> ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image9.jpg)![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image33.jpg)![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image23.jpg)  
 *[Toxic aggregations of the misfolded Aβ peptide in Alzheimer’s disease.](https://en.wikipedia.org/wiki/Alzheimer%27s_disease?oldformat=true#Biochemistry)*
 
 Another example is [<span class="underline">prion</span>](https://www.wikiwand.com/en/Prion)<sup>1</sup>, an exception to Anfinsen's dogma as it is a stable conformation that differs from the native folding state. The misfolding of normal prion protein (PrPc) into prototypical prion disease–scrapie (PrPSc) causes a host of proteopathies known as [<span class="underline">transmissible spongiform encephalopathies</span>](https://www.wikiwand.com/en/Transmissible_spongiform_encephalopathy) (TSEs) such as [<span class="underline">Bovine spongiform encephalopathy</span>](https://www.wikiwand.com/en/Bovine_spongiform_encephalopathy) (Mad Cow Disease), [<span class="underline">Creutzfeldt-Jakob disease</span>](https://www.wikiwand.com/en/Creutzfeldt%E2%80%93Jakob_disease) and [<span class="underline">fatal insomnia</span>](https://www.wikiwand.com/en/Fatal_insomnia). TSEs are especially scary because the ‘seeding’ of the infectious PrPSc, arising spontaneously, hereditary or via contamination, can cause a chain reaction of transforming normal PrPc into fibrils aggregates or amyloid like plaques consisting of PrPSc. The molecular structure of PrPSc has not been fully characterised due to its aggregated nature. Neither is known much about the mechanism of the protein misfolding nor its kinetics.

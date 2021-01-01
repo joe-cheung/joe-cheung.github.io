@@ -1,11 +1,11 @@
 /* The default x-height for code is slightly too large in side notes */
 .marginnote code,
 .sidenote code {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 /* ... and slightly to small in body text. */
 code {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 /* Make "Home" link small */
@@ -77,25 +77,11 @@ div.table-wrapper { overflow-x: auto;
 .sans { font-family: "Open Sans", sans-serif;
         letter-spacing: .03em; }
 
-code { font-family: "Open Sans", sans-serif;
-       font-size: 1.0rem;
-       line-height: 1.42; }
-
 .sans > code { font-size: 1.2rem; }
 
-h1 > code, h2 > code, h3 > code { font-size: 0.80em; }
+h1 > code, h2 > code, h3 > code { font-size: 1rem; }
 
 .marginnote > code, .sidenote > code { font-size: 1rem; }
-
-pre.code { font-size: 0.9rem;
-           width: 52.5%;
-           margin-left: 2.5%;
-           overflow-x: auto; }
-
-pre.code.fullwidth { width: 90%; }
-
-.fullwidth { max-width: 90%;
-             clear:both; }
 
 span.newthought { font-variant: small-caps;
                   font-size: 1.2em; }
@@ -121,7 +107,7 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
                                    padding-left: 8%;
                                    padding-right: 8%; }
                             hr, section > p, section > footer, section > table { width: 100%; }
-                            pre.code { width: 97%; }
+                            pre code { width: 100%; }
                             section > ol { width: 90%; }
                             section > ul { width: 90%; }
                             figure { max-width: 90%; }
