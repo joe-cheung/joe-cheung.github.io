@@ -165,7 +165,7 @@ Mining Bitcoin gets progressively harder as the network grows, and so eventually
 
 ## Reclaiming Disk Space Using Merkle Tree
 
-A [<span class="underline">Merkle tree</span>](https://nakamoto.com/merkle-trees/) is what you get when you repeatedly hash e.g. SHA-2 pairs of nodes until there is one hash left. If the number of transactions is odd, the last hash will be duplicated before hashing. You can create a hash tree with only 2 elements:
+A [<span class="underline">Merkle tree</span>](https://nakamoto.com/merkle-trees/) is what you get when you repeatedly hash (e.g. SHA-2) pairs of nodes until there is one hash left. If the number of transactions is odd, the last hash will be duplicated before hashing. You can create a hash tree with only 2 elements:
 
 ```
 from hashlib import sha1
@@ -284,6 +284,7 @@ More explainer (can skip):
 - [<span class="underline">Introduction To Cryptocurrency</span>](https://nakamoto.com/introduction-to-cryptocurrency/)
 - [<span class="underline">A technical introduction to Bitcoin for non-technical people</span>](https://alexdanco.com/2019/03/18/a-technical-introduction-to-bitcoin-for-non-technical-people/)
 - [<span class="underline">When Bitcoin grows up</span>](https://www.lrb.co.uk/v38/n08/john-lanchester/when-bitcoin-grows-up)
+- [Excellent 3Blue1Brown video on how Bitcoin (and other cryptocurrencies) work](https://www.youtube.com/watch?v=bBC-nXj3Ng4)
 
 Bitcoin/crypto:
 - [<span class="underline">Nakamoto.com</span>](https://nakamoto.com/) with contributions from all the big names.
