@@ -97,7 +97,7 @@ Trouble is that for any hash function you can actually always do better than bru
 
 In a [<span class="underline">proof of work</span>](https://en.wikipedia.org/wiki/Proof_of_work) (PoW) you usually have a challenge string *c* and you are looking for a nonce *n* such that hash(*c*+*n*) will result in a string with a certain number of leading zeroes. Let’s say our challenge string was “Hello, world\!” and our target was to get a SHA-256 hash beginning with ‘000’. One way to go about it is to start with a nonce of ‘0’ and progressively increment it until you get a hash starting with ‘000’. In this case that would take 4251 tries. If the hash is required to start with 30 zeros, the probability is 1/(2<sup>30</sup>) about 1 in a billion.
 
-The only way to produce a satisfactory nonce is by guessing a lot of times i.e. spending a lot of computational power. Once PoW is done it can be verified easily by hashing the block containing the nonce. A block also contains the list of all previous transactions, and the previous hash thus chaining to the previous block, so changing a block would change the hash of the block and all subsequent blocks, requiring all the PoW to be redone.
+The only way to produce a satisfactory nonce is by guessing a lot of times i.e. spending a lot of computational power. Once the PoW is done it can be verified easily by hashing the block containing the nonce. A block also contains the list of all previous transactions, and the previous hash thus chaining to the previous block, so changing a block would change the hash of the block and all subsequent blocks, requiring all the PoW to be redone.
 
 Thus, trust is placed at the longest *blockchain* which has the greatest PoW computational power invested. Users keep their own copy of the longest blockchain that has the addition of the new block from miners, producing a decentralised consensus.
 
@@ -300,6 +300,7 @@ Bitcoin/crypto:
 - [<span class="underline">Gwern on Bitcoin is worse is better</span>](https://www.gwern.net/Bitcoin-is-Worse-is-Better#)
 - [<span class="underline">Coding Bitcoin from Scratch in Rust</span>](https://monokh.com/posts/bitcoin-from-scratch-part-1)
 - [<span class="underline">Bitcoin’s most puzzling tradeoffs</span> <span class="underline">explained</span>](https://medium.com/@nic__carter/bitcoin-bites-the-bullet-8005a2a62d29)
+- [BadEconomics: Bitcoin](https://www.singlelunch.com/2020/10/21/badeconomics-putting-400m-of-bitcoin-on-your-company-balance-sheet/)
 - [<span class="underline">What's Really Driving the Cryptocurrency Phenomenon?</span>](https://www.gwern.net/docs/www/iterative.capital/0f2a6e1b25cbf4a115aeae3693e009e98d9de126.html)
 - [<span class="underline">Alex Tabarrok on Bitcoin is less secure than most people think</span>](https://marginalrevolution.com/marginalrevolution/2019/01/bitcoin-much-less-secure-people-think.html)
 - Vitalik Buterin [<span class="underline">on mining</span>](https://bitcoinmagazine.com/articles/mining-2-1403298609/), [<span class="underline">a philosophy of blockchain validation</span>](https://vitalik.ca/general/2020/08/17/philosophy.html), [<span class="underline">notes on blockchain governance</span>](https://vitalik.ca/general/2017/12/17/voting.html),
