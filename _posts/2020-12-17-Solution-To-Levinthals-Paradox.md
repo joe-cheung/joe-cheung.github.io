@@ -6,7 +6,7 @@ update:
 author: Joe Cheung
 description:
 tags: science
-wordcount: 1654
+wordcount: 1280
 ---
 
 *[Levinthal's paradox is the second question of the protein folding problem, which became too long to be an endnote in my [post](https://subcriticalappraisal.com/2020/Did-DeepMind-solve-the-protein-folding-problem/) about DeepMind protein structure prediction so this is sort of an appendix. Epistemic status: Not too sure, somehow almost every [paper]((https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7072185/)) I’ve read on this is written by Russian scientists.]*

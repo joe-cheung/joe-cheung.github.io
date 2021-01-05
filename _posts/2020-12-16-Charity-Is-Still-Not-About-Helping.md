@@ -6,7 +6,7 @@ update:
 author: Joe Cheung
 description:
 tags: philosophy sociology charity
-wordcount: 787
+wordcount: 628
 ---
 
 *[This is sort of an appendix to my [post](https://subcriticalappraisal.com/2020/Did-DeepMind-solve-the-protein-folding-problem/) about DeepMind protein structure prediction. Epistemic status: not too sure, just doing the back-of-the-envelope with more up-to-date numbers.]*

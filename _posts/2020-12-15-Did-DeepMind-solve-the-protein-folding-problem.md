@@ -6,7 +6,7 @@ update:
 author: Joe Cheung
 description:
 tags: science AI
-wordcount: 10844
+wordcount: 8408
 ---
 *[Epistemic status: I have no expertise, but below is my best guess from what I have read so far, mostly relying on AlQuraishi's excellent [<span class="underline">essay</span>](https://moalquraishi.wordpress.com/2020/12/08/alphafold2-casp14-it-feels-like-ones-child-has-left-home/). The first half of this post will be kind of a literature review on the protein structure prediction, and the second half is a bit of a rehash of AlQuraishi’s essay, so post will serve as a companion piece of sorts to help you understand the background of the problem better if you’re a layman like me.]*
 

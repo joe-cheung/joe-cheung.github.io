@@ -6,15 +6,15 @@ update:
 author: Joe Cheung
 description:
 tags: cryptocurrency
-wordcount: 3754-5195
+wordcount: 4015
 ---
 
-*\[Epistemic status: just going through the Bitcoin whitepaper. The first 12 headings correspond to the parts in the whitepaper. I wish I had any investment advice.\]*
+*\[Epistemic status: just trying to understand the Bitcoin whitepaper. The first 12 headings correspond to the parts in the whitepaper. My investment advice would be to invent a time machine to beat Satoshi. [Eliezer Yudkowsky](https://www.facebook.com/yudkowsky/posts/10156147605134228) on Bitcoin as [Pascal's mugging](https://en.wikipedia.org/wiki/Pascal%27s_mugging), "If you can't manage to not regret having not bought Bitcoin even though you knew about it when it was $1, you shouldn't ever buy anything except index funds because you are not psychologically suited to survive investing."\]*
 
 1. TOC
 {:toc}
 
-Inspired by Ben Reinhardt’s [Seminal Paper Club](https://benjaminreinhardt.com/seminal-paper-club/), I wanted to read more seminal papers starting with Satoshi Nakamoto’s Bitcoin whitepaper [*<span class="underline">Bitcoin: A Peer-to-Peer Electronic Cash System</span>*](https://bitcoin.org/bitcoin.pdf). It’s surprisingly readable, definitely recommended.
+Inspired by Ben Reinhardt’s [Seminal Paper Club](https://benjaminreinhardt.com/seminal-paper-club/), I wanted to read more seminal papers starting with Satoshi Nakamoto’s Bitcoin whitepaper [*<span class="underline">Bitcoin: A Peer-to-Peer Electronic Cash System</span>*](https://bitcoin.org/bitcoin.pdf). It’s surprisingly short (9 pages) and readable, definitely recommended.
 
 Bitcoin is a [<span class="underline">clever but ugly</span>](https://www.gwern.net/Bitcoin-is-Worse-is-Better#) solution to the double-spending problem using a peer-to-peer distributed timestamp server to generate computational proof of the chronological order of transactions. While Bitcoin is far from the first attempt at electronic money, and in fact involves no major mathematical or cryptographic breakthroughs, it has become a [<span class="underline">Schelling point</span>](https://nakamoto.com/bitcoin-becomes-the-flag-of-technology/) synonymous with cryptocurrency, and remains by far the [<span class="underline">largest</span>](https://www.coinbase.com/learn/crypto-basics/what-is-bitcoin) one by market capitalization and trading volume.
 
@@ -23,13 +23,14 @@ Key dates:
 - 08/2008: domain name “bitcoin.org” registered and feedback on drafts of the whitepaper was sought from [<span class="underline">Wei Dai</span>](https://en.wikipedia.org/wiki/Wei_Dai) and [<span class="underline">Hal Finney</span>](https://en.wikipedia.org/wiki/Hal_Finney_\(computer_scientist\))
 - 31/10/2008: the whitepaper was published to a public cryptography mailing list
 - 03/01/2009: open-sourced and launched the Bitcoin network with the mining of the genesis block
-    - embedded in the coinbase was “[<span class="underline">The Times 03/Jan/2009 Chancellor on brink of second bailout for banks.</span>](https://www.thetimes.co.uk/article/chancellor-alistair-darling-on-brink-of-second-bailout-for-banks-n9l382mn62h)” A comment on the instability caused by fractional-reserve banking as seen in quantitative easing since the 2008 Financial Crisis.
 - 12/01/2009: first Bitcoin transaction of 10 BTC from Satoshi to Finney
 - 05/2010: first commercial Bitcoin transaction of two Papa John’s pizza for 10,000 BTC (288,755,000 USD as of 2020/12/31)
 - 04/11: control of Bitcoin website and repository was handed off to [<span class="underline">Gavin Andresen</span>](https://en.wikipedia.org/wiki/Gavin_Andresen) (600,000-700,000 BTC still sits at Satoshi’s address today)
 
 ![](/images/2020-12-31-Bitcoin-Whitepaper/image5.png)  
-[*<span class="underline">Satoshi’s first email.</span>*](https://www.metzdowd.com/pipermail/cryptography/2008-October/014810.html)
+[*<span class="underline">Bitcoin's Genesis Block</span>*](https://iterative.capital/section-ii/)
+
+Embedded in the coinbase was “[<span class="underline">The Times 03/Jan/2009 Chancellor on brink of second bailout for banks.</span>](https://www.thetimes.co.uk/article/chancellor-alistair-darling-on-brink-of-second-bailout-for-banks-n9l382mn62h)” A comment on the instability caused by [fractional-reserve banking](https://en.wikipedia.org/wiki/Fractional-reserve_banking) as seen in [quantitative easing](https://en.wikipedia.org/wiki/Quantitative_easing) since the [2008 Financial Crisis](https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008).
 
 ## Introduction
 
@@ -95,7 +96,7 @@ A [<span class="underline">cryptographic hash function</span>](https://en.wikipe
 
 Trouble is that for any hash function you can actually always do better than brute-force by using a [<span class="underline">birthday attack</span>](https://en.wikipedia.org/wiki/Birthday_attack#:~:text=A%20birthday%20attack%20is%20a,between%20two%20or%20more%20parties.): how many guests need to be at a party on average so two guests share the same birthday? Surprisingly, you only need 23 guests, as it gives 253 unique pairs (n(n-1))/2, each having a 1/365 chance of sharing a birthday, i.e. 50.7% chance. Hence √n is a good approximation for the 50% threshold for a birthday collision. Current computational tractability is around 2<sup>80</sup>, so a SHA-128 can be birthday-attacked by brute-forcing 2<sup>64</sup>. This is why if we want 128-bit security, we need a 256-bit hash function.
 
-In a [<span class="underline">proof of work</span>](https://en.wikipedia.org/wiki/Proof_of_work) (PoW) you usually have a challenge string *c* and you are looking for a nonce *n* such that hash(*c*+*n*) will result in a string with a certain number of leading zeroes. Let’s say our challenge string was “Hello, world\!” and our target was to get a SHA-256 hash beginning with ‘000’. One way to go about it is to start with a nonce of ‘0’ and progressively increment it until you get a hash starting with ‘000’. In this case that would take 4251 tries. If the hash is required to start with 30 zeros, the probability is 1/(2<sup>30</sup>) about 1 in a billion.
+In a [<span class="underline">proof of work</span>](https://en.wikipedia.org/wiki/Proof_of_work) (PoW) you usually have a challenge string *c* and you are looking for a nonce (short for "number only used once") *n* such that hash(*c*+*n*) will result in a string with a certain number of leading zeroes. Let’s say our challenge string was “Hello, world\!” and our target was to get a SHA-256 hash beginning with ‘000’. One way to go about it is to start with a nonce of ‘0’ and progressively increment it until you get a hash starting with ‘000’. In this case that would take 4251 tries. If the hash is required to start with 30 zeros, the probability is 1/2<sup>30</sup> about 1 in a billion.
 
 The only way to produce a satisfactory nonce is by guessing a lot of times i.e. spending a lot of computational power. Once the PoW is done it can be verified easily by hashing the block containing the nonce. A block also contains the list of all previous transactions, and the previous hash thus chaining to the previous block, so changing a block would change the hash of the block and all subsequent blocks, requiring all the PoW to be redone.
 
@@ -103,8 +104,8 @@ Thus, trust is placed at the longest *blockchain* which has the greatest PoW com
 
 A scammer has to add blocks faster to maintain the longest blockchain forever than all honest nodes adding to the blockchain, which becomes harder exponentially as the blockchain grows. As long as the majority of CPU power is controlled by honest nodes, it is infeasible for the slower attacker to catch up to the longest blockchain. To compensate for Moore’s Law and the number of miners, the number of zeroes required in the hash is increased periodically to maintain about 10 mins to find the nonce to add a new block.
 
-![](/images/2020-12-31-Bitcoin-Whitepaper/image9.png)
-[*<span class="underline">Semi-log plot of relative mining difficulty.</span>*](https://commons.wikimedia.org/wiki/File:History_of_Bitcoin_difficulty.svg#/media/File:History_of_Bitcoin_difficulty.svg)
+![](/images/2020-12-31-Bitcoin-Whitepaper/image9.png)  
+[*<span class="underline">Semi-log plot of relative mining difficulty.</span>*](https://cseweb.ucsd.edu/~mbtaylor/papers/Taylor_Bitcoin_IEEE_Computer_2017.pdf)
 
 Unfortunately, [<span class="underline">centralised crypto mining</span>](https://www.investopedia.com/investing/why-centralized-crypto-mining-growing-problem/) is a growing problem as those with enough money in areas that subsidise electricity are concentrating computing power in the hands of a few.
 
@@ -216,6 +217,9 @@ This kind of inclusion proof is known as a *Merkle proof*, which also only requi
 
 Combining transaction amounts will result in more efficient transfers as opposed to creating a separate transaction for every cent involved. For example, Alice transfers 10BTC to Bob, if Bob wants to transfer 2BTC to Charlie, he can set up a transaction with one input of 10BTC and two outputs of 2BTC to Charlie and 8BTC to Bob himself.
 
+![](/images/2020-12-31-Bitcoin-Whitepaper/image17.png)  
+[*Example of a Bitcoin transaction*](https://iterative.capital/section-iv/)
+
 ## Privacy
 
 A new key-pair should be used for each new transaction. For example, Alice wants to transfer 2BTC to Bob, she will set up a transaction with input of 10BTC and with two outputs of 2BTC to Bob and 8BTC to Daniel, where Charlie is her new identity so no one can link Daniel to Alice.
@@ -253,6 +257,8 @@ From [<span class="underline">Gwern</span>](https://www.gwern.net/Bitcoin-is-Wor
 
 > This lack of novelty is part of the appeal—the fewer new parts of a cryptosystem, the less danger. All that was lacking was a Satoshi to start a Bitcoin.
 
+Bitcoin is [worse-is-better](https://en.wikipedia.org/wiki/Worse_is_better): so long as the design of the initial program is a clear expression of a solution to a specific problem, then it will take less time and effort to implement a “good” version initially (and adapt it to new situations) than it will to build a “perfect” version straight away.
+
 ## More Nice Graphs 
 
 ![](/images/2020-12-31-Bitcoin-Whitepaper/image14.png)  
@@ -263,6 +269,12 @@ From [<span class="underline">Gwern</span>](https://www.gwern.net/Bitcoin-is-Wor
 
 ![](/images/2020-12-31-Bitcoin-Whitepaper/image15.png)  
 [*<span class="underline">Should’ve bought Bitcoin?</span>*](https://www.blockchain.com/charts/market-price?timespan=all&scale=1)
+
+![](/images/2020-12-31-Bitcoin-Whitepaper/image18.png)  
+*[Bitcoin price showing each halving.](https://iterative.capital/appendix/)*
+
+![](/images/2020-12-31-Bitcoin-Whitepaper/image20.png)  
+*[Bitcoin price against hashing rate.](https://iterative.capital/appendix/)*
 
 ![](/images/2020-12-31-Bitcoin-Whitepaper/image12.png)  
 *[<span class="underline">Bitcoin is very volatile.</span>](https://nakamoto.com/bitcoin-becomes-the-flag-of-technology/)*
@@ -276,9 +288,12 @@ From [<span class="underline">Gwern</span>](https://www.gwern.net/Bitcoin-is-Wor
 ![](/images/2020-12-31-Bitcoin-Whitepaper/image3.png)  
 *[<span class="underline">Bitcoin price bubbles in 2011, 2013 and 2017.</span>](https://commons.wikimedia.org/wiki/File:Bitcoin-bubble-chart-history-2017.png#/media/File:Bitcoin-bubble-chart-history-2017.png) Cryptocurrencies have long been criticised as [<span class="underline">speculative bubbles</span>](https://en.wikipedia.org/wiki/Cryptocurrency_bubble).*
 
+![](/images/2020-12-31-Bitcoin-Whitepaper/image19.png)  
+[*The Hype Cycle.*](https://iterative.capital/appendix/)
+
 ## Additional reading
 
-More explainer (can skip):
+More explainers (can skip):
 - [<span class="underline">Fermat’s Library's annotated Bitcoin whitepaper</span>](https://fermatslibrary.com/s/bitcoin)
 - [<span class="underline">Wikipedia article on Bitcoin</span>](https://en.wikipedia.org/wiki/Bitcoin#cite_note-RCAWJune2018LOC-209)
 - [<span class="underline">Introduction To Cryptocurrency</span>](https://nakamoto.com/introduction-to-cryptocurrency/)
@@ -287,29 +302,30 @@ More explainer (can skip):
 - [Excellent 3Blue1Brown video on how Bitcoin (and other cryptocurrencies) work](https://www.youtube.com/watch?v=bBC-nXj3Ng4)
 
 Bitcoin/crypto:
-- [<span class="underline">Nakamoto.com</span>](https://nakamoto.com/) with contributions from all the big names.
-- [<span class="underline">Bitcoin’s Guardian Angel: Inside Coinbase Billionaire Brian Armstrong’s Plan To Make Crypto Safe For All</span>](https://www.forbes.com/sites/michaeldelcastillo/2020/02/19/coinbase-billionaire-brian-armstrongs-plan-to-make-bitcoin-ethereum-xrp-safe-for-all/)
-- [<span class="underline">Stripe on Bitcoin</span>](https://stripe.com/gb/blog/bitcoin-the-stripe-perspective)
-- [<span class="underline">In Search of the Elusive Bitcoin Billionaire</span>](http://reason.com/archives/2017/11/28/in-search-of-the-elusive-bitco)
-- [<span class="underline">This Is What Happens When Bitcoin Miners Take Over Your Town</span>](https://www.politico.com/magazine/story/2018/03/09/bitcoin-mining-energy-prices-smalltown-feature-217230)
-- [<span class="underline">Nassim Taleb on Bitcoin</span>](https://medium.com/opacity/bitcoin-1537e616a074)
-- [<span class="underline">As Traditional Payments Get Faster, What’s Left for Bitcoin?</span>](https://breakermag.com/as-traditional-payments-get-faster-whats-left-for-bitcoin/)
-- [<span class="underline">Why Bitcoin Will Take a Long Time to Dethrone the Dollar</span>](https://www.coindesk.com/why-bitcoin-will-take-a-long-time-to-dethrone-the-dollar)
-- [<span class="underline">Sam Altman on Bitcoin (2013)</span>](https://blog.samaltman.com/thoughts-on-bitcoin)
-- [<span class="underline">Bitcoin’s Biggest Hack In History: 184.4 Billion Bitcoin from Thin Air</span>](https://hackernoon.com/bitcoins-biggest-hack-in-history-184-4-ded46310d4ef)
-- [<span class="underline">Gwern on Bitcoin is worse is better</span>](https://www.gwern.net/Bitcoin-is-Worse-is-Better#)
-- [<span class="underline">Coding Bitcoin from Scratch in Rust</span>](https://monokh.com/posts/bitcoin-from-scratch-part-1)
-- [<span class="underline">Bitcoin’s most puzzling tradeoffs</span> <span class="underline">explained</span>](https://medium.com/@nic__carter/bitcoin-bites-the-bullet-8005a2a62d29)
-- [BadEconomics: Bitcoin](https://www.singlelunch.com/2020/10/21/badeconomics-putting-400m-of-bitcoin-on-your-company-balance-sheet/)
-- [<span class="underline">What's Really Driving the Cryptocurrency Phenomenon?</span>](https://www.gwern.net/docs/www/iterative.capital/0f2a6e1b25cbf4a115aeae3693e009e98d9de126.html)
-- [<span class="underline">Alex Tabarrok on Bitcoin is less secure than most people think</span>](https://marginalrevolution.com/marginalrevolution/2019/01/bitcoin-much-less-secure-people-think.html)
-- Vitalik Buterin [<span class="underline">on mining</span>](https://bitcoinmagazine.com/articles/mining-2-1403298609/), [<span class="underline">a philosophy of blockchain validation</span>](https://vitalik.ca/general/2020/08/17/philosophy.html), [<span class="underline">notes on blockchain governance</span>](https://vitalik.ca/general/2017/12/17/voting.html),
-- Tyler Cowen on [<span class="underline">Bitcoin will not take over the world</span>](https://www.gwern.net/Silk-Road#), [<span class="underline">Bitcoin volatility is a feature not a bug</span>](https://marginalrevolution.com/marginalrevolution/2017/12/can-bitcoin-good-store-value-price-volatile.html), [<span class="underline">no longer thinks Bitcoin is a bubble</span>](https://marginalrevolution.com/marginalrevolution/2017/11/bitcoin-just-bubble.html), [<span class="underline">Bitcoin is here to stay</span>](https://www.bloomberg.com/opinion/articles/2019-06-28/bitcoin-s-rise-shows-crypto-is-alive-and-well)
+- [<span class="underline">Nakamoto.com (2020)</span>](https://nakamoto.com/) with contributions from all the big names.
+- [<span class="underline">Bitcoin’s Guardian Angel: Inside Coinbase Billionaire Brian Armstrong’s Plan To Make Crypto Safe For All (2020)</span>](https://www.forbes.com/sites/michaeldelcastillo/2020/02/19/coinbase-billionaire-brian-armstrongs-plan-to-make-bitcoin-ethereum-xrp-safe-for-all/)
+- [<span class="underline">Stripe on Bitcoin (2014)</span>](https://stripe.com/gb/blog/bitcoin-the-stripe-perspective) and [Ending Bitcoin Support (2018)](https://stripe.com/blog/ending-bitcoin-support)
+- [<span class="underline">In Search of the Elusive Bitcoin Billionaire (2018)</span>](http://reason.com/archives/2017/11/28/in-search-of-the-elusive-bitco)
+- [<span class="underline">This Is What Happens When Bitcoin Miners Take Over Your Town (2018)</span>](https://www.politico.com/magazine/story/2018/03/09/bitcoin-mining-energy-prices-smalltown-feature-217230)
+- [<span class="underline">Nassim Taleb on Bitcoin (2018)</span>](https://medium.com/opacity/bitcoin-1537e616a074)
+- [<span class="underline">As Traditional Payments Get Faster, What’s Left for Bitcoin? (2018)</span>](https://breakermag.com/as-traditional-payments-get-faster-whats-left-for-bitcoin/)
+- [<span class="underline">Why Bitcoin Will Take a Long Time to Dethrone the Dollar (2020)</span>](https://www.coindesk.com/why-bitcoin-will-take-a-long-time-to-dethrone-the-dollar)
+- [<span class="underline">Sam Altman on Bitcoin (2013)</span>](https://blog.samaltman.com/thoughts-on-bitcoin) and [US Digital Currency (2018)](https://blog.samaltman.com/us-digital-currency)
+- [<span class="underline">Bitcoin’s Biggest Hack In History In 2010 (2019)</span>](https://hackernoon.com/bitcoins-biggest-hack-in-history-184-4-ded46310d4ef)
+- [<span class="underline">Gwern on Bitcoin is worse is better (2011)</span>](https://www.gwern.net/Bitcoin-is-Worse-is-Better#) and [comment on Bitcoin as a Thielian Secret in 2011 (2020)](https://www.lesswrong.com/posts/MajyZJrsf8fAywWgY/a-lesswrong-crypto-autopsy?commentId=X4wAWi5nyTRyFvbsq)
+- [<span class="underline">Coding Bitcoin from Scratch in Rust (2020)</span>](https://monokh.com/posts/bitcoin-from-scratch-part-1), [Part 2](https://monokh.com/posts/bitcoin-from-scratch-part-2) and [Part 3](https://monokh.com/posts/bitcoin-from-scratch-part-3)
+- [<span class="underline">Bitcoin’s most puzzling tradeoffs </span> <span class="underline">explained</span> (2019)](https://medium.com/@nic__carter/bitcoin-bites-the-bullet-8005a2a62d29)
+- [r/BadEconomics mod on Bitcoin (2020)](https://www.singlelunch.com/2020/10/21/badeconomics-putting-400m-of-bitcoin-on-your-company-balance-sheet/)
+- [<span class="underline">Detailed report on "What's Really Driving the Cryptocurrency Phenomenon?" (2020)</span>](https://www.gwern.net/docs/www/iterative.capital/0f2a6e1b25cbf4a115aeae3693e009e98d9de126.html)
+- [<span class="underline">Alex Tabarrok on Bitcoin is less secure than most people think (2019)</span>](https://marginalrevolution.com/marginalrevolution/2019/01/bitcoin-much-less-secure-people-think.html)
+- [Interview of Ray Dillinger](https://www.ofnumbers.com/2018/10/01/interview-with-ray-dillinger/) and [Bitcoin is a disaster (2020)](https://www.metzdowd.com/pipermail/cryptography/2020-December/036510.html)
+- Vitalik Buterin [<span class="underline">on mining (2014)</span>](https://bitcoinmagazine.com/articles/mining-2-1403298609/), [<span class="underline">a philosophy of blockchain validation (2017)</span>](https://vitalik.ca/general/2020/08/17/philosophy.html), [<span class="underline">notes on blockchain governance (2017)</span>](https://vitalik.ca/general/2017/12/17/voting.html),
+- Tyler Cowen on [<span class="underline">Bitcoin will not take over the world (2020)</span>](https://www.bloomberg.com/opinion/articles/2020-12-29/bitcoin-hits-new-high-but-cryptocurrency-s-future-is-uncertain?sref=htOHjx5Y), [<span class="underline">Bitcoin volatility is a feature not a bug (2017)</span>](https://marginalrevolution.com/marginalrevolution/2017/12/can-bitcoin-good-store-value-price-volatile.html), [<span class="underline">no longer thinks Bitcoin is a bubble (2017)</span>](https://marginalrevolution.com/marginalrevolution/2017/11/bitcoin-just-bubble.html), [<span class="underline">Bitcoin is here to stay (2019)</span>](https://www.bloomberg.com/opinion/articles/2019-06-28/bitcoin-s-rise-shows-crypto-is-alive-and-well)
 
 Blockchain:
-- [<span class="underline">Ten years in, nobody has come up with a use for blockchain</span>](https://hackernoon.com/ten-years-in-nobody-has-come-up-with-a-use-case-for-blockchain-ee98c180100) and its sequel [<span class="underline">Blockchain is not only crappy technology but a bad vision for the future</span>](https://medium.com/@kaistinchcombe/decentralized-and-trustless-crypto-paradise-is-actually-a-medieval-hellhole-c1ca122efdec)
-- [<span class="underline">Harvard Business Review on blockchain</span>](https://hbr.org/2017/01/the-truth-about-blockchain)
-- [<span class="underline">Blockchain social networks</span>](https://medium.com/decentralized-web/blockchain-social-networks-c941fb337970)
-- [<span class="underline">Tyler Cowen on blockchains</span>](https://www.bloomberg.com/opinion/articles/2018-04-27/blockchains-warrant-skepticism-but-keep-an-open-mind?utm_content=crypto&utm_medium=social&utm_campaign=socialflow-organic&utm_source=twitter)
-- [<span class="underline">Eight Popular Blockchain Use Cases And Why They Do Not Work</span>](https://blog.smartdec.net/you-do-not-need-blockchain-eight-popular-use-cases-and-why-they-do-not-work-f2ecc6cc2129)
-- [<span class="underline">Blockchains and the Opportunity of the Commons</span>](https://marginalrevolution.com/marginalrevolution/2018/06/blockchains-opportunity-commons.html)
+- [<span class="underline">Ten years in, nobody has come up with a use for blockchain (2017)</span>](https://hackernoon.com/ten-years-in-nobody-has-come-up-with-a-use-case-for-blockchain-ee98c180100) and its sequel [<span class="underline">Blockchain is not only crappy technology but a bad vision for the future (2018)</span>](https://medium.com/@kaistinchcombe/decentralized-and-trustless-crypto-paradise-is-actually-a-medieval-hellhole-c1ca122efdec)
+- [<span class="underline">Harvard Business Review on blockchain (2017)</span>](https://hbr.org/2017/01/the-truth-about-blockchain)
+- [<span class="underline">Blockchain social networks (2020)</span>](https://medium.com/decentralized-web/blockchain-social-networks-c941fb337970)
+- [<span class="underline">Tyler Cowen on blockchains (2018)</span>](https://www.bloomberg.com/opinion/articles/2018-04-27/blockchains-warrant-skepticism-but-keep-an-open-mind?utm_content=crypto&utm_medium=social&utm_campaign=socialflow-organic&utm_source=twitter)
+- [<span class="underline">Eight Popular Blockchain Use Cases And Why They Do Not Work (2019)</span>](https://blog.smartdec.net/you-do-not-need-blockchain-eight-popular-use-cases-and-why-they-do-not-work-f2ecc6cc2129)
+- [<span class="underline">Alex Tabarrok on blockchains and the Opportunity of the Commons (2018)</span>](https://marginalrevolution.com/marginalrevolution/2018/06/blockchains-opportunity-commons.html)

@@ -6,7 +6,7 @@ update: 2020-12-18 00:00:00
 author: Joe Cheung
 description:
 tags: science medicine unfinished
-wordcount: 9195
+wordcount: 7884
 ---
 
 *[Epistemic status: I have no expertise, and news about COVID-19 changes by the minute so this is likely somewhat, but below is my best guess from what I have read so far (h/t [Tyler Cowen](https://marginalrevolution.com/), [Alex Tabarrok](https://marginalrevolution.com/), [Eric Topol](https://twitter.com/EricTopol?s=20), and many others).]*
