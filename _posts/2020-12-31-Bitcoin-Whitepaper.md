@@ -6,7 +6,7 @@ update:
 author: Joe Cheung
 description:
 tags: cryptocurrency
-wordcount: 4015
+wordcount: 4019
 ---
 
 *\[Epistemic status: just trying to understand the Bitcoin whitepaper. The first 12 headings correspond to the parts in the whitepaper. My investment advice would be to invent a time machine to beat Satoshi. [Eliezer Yudkowsky](https://www.facebook.com/yudkowsky/posts/10156147605134228) on Bitcoin as [Pascal's mugging](https://en.wikipedia.org/wiki/Pascal%27s_mugging), "If you can't manage to not regret having not bought Bitcoin even though you knew about it when it was $1, you shouldn't ever buy anything except index funds because you are not psychologically suited to survive investing."\]*
@@ -312,6 +312,7 @@ Bitcoin/crypto:
 - [<span class="underline">Why Bitcoin Will Take a Long Time to Dethrone the Dollar (2020)</span>](https://www.coindesk.com/why-bitcoin-will-take-a-long-time-to-dethrone-the-dollar)
 - [<span class="underline">Sam Altman on Bitcoin (2013)</span>](https://blog.samaltman.com/thoughts-on-bitcoin) and [US Digital Currency (2018)](https://blog.samaltman.com/us-digital-currency)
 - [<span class="underline">Bitcoin’s Biggest Hack In History In 2010 (2019)</span>](https://hackernoon.com/bitcoins-biggest-hack-in-history-184-4-ded46310d4ef)
+- [A16Z Crypto Startup School](https://a16z.com/2020/12/28/crypto-users-guide/)
 - [<span class="underline">Gwern on Bitcoin is worse is better (2011)</span>](https://www.gwern.net/Bitcoin-is-Worse-is-Better#) and [comment on Bitcoin as a Thielian Secret in 2011 (2020)](https://www.lesswrong.com/posts/MajyZJrsf8fAywWgY/a-lesswrong-crypto-autopsy?commentId=X4wAWi5nyTRyFvbsq)
 - [<span class="underline">Coding Bitcoin from Scratch in Rust (2020)</span>](https://monokh.com/posts/bitcoin-from-scratch-part-1), [Part 2](https://monokh.com/posts/bitcoin-from-scratch-part-2) and [Part 3](https://monokh.com/posts/bitcoin-from-scratch-part-3)
 - [<span class="underline">Bitcoin’s most puzzling tradeoffs </span> <span class="underline">explained</span> (2019)](https://medium.com/@nic__carter/bitcoin-bites-the-bullet-8005a2a62d29)
