@@ -23,12 +23,10 @@
 <meta name="tags" content="{{ page.tags | join: ' ' }}">
 {% endif %}
 
-{% seo title=false %}
-
 <title>
   {% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}{% if paginator.total_pages > 1 and paginator.page > 1 %}
   - Page {{ paginator.page }} of {{ paginator.total_pages }}{% endif %}</title>
-
+{% title=false %}
 <link rel="icon" type="image/png" href="/images/Random-Confounder-Theory-Logo.png" />
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
