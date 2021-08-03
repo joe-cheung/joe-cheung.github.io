@@ -35,6 +35,8 @@ plugins:
   - jekyll-remote-theme
   - jemoji
   - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-multiple-languages-plugin
 
 titles_from_headings:
   enabled:     true

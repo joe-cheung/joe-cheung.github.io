@@ -21,6 +21,7 @@ group :jekyll_plugins do
   gem 'jemoji'
   gem "tufte-pandoc-jekyll"
   gem "jekyll-paginate"
+  gem 'jekyll-multiple-languages-plugin'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
