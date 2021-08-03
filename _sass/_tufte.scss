@@ -52,8 +52,7 @@ html {
 @media screen and (max-width: 707px) {
      body {
           padding-left: 20px;
-          padding-right: 20px;
-          
+          padding-right: 20px;     
      }
      html {
           font-size: 11px;
@@ -163,7 +162,7 @@ p { margin-top: 1.5em;
 }
 
 .content {
-  flex: 1 0 auto;
+  flex: 1 0 100%;
   margin: 0 auto;
 }
 

@@ -37,7 +37,12 @@ article {
 /* copied form _tufte.scss */
 
 /* Sidenotes, margin notes, figures, captions */
-img { max-width: 100%; }
+img {
+  max-width: 100%;
+  max-height: 600px;
+  display: block;
+  margin: 0 auto;
+}
 
 .sidenote, .marginnote { float: right;
                          clear: right;
@@ -103,9 +108,7 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
                          width: 100%;
                          height: 100%; }
 
-@media (max-width: 33.99em) { body { width: 84%;
-                                   padding-left: 8%;
-                                   padding-right: 8%; }
+@media (max-width: 33.99em) {
                             hr, section > p, section > footer, section > table { width: 100%; }
                             pre code { width: 100%; }
                             section > ol { width: 90%; }
