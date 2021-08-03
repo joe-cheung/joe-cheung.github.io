@@ -1,0 +1,12 @@
+---
+layout: default
+title: Newsletter Archives
+---
+
+<div class="posts newsletters">
+    {% for newsletter in site.newsletters %}
+    <article class="post">
+        <p style="font-size: 1.5rem"><a href="{{ site.baseurl }}{{ newsletter.url }}">{{ newsletter.title }}</a></p>
+    </article>
+    {% endfor %}
+</div>

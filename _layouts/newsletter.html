@@ -1,0 +1,48 @@
+---
+layout: default
+archive: false
+---
+{% if page.author %}
+<h3 style="text-align: left; width:49%; display: inline-block;"> By <a href="{{ '/about' | prepend: site.baseurl }}"
+        style="float: none; text-decoration: none;">{{ page.author }}</a>
+</h3>
+{% endif %}
+<h3 style="text-align: right; width:50%;  display: inline-block;" class="date-range">
+    {{ page.date | date: "%b %-d, %Y" }}{% if page.update %} -
+    {{ page.update | date: "%b %-d, %Y" }}{% endif %}</h3>
+<h3>
+    {% if page.tags %}
+    {% for tag in page.tags %}
+    <a style="text-decoration: none; background-color: var(--link-color); padding: 0 .5rem; margin-right: .5rem; border-radius: 4px; color: var(--main-background-color); font-size: 90%;"
+        class="post-tag" href="{{ site.baseurl }}/newsletters">{{ tag }}</a>
+    {% endfor %}
+    {% endif %}
+</h3>
+
+<article class="post newsletter">
+    <a name="top"></a>
+    {{ content }}
+    <a href="#top">
+        <h3 style="text-align: right;">↑ back to top</h3>
+    </a>
+</article>
+
+<footer id="post-meta" class="clearfix">
+    <h3>
+        {% include previousnext.html %}<br>
+    </h3>
+    <section id="sharing">
+        {% include share.html %}
+    </section>
+    <h3 style="text-align: center; "><a
+            href="https://docs.google.com/forms/u/5/d/1bP6T5wroUFU1br69pvEOOwSNY4j0y9f6iyA-NU8YaCs/">Send anonymous
+            feedback</a> </a>
+    </h3>
+</footer>
+
+<!-- Disqus comments -->
+{% if site.disqus %}
+<div class="archive readmore">
+    {% include disqus.html %}
+</div>
+{% endif %}
