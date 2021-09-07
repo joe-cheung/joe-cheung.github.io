@@ -9,19 +9,19 @@ tags: economics history finished
 wordcount: 3903
 ---
 
-1. TOC
-{:toc}
-
 Why are Japan, South Korea, Taiwan, and post-Mao China rich, while Thailand, the Philippines, Indonesia, Malaysia are poor?
 
 *How Asia Works: Success and Failure in the World’s Most Dynamic Region* is a bland and sweeping title, but it is the best single treatment on the greatest anti-poverty program in history that proved economists and the World Bank wrong and wrong again with decades of unprecedented growth.
 
 Joe Studwell is confident that there is only one Way to go from Third World to First: 
 
-1. Thou shalt enact real land redistribution.
-2. Thou shalt protect infant industries and enforce export discipline.
-3. Thou shalt repress and direct thine financial system.
+* Thou shalt enact real land redistribution.
+* Thou shalt protect infant industries and enforce export discipline.
+* Thou shalt repress and direct thine financial system.
 
+**Contents**
+1. TOC
+{:toc}
 ## The First Commandment: Land Reform
 
 Say you’re a peasant in the feudal Philippines. Your corrupt leaders left vast haciendas to absentee landlords. 40% of your output is taxed by the landlord, and you can’t sell the remaining crop for much money because the landlord also happens to be the monopsony buyer. You don’t have any money to buy the right tools and fertilisers, and the landlord is the only guy who can lend you money but at more than 100% interest rate. Worse: maybe you’re a peasant in Maoist China and your beloved Chairman decided to collectivise land into large-scale co-operatives, so now they’re _our_ crops. Should’ve recognised the red flags – agricultural productivity is low by default because poor peasants have no incentive to maximise yield on farms that they don’t own.

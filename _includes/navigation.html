@@ -1,22 +1,56 @@
-<nav class="main-nav">
-    <div class="container" style= "max-width: 100%; margin-top: -5px;">
-        <a href="{{site.url}}"><img src="/images/Random-Confounder-Theory-Logo.png"
-                style="padding-right:5px; position:relative; top: 28px; max-width: 50px; display: inline-block;" alt='SubCriticalAppraisal' /><a
-                href="{{ site.url }}" style="position:relative; top: 26px; color: var(--main-text-color); text-decoration: none; display: inline-block;">
-                <h3>Sub<br>Critical<br>Appraisal</h3>
-        </a>
-        <br>
-        <hr style="width: 400%; margin-top: 40px; margin-left: -300px;">
-        <ul class="navbar" style= "list-style-type: none; margin-top: -4px; padding: 0; position:relative; text-align: right;">
-            <h3 style="overflow:hidden; margin-top: 0;">
-            <div class="vl"></div><li style= "display: inline; margin-top:-5px; margin-bottom: 1px;"><a href="{{ '/about' | prepend: site.baseurl }}">&nbspAbout</a></li>
-            <div class="vl"></div><li style= "display: inline; margin-top:-5px; margin-bottom: 1px;"><a href="{{ '/archives' | prepend: site.baseurl }}">&nbspArchives</a></li>
-            <div class="vl"></div><li style="display: inline; margin-top:-5px; margin-bottom: 1px;"><a href="{{ '/bookshelf' | prepend: site.baseurl }}">&nbspBookshelf</a></li>
-            <div class="vl"></div><li style="display: inline; margin-top:-5px; margin-bottom: 1px;"><a href="{{ '/links' | prepend: site.baseurl }}">&nbspLinks</a></li>
-            <div class="vl"></div><li style="display: inline; margin-top:-5px; margin-bottom: 1px;"><a href="https://subcriticalappraisal.substack.com">&nbspSubscribe</a></li>
-            <div class="vl"></div><li style= "display: inline-block; margin-top:-5px; margin-bottom: 1px;"><a href="{{page.baseurl}}" id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;"></a></li>
+<div class="container" style="max-width: 100%; margin-top: -5px;"></div>
+
+<a href="{{site.url}}"><img src="/images/Random-Confounder-Theory-Logo.png"
+        style="padding-right:5px; position:relative; top: 28px; max-width: 50px; display: inline-block;"
+        alt='SubCriticalAppraisal' /><a href="{{ site.url }}"
+        style="position:relative; top: 26px; color: var(--main-text-color); text-decoration: none; display: inline-block;">
+        <h3>Sub<br>Critical<br>Appraisal</h3>
+</a>
+    
+<!--Navbar Burger-->
+
+<label for="toggle-1" class="toggle-menu">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</label>
+
+<input type="checkbox" id="toggle-1">
+
+<br>
+
+<hr style="width: 400%; margin-top: 40px; margin-left: -300px; z-index: 100; position: relative;">
+
+<div class="fullbar" style="width: 100%; margin-top: -25px; text-align:right; position: relative;">
+    <nav>
+        <ul class="menu-items" style="list-style-type: none;">
+            <h3>
+                <div class="vl"></div><li><a href="{{ '/about' | prepend: site.baseurl }}">&nbspAbout</a></li>
+                <div class="vl"></div><li><a href="{{ '/archives' | prepend: site.baseurl }}">&nbspArchives</a></li>
+                <div class="vl"></div><li><a href="{{ '/bookshelf' | prepend: site.baseurl }}">&nbspBookshelf</a></li>
+                <div class="vl"></div><li><a href="{{ '/links' | prepend: site.baseurl }}">&nbspLinks</a></li>
+                <div class="vl"></div><li><a href="https://subcriticalappraisal.substack.com">&nbspSubscribe</a></li>
+                <div class="vl"></div><li><a href="{{ '/support' | prepend: site.baseurl }}">&nbspSupport</a></li>
             </h3>
         </ul>
-        <hr style="width: 400%; margin-top: -10px; margin-left: -300px;">
-    </div>
-</nav>
+    </nav>
+
+    <div class="vl" style=" display: inline-block; text-align:right;"></div>
+    <h3 style=" display: inline-block; text-align:right; margin-bottom: 8px;"><div class="darkmode"><a href="{{page.baseurl}}" id="theme-toggle"
+            onclick="modeSwitcher()" style="cursor: pointer;"></a></div></h3>
+</div>
+
+<hr style="width: 400%; margin-top: -10px; margin-left: -300px;">
+
+<div class="menu-burger">
+    <h3>
+        <a href="{{ '/about' | prepend: site.baseurl }}">&nbspAbout</a>
+        <a href="{{ '/archives' | prepend: site.baseurl }}">&nbspArchives</a>
+        <a href="{{ '/bookshelf' | prepend: site.baseurl }}">&nbspBookshelf</a>
+        <a href="{{ '/links' | prepend: site.baseurl }}">&nbspLinks</a>
+        <a href="https://subcriticalappraisal.substack.com">&nbspSubscribe</a>
+        <a href="https://ko-fi.com/subcriticalappraisal">&nbspSupport</a>
+    </h3>
+</div>

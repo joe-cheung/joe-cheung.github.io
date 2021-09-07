@@ -45,8 +45,8 @@ titles_from_headings:
 highlighter: rouge
 
 pagination:
-  enabled: true
-paginate: 8
+  enabled: false
+paginate: 10
 paginate_path: "/page:num/"
 
 markdown: Pandoc
