@@ -7,6 +7,8 @@ Spread the word!
 
 Tell your friends to [subscribe](https://subcriticalappraisal.substack.com/) to my newsletter!
 
+Let me [know](mailto:subcriticalappraisal@gmail.com) if you liked any post or have any feedback!
+
 You can [buy me a coffee](https://ko-fi.com/subcriticalappraisal)!
 
 Bitcoin: <span style="font-family:'Roboto Mono';">3DbMwySduugYGXFKF9jC3x5L198qERJBde</span>
