@@ -21,7 +21,7 @@ As usual in practical ethics, an adequate discussion of the moral issues surroun
 1. TOC
 {:toc}
 
-**Genomics Revolution**
+## Genomics Revolution
 
 Since the release of _Gattaca_ in 1997, the past two decades have seen a revolution in molecular genetics: the exponential reduction in cost of human whole genome sequencing (WGS) has even outpaced the Carlson curve, which predicts that the doubling of DNA sequencing technologies as measured by cost and performance would be at least as fast as Moore’s law.
 
@@ -33,7 +33,7 @@ It took [$5 billion](https://www.genome.gov/human-genome-project/Completion-FAQ)
 
 This has enabled the accumulation of datasets of millions of individuals’ genomes, which enabled a myriad of genetic analysis such as genome-wide association studies (GWASs) that have identified a large number of single nucleotide polymorphisms (SNPs) that are significantly associated with a wide range of complex traits (Tam et al.). However, SNPs typically have a small effect and correspond to a small fraction of truly associated genetic variants, meaning that they have limited predictive power.
 
-**Polygenic Risk Scores**
+## Polygenic Risk Scores
 
 One way to aggregate the effects of SNPs across the genome to estimate heritability is the [polygenic risk scores](https://doi.org/10.1038/s41596-020-0353-1) (PRS) method, in which the sum of risk alleles is weighted by the risk allele effect size estimated by a GWAS on the phenotype to produce a single value estimate of genetic liability.
 
@@ -45,7 +45,7 @@ _[The increase in absolute risk with PRS percentile is rapid and nonlinear.](htt
 
 PRS is already being translated into clinical use. For example, women with _BRCA1/2 _mutations are routinely offered early screening, of whom only about [1 in 1000](https://doi.org/10.1093/jnci/91.11.943) actually result in breast or ovarian cancer. A PRS for breast cancer risk has an odds ratio per unit standard deviation of [1.47](https://doi.org/10.1200/PO.19.00360) (95% CI, 1.45 to 1.49), an order of magnitude higher than the [predictive power](https://doi.org/10.1089/109065700316462) of BRCA1/2 gene mutations. Hence, PRS can inform risk stratification to guide disease surveillance.
 
-**Embryo Screening For Polygenic Disease Risk**
+## Embryo Screening For Polygenic Disease Risk
 
 More than [half a million](https://doi.org/10.1016/j.rbmo.2018.12.001) babies are born every year via In vitro fertilisation (IVF). About [1 in 10](https://www.bbc.com/news/world-europe-45512312) babies are born via IVF in Denmark. As the typical IVF cycle produces five viable embryos, the IVF parents often have to choose which specific embryo to transfer, the default [method](https://doi.org/10.4137/CMRH.S10852) being careful microscopy-based morphology (e.g. rate of development, symmetry, general appearance) assessment. Nowadays, 40% of all IVF cycles involve preimplantation genetic testing to screen for aneuploidy (PTG-A) i.e. extra or missing chromosome (e.g. Down’s syndrome caused by trisomy 21) and chromosomal structural rearrangements (PGT-SR) i.e. translocations or inversions. Depending on familial risk factors, embryos can also be screened for monogenic disorders (PTG-M) such as Huntington’s disease or cystic fibrosis. There is even PGT for histocompatibility (HLA) for tissue donation to a sick family member. With the advent of precision embryo genotyping, preimplantation screening for polygenic disease risk (PGT-P) allows drastically more sophisticated preimplantation ranking.
 
@@ -110,7 +110,9 @@ More abstractly, Bostrom and Ord’s [Reversal Test](https://doi.org/10.1086/505
 The Double Reversal Test can also be applied: if a new widespread neurotoxin threatens to cause cognitive decline in potential cognitive enhancement users, would it be a net good if they could use the cognitive enhancement to stave off the impending decline? If the answer is yes, there is a strong prima facie case for thinking that it would be good overall – despite the assumed negative effect on equality – if the enhancement option is developed (Bostrom and Ord).
 
 In Plato's _Philebus_, Socrates concludes that the best life is a mixture of wisdom and pleasure. Intelligence is clearly a part of Plato's conception of the good life:
-> The principle of [Procreative Beneficence](https://doi.org/10.1111/1467-8519.00251) states that the selection for non-disease genes which significantly impact on well-being is _morally required_. At this point we must move beyond the morally dubious line-drawing at the borders of “disease” and “non-disease” traits according to the disease model that most countries [adopt](https://doi.org/10.1136/medethics-2020-106588) as their regulatory frameworks. We should simply allow parents to select the children most likely to have the “best life”. If, in the end, couples wish to select a child who will have a lower chance of having the best life, they should be free to make such a choice, but that should not prevent doctors from attempting to persuade them to have the best child they can.
+> Without the power of calculation you could not even calculate that you will get enjoyment in the future; your life would be that not of a man, but of a sea-lung or one of those marine creatures whose bodies are confined by a shell.
+
+The principle of [Procreative Beneficence](https://doi.org/10.1111/1467-8519.00251) states that the selection for non-disease genes which significantly impact on well-being is _morally required_. At this point we must move beyond the morally dubious line-drawing at the borders of “disease” and “non-disease” traits according to the disease model that most countries [adopt](https://doi.org/10.1136/medethics-2020-106588) as their regulatory frameworks. We should simply allow parents to select the children most likely to have the “best life”. If, in the end, couples wish to select a child who will have a lower chance of having the best life, they should be free to make such a choice, but that should not prevent doctors from attempting to persuade them to have the best child they can.
 
 ## Conclusion
 
