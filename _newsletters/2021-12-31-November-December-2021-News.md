@@ -51,11 +51,11 @@ Epidemiology:
 * [Canaries in the coal mine: a cross-species analysis of the plurality of obesity epidemics](https://royalsocietypublishing.org/doi/10.1098/rspb.2010.1890), Klimentidis et al. 2010: increasing mid-life body weights in 8 species of animals (n=20,000) living with or around humans
 * [Rebalancing the unbalanced aged immune system - a special focus on zinc](https://www.sciencedirect.com/science/article/pii/S1568163721002889?dgcid=rss_sd_all), Baarz et al. 2021: zinc is key for the immune system and its levels reduce with age
 
-Covid
+COVID:
 * [The effect of vitamin D supplementation on mortality and Intensive Care Unit admission of COVID‐19 patients. A systematic review, meta‐analysis and meta‐regression](https://onlinelibrary.wiley.com/doi/10.1002/dmrr.3517), Tentolouris et al. 2021: (n=2,078) 12.2% of the treated group were admitted to ICU vs 26.3% of the non-treated group; no effect on mortality
 
 Miscellaneous:
-* [Intercellular nanotubes mediate mitochondrial trafficking between cancer and immune cells](https://www.nature.com/articles/s41565-021-01000-4), Saha et al, 2021: cancer cells grow nanotubes to absorb the mitochondria from immune cells like vampires
+* [Intercellular nanotubes mediate mitochondrial trafficking between cancer and immune cells](https://www.nature.com/articles/s41565-021-01000-4), Saha et al, 2021: cancer cells grow nanotubes to absorb the mitochondria from immune cells like vampires:
     ![](/images/2021-12-31-November-December-2021-News/image7.png)
 * Related: [Mitochondrial Capture by a Transmissible Cancer](https://www.science.org/doi/10.1126/science.1197696), Rebbeck et al. 2011: canine transmissible venereal tumour periodically acquire mitochondria from its host
 * [Blood sugar level follows perceived time rather than actual time in people with type 2 diabetes](https://www.pnas.org/content/113/29/8168), Park et al. 2021 
@@ -100,7 +100,7 @@ Miscellaneous:
 * [The geometry of decision-making in individuals and collectives](https://www.pnas.org/content/118/50/e2102157118), Sridhar et al. 2021 
 * [The energetics of genome complexity](https://www.nature.com/articles/nature09486), Lane et al. 2010: by enabling oxidative phosphorylation across a wide area of internal membranes, mitochondrial genes enabled a roughly 200,000x rise in genome size compared with bacteria
 * [Cancer risk across mammals](https://www.nature.com/articles/s41586-021-04224-5), Vincze et al. 2021: [Peto’s Paradox](https://en.wikipedia.org/wiki/Peto%27s_paradox) — cancer mortality risk is largely independent of both body mass and adult life expectancy across species
-* [Osmosis is not driven by water dilution](https://www.cell.com/trends/plant-science/fulltext/S1360-1385(12)00252-X), Kramer et al. 2013 and [Five popular misconceptions about osmosis](https://aapt.scitation.org/doi/10.1119/1.4722325), Kramer et al. 2011: the “concentration gradient” model of osmosis is wrong; instead, on side without solute, whenever a particle hits a pore it goes through; on side with solute, solute that hit a pore bounce back (rejected by pore), small momentum away from membrane shared among all nearby molecules due to viscous interactions between solute and water
+* [Osmosis is not driven by water dilution](https://www.cell.com/trends/plant-science/fulltext/S1360-1385(12)00252-X), Kramer et al. 2013 and [Five popular misconceptions about osmosis](https://aapt.scitation.org/doi/10.1119/1.4722325), Kramer et al. 2011: the “concentration gradient” model of osmosis is wrong; instead, on side without solute, whenever a particle hits a pore it goes through; on side with solute, solute that hit a pore bounce back (rejected by pore), small momentum away from membrane shared among all nearby molecules due to viscous interactions between solute and water:
     ![](/images/2021-12-31-November-December-2021-News/image3.png)
 * [Individual quality: tautology or biological reality?](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.1365-2656.2010.01770.x), Bergeron et al. 2010
 
