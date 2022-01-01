@@ -46,7 +46,7 @@ highlighter: rouge
 
 pagination:
   enabled: false
-paginate: 10
+paginate: 30
 paginate_path: "/page:num/"
 
 markdown: Pandoc
