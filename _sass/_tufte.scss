@@ -5,6 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://db.onlinewebfonts.com/c/9fb1e7c5b973d399cb9f95667021667e?family=GT+America+Mono');
+@import url('https://db.onlinewebfonts.com/c/a2e28819ae70cc4bd989e51bb1d93a7a?family=Editor+Light');
+@import url('https://db.onlinewebfonts.com/c/f90d4035f1af61d4bc7155563c6793db?family=Editor+Medium');
 
 /* Import ET Book styles
    adapted from https://github.com/edwardtufte/et-book/blob/gh-pages/et-book.css */
@@ -19,6 +22,8 @@ html, html[data-theme="light"] {
      --selection-background-color: #000000;
      --selection-text-color: rgb(255, 255, 255, 0.99);
      --body-font-weight: 500;
+     --body-font-family: 'Editor Medium', serif;
+     --h1-font-weight: 900
 }
 
 html[data-theme="dark"] {
@@ -30,6 +35,8 @@ html[data-theme="dark"] {
      --selection-background-color: rgb(250, 250, 255, 0.99);
      --selection-text-color: rgb(0, 0, 0, 0.99);
      --body-font-weight: 400;
+     --body-font-family: 'Editor Light', serif;
+     --h1-font-weight: 800
 }
 
 /* Tufte CSS styles */
@@ -44,7 +51,7 @@ html {
           padding-right: 20px;
      }
      .vl {
-          height: 14px;
+          height: 13px;
           top: 11px;
      }
      .darkmode {
@@ -81,21 +88,21 @@ body { display: flex;
        background-color: var(--main-background-color);
        color: var(--main-text-color);
        font-size: 1rem;
-       font-family: 'Bitter', serif;
+       font-family: var(--body-font-family);
        font-weight: var(--body-font-weight);
        line-height: 1.5rem;
        min-height: 100%;
        text-align: justify; }
 
 h1 { font-family: 'Playfair Display', serif;
-     font-weight: 900;
+     font-weight: var(--h1-font-weight);
      margin-top: 4rem;
      margin-bottom: 1.5rem;
      font-size: 3rem;
      text-align: left;
      line-height: 1; }
 
-h2 { font-family: 'IBM Plex Serif', serif;
+h2 { font-family: 'Editor Medium', serif;
      font-weight: 600;
      margin-top: 2.5rem;
      margin-bottom: 1.4rem;

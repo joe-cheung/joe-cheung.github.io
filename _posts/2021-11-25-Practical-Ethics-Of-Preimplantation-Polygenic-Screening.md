@@ -43,7 +43,7 @@ One way to characterise the predictive power of PRS is that individuals with ver
 
 _[The increase in absolute risk with PRS percentile is rapid and nonlinear.](https://doi.org/10.1016/j.cell.2019.03.028)_
 
-PRS is already being translated into clinical use. For example, women with _BRCA1/2 _mutations are routinely offered early screening, of whom only about [1 in 1000](https://doi.org/10.1093/jnci/91.11.943) actually result in breast or ovarian cancer. A PRS for breast cancer risk has an odds ratio per unit standard deviation of [1.47](https://doi.org/10.1200/PO.19.00360) (95% CI, 1.45 to 1.49), an order of magnitude higher than the [predictive power](https://doi.org/10.1089/109065700316462) of BRCA1/2 gene mutations. Hence, PRS can inform risk stratification to guide disease surveillance.
+PRS is already being translated into clinical use. For example, women with _BRCA1/2_ mutations are routinely offered early screening, of whom only about [1 in 1000](https://doi.org/10.1093/jnci/91.11.943) actually result in breast or ovarian cancer. A PRS for breast cancer risk has an odds ratio per unit standard deviation of [1.47](https://doi.org/10.1200/PO.19.00360) (95% CI, 1.45 to 1.49), an order of magnitude higher than the [predictive power](https://doi.org/10.1089/109065700316462) of BRCA1/2 gene mutations. Hence, PRS can inform risk stratification to guide disease surveillance.
 
 ## Embryo Screening For Polygenic Disease Risk
 
