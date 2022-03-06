@@ -12,6 +12,9 @@
 /* Import ET Book styles
    adapted from https://github.com/edwardtufte/et-book/blob/gh-pages/et-book.css */
 
+@font-face {font-family: "Editor Medium"; src: url("//db.onlinewebfonts.com/t/f90d4035f1af61d4bc7155563c6793db.eot"); src: url("//db.onlinewebfonts.com/t/f90d4035f1af61d4bc7155563c6793db.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f90d4035f1af61d4bc7155563c6793db.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f90d4035f1af61d4bc7155563c6793db.woff") format("woff"), url("//db.onlinewebfonts.com/t/f90d4035f1af61d4bc7155563c6793db.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f90d4035f1af61d4bc7155563c6793db.svg#Editor Medium") format("svg"); }
+@font-face {font-family: "Editor Light"; src: url("//db.onlinewebfonts.com/t/a2e28819ae70cc4bd989e51bb1d93a7a.eot"); src: url("//db.onlinewebfonts.com/t/a2e28819ae70cc4bd989e51bb1d93a7a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a2e28819ae70cc4bd989e51bb1d93a7a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a2e28819ae70cc4bd989e51bb1d93a7a.woff") format("woff"), url("//db.onlinewebfonts.com/t/a2e28819ae70cc4bd989e51bb1d93a7a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a2e28819ae70cc4bd989e51bb1d93a7a.svg#Editor Light") format("svg"); }
+
 /* dark toggle */
 html, html[data-theme="light"] { 
 	--light-text-color: rgb(72, 72, 74);
