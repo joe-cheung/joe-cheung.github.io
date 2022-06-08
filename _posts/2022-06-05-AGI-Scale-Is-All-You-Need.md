@@ -288,7 +288,7 @@ In all the AGI timeline predictions, the professor is saying the sun will explod
 
 As [Kaplan](https://twitter.com/russelljkaplan/status/1513128007434530818?s=20&t=wUFpVKKFqOCtX3t8BwdevA) notes, all products for creators will have embedded intelligence from LLMs (Copilot in VSCode,  DALL·E 2 in Photoshop, GPT-3 in Google Docs); these companies will need to roll their own LLMs or pay a tax to OpenAI/DeepMind/Google.
 
-If you actually believe in AI risk, you should vote with your feet and work on AI safety. If you don’t, you should still pivot your career to work on AI as every successful tech company will use their data moats to build some variant of AGI. 
+If you actually believe in AI risk, you should vote with your feet and [work on AI safety](https://forum.effectivealtruism.org/posts/7WXPkpqKGKewAymJf/how-to-pursue-a-career-in-technical-ai-alignment). If you don’t, you should still pivot your career to work on AI as every successful tech company will use their data moats to build some variant of AGI. 
 
 ![](/images/2022-06-05-AGI-Scale-Is-All-You-Need/image20.png)
 
@@ -421,6 +421,7 @@ Neuroscience
 
 AI Safety
 
+* [How to pursue a career in technical AI alignment](https://forum.effectivealtruism.org/posts/7WXPkpqKGKewAymJf/how-to-pursue-a-career-in-technical-ai-alignment)
 * OpenPhil: [Some Background on Our Views Regarding Advanced Artificial Intelligence](https://www.openphilanthropy.org/blog/some-background-our-views-regarding-advanced-artificial-intelligence), [Potential Risks from Advanced Artificial Intelligence: The Philanthropic Opportunity](https://www.openphilanthropy.org/blog/potential-risks-advanced-artificial-intelligence-philanthropic-opportunity), [What Do We Know about AI Timelines?](https://www.openphilanthropy.org/focus/global-catastrophic-risks/potential-risks-advanced-artificial-intelligence/ai-timelines), and [How Much Computational Power Does It Take to Match the Human Brain?](https://www.openphilanthropy.org/brain-computation-report)
 * Future of Life Institute: ​​[AI Governance: A Research Agenda](https://www.fhi.ox.ac.uk/wp-content/uploads/GovAI-Agenda.pdf)
 * Machine Intelligence Research Institute: [Agent Foundations for Aligning Machine Intelligence with Human Interests: A Technical Research Agenda](https://intelligence.org/technical-agenda/)  
