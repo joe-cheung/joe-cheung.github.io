@@ -9,6 +9,8 @@ tags: AI finished
 wordcount: 5329
 ---
 
+_Basically notes on [Gwern's](https://www.gwern.net/Scaling-hypothesis) commentary on recent AI progress._
+
 The deep learning revolution started with [AlexNet](https://en.wikipedia.org/wiki/AlexNet) in 2012. Since then, more and more money is being poured into training larger and larger models:
 
 ![](/images/2022-06-05-AGI-Scale-Is-All-You-Need/image19.png)
