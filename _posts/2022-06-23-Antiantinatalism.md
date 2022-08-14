@@ -27,6 +27,9 @@ If you think most of contemporary academic philosophy is trivial, obscure semant
 
 Benatar was [profiled](https://www.newyorker.com/culture/persons-of-interest/the-case-for-not-being-born) by the New Yorker and [appeared](https://samharris.org/podcasts/107-life-actually-worth-living/) on Sam Harris' podcast. Anecdotally, antinatalist sentiments are on the rise, but if you look closer none of the arguments hold water.
 
+1. TOC
+{:toc}
+
 ## Universal A Priori Antinatalism
 
 I’ll try to steelman Benatar’s Asymmetry argument but the mental gymnastics he performs is almost as convoluted as Rawls'.
