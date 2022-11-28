@@ -1,8 +1,6 @@
 ---
 layout: about
 title: Bookshelf
-date: 2021-08-03 00:00:00
-wordcount: 8951
 ---
 
 Buying books and reading books are completely unrelated hobbies. Now that I have done the hoarding for you, you can focus on the latter.
