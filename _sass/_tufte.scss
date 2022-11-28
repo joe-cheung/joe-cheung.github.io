@@ -138,8 +138,8 @@ html[data-theme="dark"] {
      --link-color: hsl(46, 100%, 50%);
      --hover-link-color: rgb(255, 0, 170);
      --main-background-color: #121212;
-     --main-text-color: rgb(255, 255, 255, 0.87);
-     --selection-background-color: rgb(255, 255, 255, 0.87);
+     --main-text-color: rgba(255, 255, 255, 0.87);
+     --selection-background-color: rgba(255, 255, 255, 0.87);
      --selection-text-color: #121212;
      --body-font-weight: 300;
      --body-font-family: 'Editor', serif;
