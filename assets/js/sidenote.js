@@ -13,7 +13,7 @@ Sidenotes = {
 		is permitted between adjacent sidenotes; any less, and they are
 		considered to be overlapping.
 		*/
-	sidenoteSpacing: 60.0,
+	sidenoteSpacing: 10.0,
 
 	/*	This includes the border width.
 		*/

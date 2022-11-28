@@ -100,6 +100,7 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
 .iframe-wrapper { position: relative;
                   padding-bottom: 56.25%; /* 16:9 */
                   padding-top: 25px;
+                  padding-right: 0px;
                   height: 0; }
 
 .iframe-wrapper iframe { position: absolute;
