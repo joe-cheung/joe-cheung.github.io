@@ -14,7 +14,7 @@
      src: local('Editor Regular'), local('Editor-Regular'),
           url('Editor-Regular.eot?#iefix') format('embedded-opentype'),
           url('Editor-Regular.ttf') format('truetype');
-     font-weight: normal;
+     font-weight: 400;
      font-style: normal;
 }
 
@@ -124,23 +124,23 @@ html[data-theme="light"] {
      --light-text-color: rgb(72, 72, 74);
      --link-color: rgb(255, 145, 0);
      --hover-link-color: rgb(132, 0, 255);
-     --main-background-color: #fffcf8;
-     --main-text-color: #111111;
-     --selection-background-color: #111111;
-     --selection-text-color: #fffcf8;
-     --body-font-weight: normal;
+     --main-background-color: rgb(255, 253, 250);
+     --main-text-color: rgb(18, 18, 18);
+     --selection-background-color: rgb(18, 18, 18);
+     --selection-text-color: rgb(255, 252, 248);
+     --body-font-weight: 400;
      --body-font-family: 'Editor', serif;
      --h1-font-weight: 900;
 }
 
 html[data-theme="dark"] {
      --light-text-color: rgb(255, 255, 255);
-     --link-color: hsl(46, 100%, 50%);
+     --link-color: rgb(255, 196, 0);
      --hover-link-color: rgb(255, 0, 170);
-     --main-background-color: #121212;
+     --main-background-color: rgb(18, 18, 18);
      --main-text-color: rgba(255, 255, 255, 0.87);
      --selection-background-color: rgba(255, 255, 255, 0.87);
-     --selection-text-color: #121212;
+     --selection-text-color: rgb(18, 18, 18);
      --body-font-weight: 300;
      --body-font-family: 'Editor', serif;
      --h1-font-weight: 800;
@@ -150,6 +150,7 @@ html[data-theme="dark"] {
 html {
      font-size: 12px;
      height: 100%;
+     background-color: var(--main-background-color);
 }
 
 @media screen and (min-width: 708px) {
@@ -207,7 +208,6 @@ body {
      display: flex;
      flex-direction: column;
      margin: 0;
-     background-color: var(--main-background-color);
      color: var(--main-text-color);
      font-size: 1rem;
      font-family: var(--body-font-family);
