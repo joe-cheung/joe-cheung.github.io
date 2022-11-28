@@ -11,7 +11,7 @@ wordcount: 1809
 
 _Warning: mentions suicide, may trigger existential crisis._
 
-There is but one truly serious philosophical problem and that is suicide.
+> There is but one truly serious philosophical problem and that is suicide.
 
 <p style="text-align: right">
 - Albert Camus</p>

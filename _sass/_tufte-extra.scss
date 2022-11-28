@@ -16,7 +16,10 @@ body { max-width: 1440px; }
 /**
  * Makes it so that top-level <p> don't need to be wrapped in <section>
  */
-article > p {
+article>p,
+article>li,
+article>footer,
+article>table {
   width: 100%;
 }
 
