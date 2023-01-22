@@ -3,6 +3,10 @@ layout: about
 title: About
 ---
 
+> Wovon man nicht sprechen kann, darüber muss man schweigen.
+<p style="text-align: right">
+- Wittgenstein</p>
+
 This is a blog by Joe Cheung. I write about medicine, biology, science, technology, ethics, economics, and politics.
 
 ![](/images/sistersarahwriting.jpeg)
