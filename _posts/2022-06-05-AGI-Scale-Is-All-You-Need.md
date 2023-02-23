@@ -6,16 +6,24 @@ update:
 author: Joe Cheung
 description:
 tags: AI finished
-wordcount: 5329
+wordcount: 5562
 ---
 
-_Basically notes on [Gwern's](https://www.gwern.net/Scaling-hypothesis) commentary on recent AI progress._
+_Heavily borrowed from [Gwern's](https://www.gwern.net/Scaling-hypothesis) commentary on recent AI progress._
 
-The deep learning revolution started with [AlexNet](https://en.wikipedia.org/wiki/AlexNet) in 2012. Since then, more and more money is being poured into training larger and larger models:
+> The best answer to the question, "Will computers ever be as smart as humans?” is probably “Yes, but only briefly.”
+<p style="text-align: right">
+- Vernor Vinge </p>
 
-![](/images/2022-06-05-AGI-Scale-Is-All-You-Need/image19.png)
+The release of GPT-3 two years ago marked the arrival of relatively narrow artifical general intelligence (AGI).
 
-_[Most of the increase in compute has been companies willing to pay more rather than algorithmic or hardware progress.](https://www.economist.com/technology-quarterly/2020/06/11/the-cost-of-training-machines-is-becoming-a-problem)_
+In just the past two months, ever larger AI models demonstrate the *blessing of scale*, where simply scaling existing architecture vaporises problems thought to be inherent to simple neural networks, and "learns" new capabilities believed to require novel, complicated architectures, without being programmed to learn them. As we ride this exponential, we will only continue to be surprised by the intelligence and generality of each bigger model.
+
+Right now, AI is already better than most of humanity in producing prose, poetry, and programmes; already better than most of humanity in casual thinking. Per William Gibson, the future is already here  — it's just not evenly distributed. [Hard problems are easy and the easy problems are hard](https://en.wikipedia.org/wiki/Moravec%27s_paradox). Right in front of our eyes, the artist is made obsolete before the bricklayer.
+
+The blessing of scale suggests that merely throwing more computing power into training AI models will produce machine superintelligence that can beat any human and the entire human civilsiation at *all congnitive tasks*. Just like how it's impossible for Magnus Carlsen to beat any existing chess engine, it will be impossible for any of us to beat superhuman AGI.
+
+We are all going to die.
 
 1. TOC
 {:toc}
@@ -93,6 +101,12 @@ If GPT-3 gained so much meta-learning and world knowledge by dropping its absolu
 Thus, the [scaling hypothesis](https://www.gwern.net/Scaling-hypothesis#scaling-hypothesis): the blessings of scale as the secret of [artificial general intelligence](https://en.wikipedia.org/wiki/Artificial_general_intelligence) (AGI) — intelligence is “just” simple NNs applied to diverse experiences at a (currently) unreachable [scale](https://www.lesswrong.com/posts/xwBuoE9p8GE7RAuhd/brain-efficiency-much-more-than-you-wanted-to-know); as increasing computational resources permit running such algorithms at the necessary scale, NNs will get ever more intelligent.
 
 ## Slowly At First, Then All At Once
+
+The deep learning revolution started with [AlexNet](https://en.wikipedia.org/wiki/AlexNet) in 2012. Since then, computing power used in training AI systems has been doubling every 3.4 months:
+
+![](/images/2022-06-05-AGI-Scale-Is-All-You-Need/image19.png)
+
+_[Most of the increase in compute has been companies willing to pay more rather than algorithmic or hardware progress.](https://www.economist.com/technology-quarterly/2020/06/11/the-cost-of-training-machines-is-becoming-a-problem)_
 
 Even in 2015, the scaling hypothesis seemed highly dubious — you needed something to scale, after all, and it was all too easy to imagine flaws in existing systems would never go away, and progress would sigmoid any month now. Like the genomics revolution where a few far-sighted seers extrapolated that the necessary _n_ for GWASes would increase exponentially and deliver powerful polygenic scores soon (which I [wrote about](https://subcriticalappraisal.com/2021/Practical-Ethics-Of-Preimplantation-Polygenic-Screening/)), while sober experts wrung their hands over “missing heritability” and the miraculous complexity of biology to scoff about how such _n_ requirements proved GWAS was a failed paradigm, the future arrived at first slowly and then quickly.
 
@@ -221,6 +235,10 @@ Constantin again:
 > The mental motion of “I didn’t really parse that paragraph, but sure, whatever, I’ll take the author’s word for it” is, in my introspective experience, absolutely identical to “I didn’t really parse that paragraph because it was bot-generated and didn’t make any sense so I couldn’t possibly have parsed it”, except that in the first case, I assume that the error lies with me rather than the text.  This is not a safe assumption in a post-GPT2 world. Instead of “default to humility” (assume that when you don’t understand a passage, the passage is true and you’re just missing something) the ideal mental action in a world full of bots is “default to null” (if you don’t understand a passage, assume you’re in the same epistemic state as if you’d never read it at all.)
 
 ## The Singularity Is Nigh
+
+> The AI neither hates you, nor loves you, but you are made out of atoms that it can use for something else.
+<p style="text-align: right">
+- Eliezer Yudkowsky</p>
 
 In _[The Precipice](https://www.goodreads.com/en/book/show/50485582-the-precipice)_, the definitive book on existential risks, Toby Ord ranks unaligned artificial intelligence as _the_ greatest risk to humanity’s potential in the next century. 
 
@@ -406,6 +424,7 @@ Implicit meta-learning
 
 ML Scaling
 
+* Gwern's[The Scaling Hypothesis](https://gwern.net/scaling-hypothesis) and his[up-to-date bibliography of ML scaling papers](https://gwern.net/note/scaling)
 * ​​[Understanding the generalization of 'lottery tickets' in neural networks](https://ai.facebook.com/blog/understanding-the-generalization-of-lottery-tickets-in-neural-networks/), Morcos et al. 2019
 * [Bayesian Deep Learning and a Probabilistic Perspective of Generalization](https://www.gwern.net/docs/www/arxiv.org/aea56633ef88d71aadfb45b62bb1a218cda38102.pdf), Wilson et al. 2020
 * [On Linear Identifiability of Learned Representations](https://www.gwern.net/docs/www/arxiv.org/98ad3320bdb3cbab2681220ed6b4dc44c455f14d.pdf#google), Roeder et al. 2020
