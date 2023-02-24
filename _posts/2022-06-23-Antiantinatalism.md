@@ -9,7 +9,7 @@ tags: philosophy finished
 wordcount: 1809
 ---
 
-_Warning: mentions suicide, may trigger existential crisis._
+_Warning: mentions suicide, may trigger existential crisis. Straussian._
 
 > There is but one truly serious philosophical problem and that is suicide.
 
@@ -103,9 +103,9 @@ Even granting Benatar’s argument, an empirical assessment of his claims is unn
 
 ![](/images/2022-06-23-Antiantinatalism/image1.png)
 
-The preferentist approach is more reliable — it is very hard to judge another person’s wellbeing, and the best judge is themselves. Fellow antinatalist David Pearce [supports](https://www.hedweb.com/negutil.htm) a version of lexical threshold NU because of his sense of horror at Auschwitz. However, even people in such unfathomable extremes of suffering like [Viktor Frankl](https://en.wikipedia.org/wiki/Viktor_Frankl) believed that life was worth living.
+The preferentist approach is more reliable — it is very hard to judge another person’s wellbeing, and the best judge is themselves. Antinatalist David Pearce [supports](https://www.hedweb.com/negutil.htm) a version of lexical threshold NU because of his sense of horror at Auschwitz. However, even people in such unfathomable extremes of suffering like [Viktor Frankl](https://en.wikipedia.org/wiki/Viktor_Frankl) believed that life was worth living. It's best not to go up to Frankl and tell him "actually you were wrong you should have given up and died."
 
-Perry argues that the “extreme uncertainty” in predicting whether a given life would be good or not should counsel against reproduction, but in practice, every typical childless couple rely on such predictions. Perhaps they know they will be bad parents, or they are in extreme poverty, or they have [Huntington’s](https://en.wikipedia.org/wiki/Huntington%27s_disease#Inheritance) (if either parent has two disease alleles, the risk is 100%), or they know they will die before their child reaches adulthood (due to old age or cancer). I suspect most childless couples would not think other couples who decide to bear children to be unethical. In any case, Perry relies on an [incoherent](https://en.wikipedia.org/wiki/Precautionary_principle#The_precautionary_dilemma) _strong_ precautionary principle that falls short of the core antinatalist assertion that _no_ life is worth living.
+Perry argues that the “extreme uncertainty” in predicting whether a given life would be good or not should counsel against reproduction, but in practice, every typical childless couple rely on such predictions. Perhaps they know they will be bad parents, or they find themselves in bankruptcy, or they have [Huntington’s](https://en.wikipedia.org/wiki/Huntington%27s_disease#Inheritance) (if either parent has two disease alleles, the risk is 100%), or they know they will die before their child reaches adulthood (due to old age or cancer). As Paul Kalanithi writes in *[When Breath Becomes Air](https://www.goodreads.com/book/show/25899336-when-breath-becomes-air)*, he and his wife decided to have a child despite his stage IV metastatic lung cancer diagnosis. I suspect most childless couples would not think other couples who decide to bear children to be unethical. In any case, Perry relies on an [incoherent](https://en.wikipedia.org/wiki/Precautionary_principle#The_precautionary_dilemma) _strong_ precautionary principle that proves inadequte in asserting the core antinatalist notion that _no_ life is worth living.
 
 ## To Be Or Not To Be, That Is The Question
 

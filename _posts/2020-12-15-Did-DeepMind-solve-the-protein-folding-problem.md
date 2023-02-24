@@ -8,10 +8,7 @@ description:
 tags: science AI
 wordcount: 8408
 ---
-*[Epistemic status: I have no expertise, but below is my best guess from what I have read so far, mostly relying on AlQuraishi's excellent [<span class="underline">essay</span>](https://moalquraishi.wordpress.com/2020/12/08/alphafold2-casp14-it-feels-like-ones-child-has-left-home/). The first half of this post will be kind of a literature review on the protein structure prediction, and the second half is a bit of a rehash of AlQuraishi’s essay, so post will serve as a companion piece of sorts to help you understand the background of the problem better if you’re a layman like me.]*
-
-1. TOC
-{:toc}
+*Epistemic status: I have no expertise, but below is my best guess from what I have read so far, mostly relying on AlQuraishi's excellent [<span class="underline">essay</span>](https://moalquraishi.wordpress.com/2020/12/08/alphafold2-casp14-it-feels-like-ones-child-has-left-home/). The first half of this post will be kind of a literature review on the protein structure prediction, and the second half is a bit of a rehash of AlQuraishi’s essay, so post will serve as a companion piece of sorts to help you understand the background of the problem better if you’re a layman like me.*
 
 ![](/images/2020-12-17-Did-DeepMind-solve-the-protein-folding-problem/image2.png)
 *[<span class="underline">Obligatory XKCD</span>](https://xkcd.com/1430/)*
@@ -28,6 +25,9 @@ Is the hype for real?[^7] Mohammed AlQuraishi, a computational biologist at Colu
 As if it wasn’t hyperbolic to describe this moment to be protein structure prediction’s [<span class="underline">ImageNet</span>](https://www.wikiwand.com/en/ImageNet) moment like some have, AlQuraishi said,
 
   > “It is more akin to having the ImageNet accuracies of 2020 in 2012\! A seismic and unprecedented shift so profound it literally turns a field upside down over night.”
+
+1. TOC
+{:toc}
 
 ## But Why?
 

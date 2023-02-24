@@ -9,15 +9,16 @@ tags: cryptography finished
 wordcount: 2522
 ---
 
-1. TOC
-{:toc}
-
-## Overview
-
 For two decades now, [lead](https://en.wikipedia.org/wiki/Lead%E2%80%93crime_hypothesis) has been very strongly suspected of causing crime. 
 
 ![](/images/2021-08-21-Lead-Crime/image10.png)
 
+Does it hold up?
+
+1. TOC
+{:toc}
+
+## Overview
 A [2000 paper](http://www.ricknevin.com/uploads/Nevin_2000_Env_Res_Author_Manuscript.pdf) found that if you add a lag time of 23 years, lead emissions from automobiles explained 90% of the variation in violent crime in the US. A [2007 paper](https://pic.plover.com/Nevin/Nevin2007.pdf) found more or less the same effect in Great Britain, Australia, New Zealand, Finland, France, Italy, and West Germany:
 
 ![](/images/2021-08-21-Lead-Crime/image2.png)

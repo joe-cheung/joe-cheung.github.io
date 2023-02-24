@@ -9,21 +9,21 @@ tags: AI finished
 wordcount: 5562
 ---
 
-_Heavily borrowed from [Gwern's](https://www.gwern.net/Scaling-hypothesis) commentary on recent AI progress._
+_Mostly rehash of [Gwern's](https://www.gwern.net/Scaling-hypothesis) commentary on recent AI progress._
 
 > The best answer to the question, "Will computers ever be as smart as humans?” is probably “Yes, but only briefly.”
 <p style="text-align: right">
 - Vernor Vinge </p>
 
-The release of GPT-3 two years ago marked the arrival of relatively narrow artifical general intelligence (AGI).
+The release of GPT-3 two years ago marked the arrival of relatively narrow or "weak" artifical general intelligence (AGI).
 
-In just the past two months, ever larger AI models demonstrate the *blessing of scale*, where simply scaling existing architecture vaporises problems thought to be inherent to simple neural networks, and "learns" new capabilities believed to require novel, complicated architectures, without being programmed to learn them. As we ride this exponential, we will only continue to be surprised by the intelligence and generality of each bigger model.
+In just the past two months, ever larger AI models demonstrate the *blessing of scale*, where simply scaling existing architecture vaporises problems thought to be inherent to simple architectures, and "learns" new cognitive abilities believed to require bespoke, complicated architectures, without being programmed to learn them. As we ride this exponential, we will only continue to be surprised by the intelligence and generality of each bigger model.
 
-Right now, AI is already better than most of humanity in producing prose, poetry, and programmes; already better than most of humanity in casual thinking. Per William Gibson, the future is already here  — it's just not evenly distributed. [Hard problems are easy and the easy problems are hard](https://en.wikipedia.org/wiki/Moravec%27s_paradox). Right in front of our eyes, the artist is made obsolete before the bricklayer.
+Right now, AI is already better than most of humanity in producing prose, poetry, and programmes; better than most of humanity in casual thinking. Per William Gibson, the future is already here  — it's just not evenly distributed. [Hard problems are easy and the easy problems are hard](https://en.wikipedia.org/wiki/Moravec%27s_paradox). The artist is made obsolete before the bricklayer, right in front of our eyes.
 
-The blessing of scale suggests that merely throwing more computing power into training AI models will produce machine superintelligence that can beat any human and the entire human civilsiation at *all congnitive tasks*. Just like how it's impossible for Magnus Carlsen to beat any existing chess engine, it will be impossible for any of us to beat superhuman AGI.
+The blessing of scale suggests that merely throwing more computing power into training AI models will produce machine superintelligence that can beat any human and the entire human civilisation at *all congnitive tasks*. Just as it's impossible for Magnus Carlsen to beat any chess engine, it will be impossible for any of us to beat superhuman AGI.
 
-We are all going to die.
+We're all gonna die.
 
 1. TOC
 {:toc}
@@ -87,7 +87,7 @@ Language model performance can be measured by how many bits it takes to convey a
 
 It still won’t be near the natural language performance of humans who (in [ASCII](https://en.wikipedia.org/wiki/ASCII)) use a byte to express a full [7 bits](https://www.gwern.net/Differences#efficient-natural-languages) of information i.e. Shannon’s [7-gram character entropy](https://thegradient.pub/understanding-evaluation-metrics-for-language-models/) (0.7 BPC).
 
-What is in that missing >0.4? _Everything!_ While random babbling sufficed at the start, nothing short of true understanding will suffice for ideal prediction. _The last bits are deepest._ Analogous to humans: we all perform everyday actions like buttoning our shirts well given enough practice and feedback, but we differ when we run into the long tail of choices that are:
+What is in that missing >0.4 BPC? _Everything!_ While random babbling sufficed at the start, nothing short of true understanding will suffice for ideal prediction. _The last bits are deepest._ Analogous to humans: we all perform everyday actions like buttoning our shirts well given enough practice and feedback, but we differ when we run into the long tail of choices that are:
 
 1. Novel
 2. Rare
@@ -118,7 +118,7 @@ In August 2021, Stanford’s entire AI department released a 200-page 100-author
 
 _[Google's 540 billion parameter PaLM is the right-most, up-most dot](https://ourworldindata.org/grapher/ai-training-computation?time=2017-08-04..2022-07-01)_. 
 
-In just the past two months, we saw bigger and bigger models like DeepMind’s 80B-parameter [Flamingo](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/tackling-multiple-tasks-with-a-single-visual-language-model/flamingo.pdf) ([paper](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/tackling-multiple-tasks-with-a-single-visual-language-model/flamingo.pdf)), Robotics at Google and Everyday Robots (also Alphabet-owned)’s [SayCan](https://say-can.github.io/) ([paper](https://arxiv.org/abs/2204.01691)), and Robotics at Google’s [Socratic Models](https://socraticmodels.github.io/) ([paper](https://arxiv.org/abs/2204.00598)). Below I highlight the most blockbusting five.
+In just the past two months, we saw bigger and bigger models like DeepMind’s 80B-parameter [Flamingo](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/tackling-multiple-tasks-with-a-single-visual-language-model/flamingo.pdf) ([paper](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/tackling-multiple-tasks-with-a-single-visual-language-model/flamingo.pdf)), Robotics at Google and Everyday Robots (also Alphabet-owned)’s [SayCan](https://say-can.github.io/) ([paper](https://arxiv.org/abs/2204.01691)), and Robotics at Google’s [Socratic Models](https://socraticmodels.github.io/) ([paper](https://arxiv.org/abs/2204.00598)). Below I highlight the most blockbusting five. Again, it's just the past two months!
 
 #### Google AI’s 540B-parameter PaLM 
 
@@ -204,19 +204,19 @@ We live in a timeline in which the final breakthrough that precipitates AGI coul
 
 ## Technological Unemployment Is Already Here
 
-[Technological unemployment](https://en.wikipedia.org/wiki/Technological_unemployment#:~:text=A%20contemporary%20example%20of%20technological,unemployment%20has%20long%20been%20controversial.) is a very complex issue. Normal people [worry](https://slatestarcodex.com/2018/02/19/technological-unemployment-much-more-than-you-wanted-to-know/) about technological unemployment.  Economists like [Bryan Caplan](https://www.econlib.org/technological-unemployment-a-self-test/), [Robin Hanson](https://www.overcomingbias.com/2009/10/take-both-econ-tech-seriously.html), [Tyler Cowen](https://marginalrevolution.com/marginalrevolution/2009/10/noah-stoffman-asks-me-two-questions.html), and [Arnold Kling](https://www.econlib.org/archives/2009/10/the_singularity.html) keep telling them to relax, but LLMs since GPT-3 should make them rethink. From [AlphaZero](https://www.deepmind.com/blog/alphazero-shedding-new-light-on-chess-shogi-and-go), we can see that there is no chance any useful man+machine combination will work together for more than a few years, as humans soon will be only a liability. Humans need not apply.
+[Technological unemployment](https://en.wikipedia.org/wiki/Technological_unemployment#:~:text=A%20contemporary%20example%20of%20technological,unemployment%20has%20long%20been%20controversial.) is a very complex issue. Normal people [worry](https://slatestarcodex.com/2018/02/19/technological-unemployment-much-more-than-you-wanted-to-know/) about technological unemployment.  Economists like [Bryan Caplan](https://www.econlib.org/technological-unemployment-a-self-test/), [Robin Hanson](https://www.overcomingbias.com/2009/10/take-both-econ-tech-seriously.html), [Tyler Cowen](https://marginalrevolution.com/marginalrevolution/2009/10/noah-stoffman-asks-me-two-questions.html), and [Arnold Kling](https://www.econlib.org/archives/2009/10/the_singularity.html) keep telling them to relax, but LLMs since GPT-3 should make them rethink. From [AlphaZero](https://www.deepmind.com/blog/alphazero-shedding-new-light-on-chess-shogi-and-go), we can see that there is no chance any useful man+machine combination will work together for more than a few years, as humans will soon be a liability only. Humans need not apply.
 
 This time is different: before, the machines began handling brute force tasks and replacing things that offered only brute force and not intelligence like horses or watermills. It’s clear that the machines are now slowly absorbing intelligence — the final province of humans. Machines switched from being complements to being substitutes in some [sectors](https://www.theatlantic.com/magazine/archive/2012/01/making-it-in-america/308844/?single_page=true) a while ago. Humans need not apply.
 
 During the various panics and busts in the past centuries, there were huge disemployment effects as companies were forced to automate, but the people were able to switch sectors or find new jobs. The trucking industry alone employs [3%](https://en.wikipedia.org/wiki/Trucking_industry_in_the_United_States#Economic_impact) of the entire American population, and how many of those employees are skilled operations research PhDs who can easily find employment elsewhere in logistics? Imagine a kid with an IQ of 70, his Ricardian comparative advantage doesn’t guarantee there’s anything worth hiring him for (even laundry has gotten [harder](http://online.wsj.com/article/SB10001424052702304410504575560552064806106.html)). Humans need not apply.
 
-We live in a world where in some cases we would not hire someone at any price. One video of an employee spitting in customer's food can go viral and do more damage to a chain's sales than that employee would earn for the chain in a hundred years. One person in an [o-ring process](https://en.wikipedia.org/wiki/O-ring_theory_of_economic_development) can do an incredible amount of damage if they are only slightly subpar; to continue the NASA analogy, one loose bolt can cost [$135 million](https://en.wikipedia.org/wiki/NOAA-19#Damage_during_manufacture), one young inexperienced technician can cost [$200 million](http://www.russianspaceweb.com/proton_glonass49.html#culprit). We just have to calculate the expected-value of reducing the number of such incidents by even 0.01%. Humans need not apply.
+We live in a world where in some cases we would not hire someone at any price. One person in an [o-ring process](https://en.wikipedia.org/wiki/O-ring_theory_of_economic_development) can do an incredible amount of damage if they are only slightly subpar; to continue the NASA analogy, one loose bolt can cost [$135 million](https://en.wikipedia.org/wiki/NOAA-19#Damage_during_manufacture), one young inexperienced technician can cost [$200 million](http://www.russianspaceweb.com/proton_glonass49.html#culprit). We just have to calculate the expected-value of reducing the number of such incidents by even 0.01%. Humans need not apply.
 
 ## Frankfurtian Bullshit In A Post-GPT-3 World
 
-As Sarah Constantin [writes](https://srconstantin.wordpress.com/2019/02/25/humans-who-are-not-concentrating-are-not-general-intelligences/), humans who are not concentrating are not general intelligences. Unless you make an effort to read carefully, you probably cannot detect any mistakes in GPT-3’s [nonfiction](https://www.gwern.net/GPT-3-nonfiction) upon skimming — OpenAI has achieved the ability to pass the [Turing test](https://en.wikipedia.org/wiki/Turing_test) against humans on autopilot.
+As Sarah Constantin [writes](https://srconstantin.wordpress.com/2019/02/25/humans-who-are-not-concentrating-are-not-general-intelligences/), humans who are not concentrating are not general intelligences. Unless you make an effort to to read carefully, you probably cannot detect any mistakes in GPT-3’s [nonfiction](https://www.gwern.net/GPT-3-nonfiction) upon skimming. Try for yourself. Notice how hard you have to pay attention to to pick up any mistakes. In a post-GPT-3 world, can you bring yourself to to read everything with that level of care? How many times have I repeated the word "to" in this paragraph alone without you noticing? What about articles on topics you don't have any expertise in? GPT-induced [Gell-Mann amnesia](https://www.epsilontheory.com/gell-mann-amnesia/) is going to fry your brain. OpenAI has achieved the ability to pass the [Turing test](https://en.wikipedia.org/wiki/Turing_test) against humans on autopilot.
 
-As Robin Hanson [notes](https://www.overcomingbias.com/2017/03/better-babblers.html), and I don’t think he’s exaggerating, that a lot of human speech is just babbling — simply linking words and sentences statistically likely to come after the next, not unlike GPT-3. The median student learns a set of low order correlations, but if you ask an exam question probing a deep structure answer, most students give the wrong answer. These low order correlations also seem sufficient to capture most polite conversation talk (e.g. the weather is nice, how is your mother’s illness, and damn that other political party), inspirational TED talks, and when podcast guests pontificate on topics they really don’t understand (e.g. quantum mechanics, consciousness, postmodernism, or the need always for more regulation everywhere).
+As Robin Hanson [writes](https://www.overcomingbias.com/2017/03/better-babblers.html), a lot of human speech is just babbling — simply linking words and sentences statistically likely to come after the next, not unlike GPT-3. The median student learns a set of low order correlations, but if you ask an exam question probing a deep structure answer, most students give the wrong answer. These low order correlations also seem sufficient to capture most polite conversation talk (e.g. the weather is nice, how is your mother’s illness, and damn that other political party), inspirational TED talks, and when podcast guests pontificate on topics they really don’t understand (e.g. quantum mechanics, consciousness, postmodernism, or the need always for more regulation everywhere).
 
 What unites the GPT-3 and its cousins is an unflagging enthusiasm to render whatever’s been requested, no matter how absurd or overwrought — they are fundamentally [Frankfurtian bullshitters](http://www2.csudh.edu/ccauthen/576f12/frankfurt__harry_-_on_bullshit.pdf):
 
@@ -251,13 +251,6 @@ Ord explains the high number for such a speculative risk:
 > In the case of artificial intelligence, everyone agrees the evidence and arguments are far from watertight, but the question is where does this leave us? Very roughly, my approach is to start with the overall view of the expert community that there is something like a 1 in 2 chance that AI agents capable of outperforming humans in almost every task will be developed in the coming century. And conditional on that happening, we shouldn’t be shocked if these agents that outperform us across the board were to inherit our future.
 
 Read Gwern’s (fictional) [It Looks Like You're Trying To Take Over The World](https://www.gwern.net/fiction/Clippy) to imagine a [hard takeoff](https://en.wikipedia.org/wiki/Technological_singularity#Hard_vs._soft_takeoff) scenario using solely known sorts of NN and ⁠scaling effects. Then read [AGI Ruin: A List of Lethalities](https://www.lesswrong.com/posts/uMQ3cqWDPHhjtiesc/agi-ruin-a-list-of-lethalities) in which Eliezer Yudkowsky, for the first time publicly, explains what he spent the last several years doing (and he is pessimistic).
-
-Richard Ngo on [AGI safety from first principles](https://www.alignmentforum.org/s/mzgtmmTKKn5MuCzFJ/p/8xRSjC76HasLnMGSf):
-
-1. We’ll build AIs which are much more intelligent than humans; that is, much better than humans at using generalisable cognitive skills to understand the world.
-2. Those AGIs will be autonomous agents which pursue long-term, large-scale goals, because goal-directedness is reinforced in many training environments, and because those goals will sometimes generalise to be larger in scope.
-3. Those goals will by default be misaligned with what we want, because our desires are complex and nuanced, and our existing tools for shaping the goals of AIs are inadequate.
-4. The development of autonomous misaligned AGIs would lead to them gaining control of humanity’s future, via their superhuman intelligence, technology and coordination - depending on the speed of AI development, the transparency of AI systems, how constrained they are during deployment, and how well humans can cooperate politically and economically. 
 
 What are some concrete problems in AI safety? Fom [Amodei et al. 2016](https://arxiv.org/abs/1606.06565), take a robot that cleans up messes in an office using common cleaning tools as an example:
 
@@ -424,7 +417,7 @@ Implicit meta-learning
 
 ML Scaling
 
-* Gwern's[The Scaling Hypothesis](https://gwern.net/scaling-hypothesis) and his[up-to-date bibliography of ML scaling papers](https://gwern.net/note/scaling)
+* Gwern's [The Scaling Hypothesis](https://gwern.net/scaling-hypothesis) and his [up-to-date bibliography of ML scaling papers](https://gwern.net/note/scaling)
 * ​​[Understanding the generalization of 'lottery tickets' in neural networks](https://ai.facebook.com/blog/understanding-the-generalization-of-lottery-tickets-in-neural-networks/), Morcos et al. 2019
 * [Bayesian Deep Learning and a Probabilistic Perspective of Generalization](https://www.gwern.net/docs/www/arxiv.org/aea56633ef88d71aadfb45b62bb1a218cda38102.pdf), Wilson et al. 2020
 * [On Linear Identifiability of Learned Representations](https://www.gwern.net/docs/www/arxiv.org/98ad3320bdb3cbab2681220ed6b4dc44c455f14d.pdf#google), Roeder et al. 2020

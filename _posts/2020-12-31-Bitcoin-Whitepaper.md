@@ -9,10 +9,7 @@ tags: cryptocurrency
 wordcount: 4019
 ---
 
-*\[Epistemic status: just trying to understand the Bitcoin whitepaper. The first 12 headings correspond to the parts in the whitepaper. My investment advice would be to invent a time machine to beat Satoshi. [Eliezer Yudkowsky](https://www.facebook.com/yudkowsky/posts/10156147605134228) on Bitcoin as [Pascal's mugging](https://en.wikipedia.org/wiki/Pascal%27s_mugging), "If you can't manage to not regret having not bought Bitcoin even though you knew about it when it was $1, you shouldn't ever buy anything except index funds because you are not psychologically suited to survive investing."\]*
-
-1. TOC
-{:toc}
+*Epistemic status: just trying to understand the Bitcoin whitepaper. The first 12 headings correspond to the parts in the whitepaper. My investment advice would be to invent a time machine to beat Satoshi. [Eliezer Yudkowsky](https://www.facebook.com/yudkowsky/posts/10156147605134228) on Bitcoin as [Pascal's mugging](https://en.wikipedia.org/wiki/Pascal%27s_mugging): if you can't manage to not regret having not bought Bitcoin even though you knew about it when it was $1, you shouldn't ever buy anything except index funds because you are not psychologically suited to survive investing.*
 
 Inspired by Ben Reinhardt’s [Seminal Paper Club](https://benjaminreinhardt.com/seminal-paper-club/), I wanted to read more seminal papers starting with Satoshi Nakamoto’s Bitcoin whitepaper [*<span class="underline">Bitcoin: A Peer-to-Peer Electronic Cash System</span>*](https://bitcoin.org/bitcoin.pdf). It’s surprisingly short (9 pages) and readable, definitely recommended.
 
@@ -31,6 +28,10 @@ Key dates:
 [*<span class="underline">Bitcoin's Genesis Block</span>*](https://iterative.capital/section-ii/)
 
 Embedded in the coinbase was “[<span class="underline">The Times 03/Jan/2009 Chancellor on brink of second bailout for banks.</span>](https://www.thetimes.co.uk/article/chancellor-alistair-darling-on-brink-of-second-bailout-for-banks-n9l382mn62h)” A comment on the instability caused by [fractional-reserve banking](https://en.wikipedia.org/wiki/Fractional-reserve_banking) as seen in [quantitative easing](https://en.wikipedia.org/wiki/Quantitative_easing) since the [2008 Financial Crisis](https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008).
+
+
+1. TOC
+{:toc}
 
 ## Introduction
 

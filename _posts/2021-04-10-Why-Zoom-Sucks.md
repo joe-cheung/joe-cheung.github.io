@@ -8,7 +8,7 @@ description:
 tags: software finished
 wordcount: 1843
 ---
-_[This was written in lockdown, before I had my 2 doses, so bear with me.]_
+_This was written in lockdown, before I had my 2 doses, so bear with me._
 
 Even when Zoom works, it sucks.
 

@@ -9,12 +9,12 @@ tags: philosophy sociology charity
 wordcount: 628
 ---
 
-*[This is sort of an appendix to my [post](https://subcriticalappraisal.com/2020/Did-DeepMind-solve-the-protein-folding-problem/) about DeepMind protein structure prediction. Epistemic status: not too sure, just doing the back-of-the-envelope with more up-to-date numbers.]*
+*This is sort of an appendix to my [post](https://subcriticalappraisal.com/2020/Did-DeepMind-solve-the-protein-folding-problem/) about DeepMind protein structure prediction. Epistemic status: not too sure, just doing the back-of-the-envelope with more up-to-date numbers.*
+
+This is an update of Gwern's [cost-benefit analysis](https://www.gwern.net/Charity-is-not-about-helping) of Folding@home (FAH) which made the case that distributed computing is harmful as scientific [lemon](https://www.wikiwand.com/en/The_Market_for_Lemons) projects running at high resource cost.
 
 1. TOC
 {:toc}
-
-This is an update of Gwern's [cost-benefit analysis](https://www.gwern.net/Charity-is-not-about-helping) of Folding@home (FAH) which made the case that distributed computing is harmful as scientific [lemon](https://www.wikiwand.com/en/The_Market_for_Lemons) projects running at high resource cost.
 
 ## Charitable Supercomputer
 

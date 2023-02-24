@@ -8,7 +8,8 @@ description:
 tags: software cryptography finished
 wordcount: 1843
 ---
-_[I declare no conflict of interest. I’m just a happy user of Bitwarden and Authy; they’re free anyway.]_
+_I declare no conflict of interest. I’m just a happy user of Bitwarden and Authy (they’re free anyway)._
+
 1. TOC
 {:toc}
 
