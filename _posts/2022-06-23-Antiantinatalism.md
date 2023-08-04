@@ -32,9 +32,7 @@ Benatar was [profiled](https://www.newyorker.com/culture/persons-of-interest/the
 
 ## Universal A Priori Antinatalism
 
-I’ll try to steelman Benatar’s Asymmetry argument but the mental gymnastics he performs is almost as convoluted as Rawls'.
-
-The argument goes:
+I’ll try to steelman Benatar’s Asymmetry argument, which goes:
 
 ![](/images/2022-06-23-Antiantinatalism/image3.png)
 
