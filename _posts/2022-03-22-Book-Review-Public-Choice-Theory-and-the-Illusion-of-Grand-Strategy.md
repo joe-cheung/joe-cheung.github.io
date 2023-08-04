@@ -1,5 +1,5 @@
 ---
-title: 
+title: "Book Review: Public Choice Theory and the Illusion of Grand Strategy"
 subtitle:
 date: 2022-03-20 00:00:00
 update: 
@@ -209,7 +209,7 @@ _It’s all a competition to see who can signal “I hate Putin” the most, but
 
 That is not to excuse Putin’s invasion (he is, afterall, the aggressor) and no, Ukraine is [not](https://adamtooze.substack.com/p/chartbook-95-is-ukraine-the-wests?s=r) “the West’s fault” as Mearsheimer has claimed in his [viral lecture](https://youtu.be/JrMiSQAGOS4), but “[NATO’s door remains open](https://www.vox.com/22900113/nato-ukraine-russia-crisis-clinton-expansion)” for me and “[we're going to start WW3 because you're in my sphere of influence](https://en.wikipedia.org/wiki/Cuban_Missile_Crisis)” for thee is no grand strategy at all.
 
-US aid to Ukraine hits that rare trifecta of being morally right, popular with the public, and achieving both a short-term goal (protecting Ukraine) and a long-term one (weakening Russia). Indeed, the Western response is not predictable by the unitary actor model, but by the public choice model. Hanania [writes](https://richardhanania.substack.com/p/lessons-from-forecasting-the-ukraine?s=r):
+As James Palmer [wrote](https://twitter.com/BeijingPalmer/status/1525955772982738946?s=20), US aid to Ukraine hits that rare trifecta of being morally right, popular with the public, and achieving both a short-term goal (protecting Ukraine) and a long-term one (weakening Russia). Indeed, the Western response is not predictable by the unitary actor model, but by the public choice model. Hanania [writes](https://richardhanania.substack.com/p/lessons-from-forecasting-the-ukraine?s=r):
 
 
 > If you were going to cut Russia off from SWIFT, for example, why wouldn’t you announce it beforehand? The whole point of a punishment like that is supposed to be its deterrent effect, but if you don’t communicate that a specific action will happen, then it can’t influence behaviour. The answer here seems to be a lack of grand strategy, with leaders responding to events according to emotion and public relations more than anything. Cutting off SWIFT, or even threatening to do so, seems extreme before an invasion occurs, but not after it has begun.
@@ -253,7 +253,7 @@ Despite how odd it is that some wars are “legal” while others aren’t, we s
 
 80,000 Hours has updated their top career recommendations to include [China specialist](https://80000hours.org/career-reviews/china-specialist/) to improve China-Western coordination on global catastrophic risk, which seems more important after reading how irrational and [captured](https://en.wikipedia.org/wiki/Regulatory_capture) the American foreign policy apparatus is. As Hanania [writes](https://www.defensepriorities.org/explainers/great-power-competition-as-an-anachronism), “great power competition” is an anachronism. If Ukraine is the first war warped by hyperreality, it won’t be the last. Now that US foreign policy elites have driven Putin into the arms of China, let’s hope IR specialists can imbibe the public choice model instead of antagonising yet another nuclear rival.
 
-_Public Choice Theory and the Illusion of Grand Strategy_ is an important work because it raises [the sanity waterline](https://www.lesswrong.com/posts/XqmjdBKa4ZaXJtNmf/raising-the-sanity-waterline), which at the least should make us stop killing millions for no reason, and at the most should make the human race more knowledgeable of how to prevent total extinction from nuclear armageddon. Pax Americana is dead, but [a multipolar world will be more humane](https://richardhanania.substack.com/p/why-a-multipolar-world-will-be-more?s=r). 
+_Public Choice Theory and the Illusion of Grand Strategy_ is an important work because it raises [the sanity waterline](https://www.lesswrong.com/posts/XqmjdBKa4ZaXJtNmf/raising-the-sanity-waterline), which at the least should make us stop killing millions for no reason, and at the most should make the human race more knowledgeable of how to prevent total extinction from nuclear armageddon. 
 
 ## Endnotes
 
