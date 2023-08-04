@@ -1,5 +1,5 @@
 ---
-title: "Book Review: Public Choice Theory and the Illusion of Grand Strategy"
+title: 
 subtitle:
 date: 2022-03-20 00:00:00
 update: 
